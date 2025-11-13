@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class</h2>
+
+<p>How to use a JavaScript Class.</p>
+<input type="text" id="email" />
+<input type="password" id="password" />
+<button id="login" onclick="login()">submit</button>
+
+<p id="demo"></p>
+
+<script>
+     
+     class Users {
+  constructor() {    
+  }
+  
+  login(){
+    
+    let email = document.getElementById('email').value;
+    let  password = document.getElementById('password').value
+    
+    alert('Your Email is:' + email + "    " + 'Your Email Password is:' + password)
+  }
+}
+
+    
+const user = new Users();
+let login = user.login;
+</script>
+
+</body>
+</html>

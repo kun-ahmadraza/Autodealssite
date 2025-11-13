@@ -1,0 +1,227 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+nav.navbar{
+	padding:0px;
+}
+a.navbar-brand{
+	padding: 2px 0px;
+}
+.dekstop-header{
+	background-color: rgba(2, 48, 71, 0.93);
+}
+.main-nav{
+	font-size: 16px;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0;
+}
+.btnn:focus,.btnn:active {
+   border: 1px solid grey !important;
+   box-shadow: none;
+}
+.mega-menu{
+	text-decoration: none;
+}
+.mega-menu span{
+	color: white;
+	height: 100%;
+    padding: 19px 25px;
+    border-radius: 0;
+}
+.mega-menu span:hover{
+	background-color: #fff;
+	color: rgba(2, 48, 71, 0.93);
+}
+.nav-button{
+	font-size: 16px;
+    color: #fff;
+    background-color: #f68300;
+    border-radius: 10px;
+}
+.dropdown-menu.show{
+	display: flex;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.drpdwn-brdr{
+	border: 1px solid transparent;
+    box-shadow: 1px 1px 4px 4px rgb(0 0 0 / 10%);
+	border-bottom: 6px solid #f68300;
+	border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.drpdwn-brdr ul:hover{
+	
+}
+.drpdwn-brdr a{
+	background-color: #fff;
+	color: #111;
+	transition: 1s;
+}
+.drpdwn-brdr a:hover{
+	color: #f68300;
+	background-color: #fff;
+}
+.ul-brdr{
+	border-bottom: 1px solid lightgrey;
+}
+.dropdown:hover .dropdown-menu{display:flex;}
+.second-bar{
+    background-color: rgba(2, 48, 71, 0.93);
+    border-top: 1px solid hsla(0,0%,100%,.15);
+    font-size: 15px;
+    font-weight: 400;
+}
+.bg-color{
+	    background-color: #ececec;
+}
+.bg-pic{
+    background-image: url("https://autodeals.pk/static/media/Image_66.d0ab5d8f5e9cab34f400.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+    width: auto;
+}
+.bg-color h1{
+	color: rgba(2, 48, 71, 0.93);
+	font-weight: 700;
+    text-align: center;
+    width: 900px;
+	margin-left: 113px;
+    margin-top: -105px;
+    padding-bottom: 72px;
+}
+.telematics h2{
+    color: #f68300;
+    font-size: 32px;
+    font-weight: 700!important;
+}
+.telematics button{
+	border-radius: 10px;
+    background: #f68300;
+    color: #fff;
+    padding: 10px 24px;
+    font-weight: 600;
+}
+.telematics button:hover{
+	background-color: rgba(2, 48, 71, 0.93);
+	color: #fff;
+}
+.tracker-step{
+	height: 350px;
+    margin-top: 60px;
+    object-fit: contain;
+    width: auto;
+}
+.cloud-heading h1{
+	color: #f68300;
+}
+.car-tracker-form{
+	border-bottom: 1px solid #ececec;
+    margin: 0 auto;
+    max-width: 752px;
+    text-align: center;
+}
+.car-tracker-form h2{
+    color: rgba(2, 48, 71, 0.93);
+    font-weight: 700;
+}
+.car-tracker-form p{
+    color: rgba(2, 48, 71, 0.93);
+    font-size: 14px;
+    font-weight: 500;
+}
+.tracker-form-btn{
+	background-color: #f68300;
+    color: #fff;
+    padding: 8px 45px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.tracker-form-btn:hover{
+	background-color: rgba(2, 48, 71, 0.93);
+	color: #fff;
+}
+.collision-point svg{
+	color: #f68300;
+}
+.collision-point h5{
+	font-weight: 700;
+}
+.tracker-img{
+	height: 415px;
+    object-fit: contain;
+    width: auto;
+}
+.tracker-card h5{
+    font-weight: 400!important;
+    margin: 0;}
+.tracker-card p {
+    color: gray;
+    font-size: 14px;
+    padding: 0 30px;
+}
+.CameraMatics h2{
+	color: #f68300;
+	font-weight: 700;
+	
+}
+.CameraMatics p{
+	font-size: 20px;
+}
+.btn-custom{
+	background-color: #f68300;
+    color: #fff;
+    padding: 10px 45px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.btn-custom:hover{
+	background-color: rgba(2, 48, 71, 0.93);
+	color: #fff;
+}
+.footer-content h2{
+	color: black;
+	font-size: 19px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.newsletter-input input{
+    border: 1px solid #f1833b;
+    border-radius: 8px;
+    padding: 15px 15px;
+    width: 278px;
+}
+.input-button{
+	color: #fff;
+    background: #f68300;
+    padding: 0px 26px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+.footer-icon{
+	border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 27%) 0px 2px 2px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+}
+.footer-icon{
+	border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 27%) 0px 2px 2px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+}
+.term-service {
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+}

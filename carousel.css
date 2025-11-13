@@ -1,0 +1,91 @@
+.browse-btn{
+	background-color: #f68300;
+	color: #fff;
+}
+.browse-btn:hover{
+	background-color: rgba(2, 48, 71, 0.93);
+	color: #fff;
+}
+.btnn:focus,.btnn:active {
+   border: 1px solid grey !important;
+   box-shadow: none;
+}
+.cards img {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    object-fit: cover;
+    width: auto;
+}
+.cards {
+    border: 1px solid #ececec;
+    border-radius: 12px;
+    padding: 10px;
+	box-shadow: 0;
+}
+.cards .active_brand{
+	border: 1px solid #f68300;
+    color: #f68300;
+	box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+}
+.cards:hover {
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+}
+.active_brand, .cards:hover {
+    border: 1px solid #f68300;
+    color: #f68300;
+	box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+}
+.brand-name {
+    font-size: 14px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.car-price{
+	background-color: #fff;
+}
+.car-price h3 {
+    color: #f68300;
+    font-size: 30px;
+}
+.carousel-btn{
+	border: 1px solid #f68300;
+    border-radius: 17px;
+    padding: 5px 16px;
+    font-weight: 800;
+    color: #f68300;
+}
+.carousel-btn2{
+	border: 1px solid #111;
+    border-radius: 17px;
+    padding: 5px 30px;
+    font-weight: 800;
+    color: #111;
+    margin-top: 6px;
+}
+.prev-btn{
+	background-color: grey;
+    color: #fff;
+    height: 66px !important;
+    width: 32px !important;
+    border-radius: 10px 0 0 10px;
+    margin-left: -45px !important;
+    margin-top: 174px;
+}
+.nxt-btn{
+	background-color: grey;
+    color: #fff;
+    height: 66px !important;
+    width: 32px !important;
+    border-radius:0 10px 10px 0; 
+    margin-right: -50px !important;
+    margin-top: 174px;
+}
+.car-price p {
+    color: #878686;
+    font-size: 22px;
+    margin-bottom: 0;
+}

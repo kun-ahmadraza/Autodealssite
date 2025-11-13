@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vehicla Tracker</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Merriweather:ital,wght@1,700&family=Montserrat:wght@100&family=Nunito+Sans:wght@200&family=Oswald:wght@200;400;600&family=PT+Serif:ital@1&family=Playfair+Display:ital,wght@1,500&family=Poppins:ital,wght@0,700;1,800&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;500&family=Rubik:ital,wght@1,600&family=Ubuntu&family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
+	<link href="car-tracker.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="dekstop-header">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg ">
+				<a class="navbar-brand" href="#">
+					<img class="ms-md-5" src="https://autodeals.pk/static/media/logo.35afa53228637baeeb8e.png" style="width: auto; height: 60px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<ul class="main-nav d-flex ms-md-5">
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Used Cars
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:195px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Cars</h5>
+													<p style="font-size: 10px;">Search from over 60k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Cars For Sale</h5>
+													<p style="font-size: 10px;">View Used Featured Cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Cars</h5>
+													<p style="font-size: 10px;">Post a free ad and sell your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-file-text-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verify Japenese Auction Sheet</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:195px;border-left: 1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Bikes</h5>
+													<p style="font-size: 10px;">Search from over 30k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Bikes For Sale</h5>
+													<p style="font-size: 10px;">View Used Featured Cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr" >
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Bikes</h5>
+													<p style="font-size: 10px;">Post a free ad and sell your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr  pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-file-text-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verify Japenese Auction Sheet</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-car mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Makes</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311340545car%20brands%20icons-10.png" style="width: auto; height: 30px;">
+													Toyota
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311330924car%20brands%20icons-05.png" style="width: auto; height: 30px;">
+													Suzuki
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311379445car%20brands%20icons-01.png" style="width: auto; height: 30px;">
+													Honda
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667310950921car%20brands%20icons-04.png" style="width: auto; height: 30px;">
+													KIA
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311350665car%20brands%20icons-11.png" style="width: auto; height: 30px;">
+													Daihatsu
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311313383car%20brands%20icons-02.png" style="width: auto; height: 30px;">
+													Nissan
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311379445car%20brands%20icons-01.png" style="width: auto; height: 30px;">
+													Honda
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-map-marker mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Cities</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-01.6897ad5f3a08a935cc20.png" style="width: auto; height: 30px;">
+													Lahore
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-02.4a1bb5dfd5c7bbfe1d0a.png" style="width: auto; height: 30px;">
+													Islamabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-03.d0eed4fea7c53a045afa.png" style="width: auto; height: 30px;">
+													Karachi
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1ZsY5puFxCqLnL9JcHQZQalE6z6vgesmXETyd-vcAGqTG1C0hf8m6pAPA2BGroNJhmM&usqp=CAU" style="width: auto; height: 30px;">
+													Faisalabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-05.b4c6c565a841f1dea6ee.png" style="width: auto; height: 30px;">
+													Peshawar
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-06.9d96102ab6e19689ec23.png" style="width: auto; height: 30px;">
+													Sialkot
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-07.61554c8aa732934873ef.png" style="width: auto; height: 30px;">
+													Gujranwala
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									New Cars
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:195px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">New Cars</h5>
+													<p style="font-size: 10px;">Search New Cars</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Car Comparison</h5>
+													<p style="font-size: 10px;">Compare Car Differences</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-user-plus mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Car Dealer</h5>
+													<p style="font-size: 10px;">Search New Car Dealers</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Cars Price</h5>
+													<p style="font-size: 10px;">Search New Cars Price</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:195px;border-left: 1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<div class="ul-brdr">
+												<li class="d-flex ">
+													<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+													<a class="dropdown-item mt-md-3" href="#">
+														<h5 style="font-size:15px;">Search New Cars</h5>
+														<p style="font-size: 10px;">Search All Sorts Of New Cars</p>
+													</a>
+												</li>
+											</div>
+											<li class="d-flex ">
+												<i class="fa fa-user-plus mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Search New Dealers</h5>
+													<p style="font-size: 10px;">Search New Car Dealers</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-comments-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Car Reviews</h5>
+													<p style="font-size: 10px;">Read Car Reviews</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2" >
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Cars</h5>
+													<p style="font-size: 10px;">Sell your car</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-map-marker mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Cities</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-01.6897ad5f3a08a935cc20.png" style="width: auto; height: 30px;">
+													Lahore
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-02.4a1bb5dfd5c7bbfe1d0a.png" style="width: auto; height: 30px;">
+													Islamabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-03.d0eed4fea7c53a045afa.png" style="width: auto; height: 30px;">
+													Karachi
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1ZsY5puFxCqLnL9JcHQZQalE6z6vgesmXETyd-vcAGqTG1C0hf8m6pAPA2BGroNJhmM&usqp=CAU" style="width: auto; height: 30px;">
+													Faisalabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-05.b4c6c565a841f1dea6ee.png" style="width: auto; height: 30px;">
+													Peshawar
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-06.9d96102ab6e19689ec23.png" style="width: auto; height: 30px;">
+													Sialkot
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-07.61554c8aa732934873ef.png" style="width: auto; height: 30px;">
+													Gujranwala
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Bikes
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:280px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Bikes</h5>
+													<p style="font-size: 10px;">Search from over 30k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Bikes</h5>
+													<p style="font-size: 10px;">Find Your Perfect Ride</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Bikes</h5>
+													<p style="font-size: 10px;">View Featured Used Bikes</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Post a free Ad</h5>
+													<p style="font-size: 10px;">Sell Your Bikes Now</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:280px;border-left:1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Bike Compare</h5>
+													<p style="font-size: 10px;">Compare Bike Difference's</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Bike Prices</h5>
+													<p style="font-size: 10px;">Search New Bike Prices</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-comments-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Bike Reviews</h5>
+													<p style="font-size: 10px;">Read Bikes Reviews</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Parts
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Auto Parts</h5>
+													<p style="font-size: 10px;">Find New or Used Car & Bike Parts</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">AutoDeals Shop</h5>
+													<p style="font-size: 10px;">Find the New Parts</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">AutoDeals Store</h5>
+													<p style="font-size: 10px;">Buy Car & Bikes Accessories From AD</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell New & Used Parts</h5>
+													<p style="font-size: 10px;">Post a Free Ads & Sell it</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									More
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Import</h5>
+													<p style="font-size: 10px;">Calculate custom duty on imported cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Custom Duty Calculator</h5>
+													<p style="font-size: 10px;">Calculate custom duty on imported cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/car-finance-calculator.25d9e663f72a08710bad.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Finance Calculator</h5>
+													<p style="font-size: 10px;">Get your dream car on easy installments</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/used-car-calculate.247f36d6d6718f34e3b1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Used Price Calculator</h5>
+													<p style="font-size: 10px;">Used car price evaluation tool</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Insurance</h5>
+													<p style="font-size: 10px;">Get car insurance & secure your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-tracker.b91fb117a6842f7993fe.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Tracker</h5>
+													<p style="font-size: 10px;">Secure your car, get a tracker</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-tracker.b91fb117a6842f7993fe.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Fuel Prices</h5>
+													<p style="font-size: 10px;">Find out latest fuel prices in Pakistan</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Blog
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verification guid & explaination</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">AutoMotive News</h5>
+													<p style="font-size: 10px;">Latest news & updates</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Pakistan Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest News Pakistani Automotives</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">WorldWide Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest automotive news across the globe</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">WorldWide Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest automotive news across the globe</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Automotive Gadgets</h5>
+													<p style="font-size: 10px;">Find out automotive gadgets & accessories</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">How to?</h5>
+													<p style="font-size: 10px;">Know more about your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">New Cars</h5>
+													<p style="font-size: 10px;">Find out newly launched cars in Pakistan</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link mt-2" style="color:#fff;" href="">Videos</a>
+							</li>
+							<li class="dropdown nav-item">
+								<a class="top-level-link">
+									<span  class="pt-2 pb-2 ps-3 pe-3 ms-sm-4 me-sm-5 mt-sm-2 btn nav-button dropdown-toggle">
+										Post fee add
+									</span>
+								</a>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</nav>
+		</div>
+    </div>
+	<div class="container-fluid">
+		<div class="row second-bar" style="">
+			<div class="text-white mt-2 ms-md-5 d-flex">
+				<a href="AR-carshop.html" class="text-white me-3 ms-md-4 mb-2 text-decoration-none">Home</a>
+			</div>
+		</div>
+	</div>	
+	<div class="container-fluid bg-color">
+		<div class="bg-pic">
+		</div>
+		<div class="container">
+			<h1>2 VANS OR 2000 TRUCKS, CAMERAMATICS HAS A SOLUTION FOR YOUR VEHICLE</h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row py-md-5">
+			<div class="col-md-6 mt-5 telematics">
+				<h4 class="text-uppercase" style="font-size:18px;">The future of fleet and driver risk management</h4>
+				<h2>Telematics is evolving into CameraMatics</h2>
+				<p style="font-size: 17px;">CameraMatics is a customer-centruc solution, designed to protect fleet operators from expensive risks. 
+					Our system is the eyes and ears of your fleet -a complete Fleet Risk Management Solution helping you to
+					predict, manage and control risk.
+				</p>
+				<p style="font-size: 17px;">We provide a complete, modular package centred arounf the powerful CameraMatics Suite which collects, 
+					processes and visualises a phenomenal amount of data from inside and around vehicles
+				</p>
+				<button class="btn btnn mt-3">Book Tracker</button>
+			</div>
+			<div class="col-md-5 offset-md-1">
+				<img src="https://autodeals.pk/static/media/car-tracker-steps.b8ffe4eb68a9351ffa1a.png" class="tracker-step"/>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-4">
+		<div class="cloud-heading">
+			<h1 class="text-center">Our cloud-based SaaS platform can improve safety, reduce collisions and ensure compliance.</h1>
+		</div>
+		<div class="car-tracker-form mt-5 mb-sm-5">
+			<h2>Car Tracker</h2>
+			<p>(All fields marked with * are mandatory)</p>
+		</div>
+		<div class="row mt-5">
+			<div class="col-md-6 tracker-form">
+				<div>
+					<label>Car Info*</label>
+					<div class="input-group">
+						<input type="text" class="form-control btnn mt-2 mb-2" placeholder="Year*/Make*/Model*/Variant*" style="border-radius: 10px;padding: 15px;background-color: #ececec;" />
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 tracker-form">
+				<div>
+					<label>Name*</label>
+					<div class="input-group">
+						<input type="text" class="form-control btnn mt-2 mb-2" placeholder="Name" style="border-radius: 10px;padding: 15px;background-color: #ececec;" />
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 tracker-form mt-4">
+				<div>
+					<label>Email*</label>
+					<div class="input-group">
+						<input type="text" class="form-control btnn mt-2 mb-2" placeholder="Email" style="border-radius: 10px;padding: 15px;background-color: #ececec;" />
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 tracker-form mt-4">
+				<div>
+					<label>Name*</label>
+					<div class="">
+						<select class="form-select btnn text-secondary mt-2 mb-2" type="submit" style="border-radius: 10px;padding: 15px;background-color: #ececec;">
+						  <option selected>All Cities</option>
+						  <option class="city-option">Karachi</option>
+						  <option>Lahore</option>
+						  <option>rawalpindi</option>
+						  <option>Faisaabad</option>
+						  <option>sialkot</option>
+						  <option>gujranwala</option>
+						  <option>swat</option>
+						  <option>peshawar</option>
+						  <option>Samundri</option>
+						  <option>Gojra</option>
+						  <option>Multan</option>
+						  <option>Quetta</option>
+						  <option>Attok</option>
+						  <option>Badin</option>
+						  <option>Bahawal-nagr</option>
+						  <option>IslamAbad</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 tracker-form mt-4">
+				<div>
+					<label>Message*</label>
+					<div class="input-group">
+						<input type="text" class="form-control btnn mt-2 mb-2" placeholder="" style="border-radius: 10px;padding: 15px;background-color: #ececec;height: 111px;" />
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 tracker-form mt-4">
+				<div>
+					<label>Phone Number*</label>
+					<div class="input-group">
+						<input type="text" class="form-control btnn mt-2 mb-2" placeholder="03XXXXXXXXX" style="border-radius: 10px;padding: 15px;background-color: #ececec;" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="btn btnn tracker-form-btn mt-3">Submit</button>
+	</div>
+	<div class="container-fluid bg-color mt-5">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>Collisions Avoidance Technology</h2>
+					<p style="font-size: 17px;">Intelligent, Al-enabled smart technologies including and sensors provide enhenced safety and collisions Avoidance. 
+						Real-time in-cab driver coaching via audible warnings. Advance Driver Assistance Systems(ADAS) and Driver Monitoring
+						System(DMS) technology for safer, smarter driving.
+					</p>
+					<div class="collision-point mt-3">
+						<h5>
+							<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"></path>
+							</svg>
+							Farward Collisions
+						</h5>
+						<h5>
+							<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"></path>
+							</svg>
+							Rear Collisions
+						</h5>
+						<h5>
+							<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"></path>
+							</svg>
+							Driver Fatigue
+						</h5>
+						<h5>
+							<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"></path>
+							</svg>
+							Driver Distraction
+						</h5>
+						<h5>
+							<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"></path>
+							</svg>
+							Distance Control
+						</h5>
+						<h5>
+							<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"></path>
+							</svg>
+							Lane Departure
+						</h5>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<img src="https://autodeals.pk/static/media/car-location.73b5b195331367cf4e3d.png" class="tracker-img"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-5">
+		<h2 class="text-center" style="color: #f68300;font-weight: 700;">How Car Tracker Works</h2>
+		<div class="row mx-3 pt-4">
+			<div class="col-6 col-md-3">
+				<div class="text-center tracker-card">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="60" width="60" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"></path>
+					</svg>
+					<h5 class="pt-2">Real Time Tacking & Monitoring</h5>
+					<p>Real Time Tacking & Monitoring</p>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="text-center tracker-card">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="60" width="60" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9.585 2.568a.5.5 0 0 1 .226.58L8.677 6.832h1.99a.5.5 0 0 1 .364.843l-5.334 5.667a.5.5 0 0 1-.842-.49L5.99 9.167H4a.5.5 0 0 1-.364-.843l5.333-5.667a.5.5 0 0 1 .616-.09z"></path>
+						<path d="M2 4h4.332l-.94 1H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2.38l-.308 1H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path><path d="M2 6h2.45L2.908 7.639A1.5 1.5 0 0 0 3.313 10H2V6zm8.595-2-.308 1H12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.276l-.942 1H12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.405z"></path><path d="M12 10h-1.783l1.542-1.639c.097-.103.178-.218.241-.34V10zm0-3.354V6h-.646a1.5 1.5 0 0 1 .646.646zM16 8a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z"></path>
+					</svg>
+					<h5 class="pt-2">Battery Temper Monitoring</h5>
+					<p>Real Time Tacking & Monitoring</p>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="text-center tracker-card">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="60" width="60" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path>
+						<path d="M13 7h-2v6h6v-2h-4z"></path>
+					</svg>
+					<h5 class="pt-2">24/7 Dynamic Control Room</h5>
+					<p>Real Time Tacking & Monitoring</p>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="text-center tracker-card">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="60" width="60" xmlns="http://www.w3.org/2000/svg">
+						<path d="M20 5H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM7.001 7H19v10H7.001V7z"></path>
+					</svg>
+					<h5 class="pt-2">Web & Mobile Acces</h5>
+					<p>Real Time Tacking & Monitoring</p>
+				</div>
+			</div>
+		</div>
+		<div class="row mx-3">
+			<div class="col-6 col-md-3">
+				<div class="text-center tracker-card">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="60" width="60" xmlns="http://www.w3.org/2000/svg">
+						<path d="M204.8 230.4c-10.6-14.1-30.7-17-44.8-6.4-14.1 10.6-17 30.7-6.4 44.8l38.1 50.8c4.8 6.4 4.1 15.3-1.5 20.9l-12.8 12.8c-6.7 6.7-17.6 6.2-23.6-1.1L64 244.4V96c0-17.7-14.3-32-32-32S0 78.3 0 96v218.4c0 10.9 3.7 21.5 10.5 30l104.1 134.3c5 6.5 8.4 13.9 10.4 21.7 1.8 6.9 8.1 11.6 15.3 11.6H272c8.8 0 16-7.2 16-16V384c0-27.7-9-54.6-25.6-76.8l-57.6-76.8zM608 64c-17.7 0-32 14.3-32 32v148.4l-89.8 107.8c-6 7.2-17 7.7-23.6 1.1l-12.8-12.8c-5.6-5.6-6.3-14.5-1.5-20.9l38.1-50.8c10.6-14.1 7.7-34.2-6.4-44.8-14.1-10.6-34.2-7.7-44.8 6.4l-57.6 76.8C361 329.4 352 356.3 352 384v112c0 8.8 7.2 16 16 16h131.7c7.1 0 13.5-4.7 15.3-11.6 2-7.8 5.4-15.2 10.4-21.7l104.1-134.3c6.8-8.5 10.5-19.1 10.5-30V96c0-17.7-14.3-32-32-32z"></path>
+					</svg>
+					<h5 class="pt-2">Real Time Tacking & Monitoring</h5>
+					<p>Real Time Tacking & Monitoring</p>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="text-center tracker-card">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="60" width="60" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.69 7.499c-.919-.965-1.577-2.105-1.6-3.116.655-.187 2.017.001 3.35.558 1.354.566 2.668 1.514 3.158 2.831.014.039.029.078.041.116a2.337 2.337 0 0 1-.529 1.14c-.26.279-.586.487-.948.605-1.143-.23-2.464-1.074-3.472-2.134zm5.581 2.244c-.957.334-1.839 1.311-2.473 2.482v.001c-.697 1.284-1.093 2.799-.96 3.957.225.307.523.553.869.713.394.163.826.215 1.247.151.038-.027.07-.053.1-.075 1.103-.872 1.6-2.413 1.72-3.875.119-1.437-.122-2.79-.503-3.354zm-7.939-3.389a2.23 2.23 0 0 0-.283-1.088 2.332 2.332 0 0 0-.92-.853l-.123.002C8.6 4.473 7.292 5.428 6.334 6.541 5.393 7.633 4.791 8.87 4.768 9.55c.969.288 2.257.017 3.459-.559v.002c1.32-.631 2.532-1.625 3.105-2.639zM7.96 14.641c-.193-1.449-.765-2.907-1.553-3.767a2.252 2.252 0 0 0-1.123-.067c-.415.099-.794.31-1.097.61l-.036.118c-.38 1.355.125 2.893.886 4.146.749 1.233 1.741 2.185 2.382 2.418.577-.832.718-2.139.54-3.459l.001.001zm5.297 2c-1.439-.264-3.004-.172-4.065.311a2.227 2.227 0 0 0-.411 1.046c-.034.426.05.852.243 1.233.033.025.067.047.1.068 1.172.779 2.793.774 4.223.438 1.405-.332 2.619-.978 3.039-1.515-.614-.807-1.817-1.344-3.128-1.584l-.001.003zM24 12c0 6.622-5.364 11.992-11.985 12C5.387 24.008.008 18.642 0 12.015-.008 5.387 5.358.008 11.985 0h.001C18.617-.004 23.996 5.369 24 12zm-1.547 0c-.003-5.778-4.69-10.459-10.468-10.456-5.774.007-10.45 4.693-10.443 10.468.007 5.775 4.693 10.45 10.468 10.443C17.78 22.448 22.453 17.77 22.453 12z"></path>
+					</svg>
+					<h5 class="pt-2">Engine Kill & Power Kill</h5>
+					<p>Real Time Tacking & Monitoring</p>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="text-center tracker-card">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="60" width="60" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path>
+					</svg>
+					<h5 class="pt-2">SMS & Call Alerts</h5>
+					<p>Real Time Tacking & Monitoring</p>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="text-center tracker-card">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="60" width="60" xmlns="http://www.w3.org/2000/svg">
+						<path d="M256 32l-96 48h23v71h-32v50h30.945L155.36 440.244l-.653.477.522.72-4.175 37.566-.994 8.945 17.89 1.99.995-8.946L171.61 457h168.78l2.665 23.994.994 8.945 17.89-1.99-.995-8.944-4.174-37.567.523-.72-.654-.476L330.054 201H361v-50h-32V80h23l-96-48zm-48 64h32v48h-32V96zm64 0h32v48h-32V96zm-103 73h14v14h-14v-14zm32 0h14v14h-14v-14zm32 0h14v14h-14v-14zm32 0h14v14h-14v-14zm32 0h14v14h-14v-14zm32 0h14v14h-14v-14zm-113.328 32h80.656L256 236.848 215.672 201zm-16.65 9.283L240.33 247h-45.385l4.08-36.717zm113.955 0l4.08 36.717h-45.385l41.305-36.717zM192.945 265h31.383l-34.822 30.953 3.44-30.953zm58.477 0h9.156l51.75 46H199.672l51.75-46zm36.25 0h31.383l3.44 30.953L287.67 265zm-83.994 64h104.644L256 367.053 203.678 329zm-18.8 8.586L236.323 375h-55.6l4.157-37.414zm142.243 0L331.278 375h-55.6l51.444-37.414zM178.724 393h41.6l-45.26 32.914 3.66-32.914zm72.205 0h10.144l63.25 46H187.678l63.25-46zm40.75 0h41.6l3.658 32.914L291.678 393z"></path>
+					</svg>
+					<h5 class="pt-2">Limit City Boundaries</h5>
+					<p>Real Time Tacking & Monitoring</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid bg-light mt-5 border-bottom">
+		<div class="text-center CameraMatics pb-5">
+			<h2 class="pt-5">Get started with CameraMatics</h2>
+			<p>Book an online demo with one of our experts for a free, no-obligation consultation</p>
+			<button class="btn btnn btn-custom">Book Tracker</button>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="container-fluid " style="background-color: rgb(245, 245, 245);">
+		<div class="row pb-md-5 pt-3 ms-md-1" style="border-bottom: 2px solid lightgrey;font-size: 14px;">
+			<div class="col-md-2 col-4 ms-md-5 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Cars By Make
+				</h2>
+				<div class="">
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary fw-100">Toyota Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Suzuki Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Honda Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">KIA Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Dihatsu Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Mercedes Cars For Sale.</a>
+					</li>
+					
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Hundyai Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Nissan Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">BMW Cars For Sale.</a>
+					</li>
+				</ul>	
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4 footer-content">
+						<h2 class="mb-md-3 fw-bolder">
+							Cars By Bodytype
+						</h2>
+						<ul class="mb-0 list-unstyled">
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Hetchback</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Sedan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">SUV</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">MInivan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Van</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Cross Over</a>
+							</li>
+							
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Double Cabin</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-4 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Cars By City
+				</h2>
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Lahore</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In IslamAbad</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Karachi</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Rawalpindi</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In FaislAbad</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Gujranwala</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Sialkot</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Multan</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Peshawar</a>
+					</li>
+				</ul>	
+				<div class="row">
+					<div class="col-md-12 mt-4 mb-0 footer-content">
+						<h2 class="mb-md-3 fw-bolder">
+							Our Business Partners
+						</h2>
+						<ul class=" list-unstyled">
+							<li>
+								<a href="" class="text-decoration-none text-secondary">AutoDeals Japan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">My Auction Sheet</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">List Network</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">City Book</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-4 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Explore AutoDeals
+				</h2>
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Used Cars</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Used Bikes</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">New Cars</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">New Bikes</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Auto Parts</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sell Your Car</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sell Your Bike</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Blog</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sitemap</a>
+					</li>
+				</ul>
+					<div class="row">
+						<div class="col-md-12 mt-4 footer-content">
+							<h2 class="mb-md-3 fw-bolder">
+								About Company
+							</h2>
+							<ul class="mb-0 list-unstyled">
+								<li>
+									<a href="" class="text-decoration-none text-secondary">About AutoDeals</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Our Prodicts</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Advertise With Us</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">How To Pay</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Shipment & Return Policy</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Return & Exchange</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Refund Policy</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Facs</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Contact-Us</a>
+								</li>
+							</ul>	
+						</div>
+					</div>
+			</div>
+			<div class="col-md-5 mt-3 ms-md-5 footer-content">
+				<div class="newsletter pb-0 pt-3">
+					<h4 class=" mb-3">Newsletter</h4>
+					<div class="d-flex newsletter-input">
+						<input type="text" class="form-control btnn" placeholder="name@email.com" ></input>
+						<button class="input-button btn btnn ms-2" type="button">Suscribe</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4 footer-content">
+						<h5 class="mb-md-3">
+							Our Soccail Media
+						</h5>
+						<div class="row">
+							<div class="d-flex">
+								<a href="" class="text-decoration-none"><i class="fa fa-facebook footer-icon" aria-hidden="true"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-twitter footer-icon ms-2" aria-hidden="true"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-pinterest footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-instagram footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-youtube-play footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-linkedin footer-icon ms-2" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4">
+						<img src="https://autodeals.pk/static/media/google-play-badge.0168dd766b85b2f2e845.png" style="height: 43.5px;cursor: pointer;"/>
+						<img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Download_on_Apple_TV_Badge_SI_RGB_blk.svg/2560px-Download_on_Apple_TV_Badge_SI_RGB_blk.svg.png" style="height: 43.5px;cursor: pointer;"/>
+						<img src="https://autodeals.pk/static/media/huawei.f823d81072a99fd1918e.png" style="height: 43.5px;cursor: pointer;"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 d-flex mt-3">
+						<h6 class="fw-bold">Get In Touch :</h6>
+						<i class="fa fa-envelope-o ms-1 mt-1" style="color:#f1833b"></i>
+						<a href="" class="text-secondary ms-1">Support@AR-CarShop.PK</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid mb-5 mb-md-0" style="background-color: rgb(245, 245, 245);">
+		<div class="mb-5 mb-md-0">
+			<div class="row">
+				<div class="col-md-4">
+					<button class="btn d-flex flex-column ms-md-5">
+						<div class="text-dark text-left ">
+							<h6>Developed By:</h6>
+							<img src="https://autodeals.pk/static/media/wellcreator.3f2a6fc7f75eb582cbbd.png" style="width: auto;height: 40px;"/>
+						</div>
+					</button>
+				</div>
+				<div class="col-md-4 mt-4 text-secondary">
+					<p>Copyright © 2003 - 2023 AutoDeals (Pvt) Ltd.</p>
+				</div>
+				<div class="col-md-4 justify-content-end term-service">
+					<a href="" class="text-dark text-decoration-none me-1">Term Of Service</a>
+					<span>|</span>
+					<a class="text-dark text-decoration-none ms-1">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

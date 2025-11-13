@@ -1,0 +1,54 @@
+function todolist(){
+	var input = document.getElementById('addList').value;
+	if (input) {
+		 document.getElementById('tasks').innerHTML += '<div class="task justify-content-between d-flex"><div class="text-start d-flex"><input type="checkbox"/><span class="task-name text-start ms-2">'+input+'</span></div><button class="delete ms-2 text-end" type="button"  onclick="removeTodo(this)"><i class="fa fa-times"></i></button></div>';
+		
+		document.getElementById('addList').value = '';
+	}
+}
+
+function todolist(){
+	var input = document.getElementById('addList').value;
+	localStorage.setItem("tasks", (input));
+	var x = localStorage.getItem("tasks");
+		console.log(x);
+	if (input) {
+		document.getElementById('tasks').innerHTML = '<div class="task justify-content-between d-flex"><div class="text-start d-flex"><input type="checkbox"/><span class="task-name text-start ms-2">'+input+'</span></div><button class="delete ms-2 text-end" type="button"  onclick="removeTodo(this)"><i class="fa fa-times"></i></button></div>';
+			
+			document.getElementById('addList').value = '';
+	}
+}
+
+
+function findmylocation(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(position); 
+    }
+}
+
+findmylocation();
+
+function position(position) {
+    console.log(+position.coords.latitude +  "   " + position.coords.longitude);
+};
+
+
+function setbgimg(){
+    var now = new Date();
+    var hours = now.getHours();
+    if(hours >= 17){
+        document.body.style.backgroundImage = 'linear-gradient(rgba(29,84,107,.0),rgba(2,48,41,.9)),url(https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/sun/sunset-creating-a-red-sky.jpg)';
+    }
+}
+
+setbgimg();
+
+function setbgimg(){
+    var now = new Date();
+    var hours = now.getHours();
+    if(hours >= 17){
+        document.body.style.backgroundImage = 'linear-gradient(rgba(29,84,107,.0),rgba(2,48,41,.9)),url(https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/sun/sunset-creating-a-red-sky.jpg)';
+    }
+}
+
+setbgimg();

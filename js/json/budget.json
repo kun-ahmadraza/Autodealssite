@@ -1,0 +1,43 @@
+[{
+	"id": 1,
+	"budget": "Under 2 Lac"
+},{
+	"id": 2,
+	"budget": "Under 3 Lac"
+},{
+	"id": 3,
+	"budget": "Under 4 Lac"
+},{
+	"id": 4,
+	"budget": "Under 5 Lac"
+},{
+	"id": 5,
+	"budget": "Under 6 Lac"
+},{
+	"id": 6,
+	"budget": "Under 7 Lac"
+},{
+	"id": 7,
+	"budget": "Under 8 Lac"
+},{
+	"id": 8,
+	"budget": "Under 9 Lac"
+},{
+	"id": 9,
+	"budget": "Under 10 Lac"
+},{
+	"id": 10,
+	"budget": "Under 15 Lac"
+},{
+	"id": 11,
+	"budget": "Under 20 Lac"
+},{
+	"id": 12,
+	"budget": "Under 40 Lac"
+},{
+	"id": 13,
+	"budget": "Under 50 Lac"
+},{
+	"id": 14,
+	"budget": "Above 50 Lac"
+}]

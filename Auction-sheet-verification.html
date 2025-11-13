@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AR-Carshop.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Merriweather:ital,wght@1,700&family=Montserrat:wght@100&family=Nunito+Sans:wght@200&family=Oswald:wght@200;400;600&family=PT+Serif:ital@1&family=Playfair+Display:ital,wght@1,500&family=Poppins:ital,wght@0,700;1,800&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;500&family=Rubik:ital,wght@1,600&family=Ubuntu&family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
+	<link href="Auction-sheet-verification.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="dekstop-header">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg ">
+				<a class="navbar-brand" href="#">
+					<img class="ms-md-5" src="https://autodeals.pk/static/media/logo.35afa53228637baeeb8e.png" style="width: auto; height: 60px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<ul class="main-nav d-flex ms-md-5">
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Used Cars
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:195px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Cars</h5>
+													<p style="font-size: 10px;">Search from over 60k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Cars For Sale</h5>
+													<p style="font-size: 10px;">View Used Featured Cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Cars</h5>
+													<p style="font-size: 10px;">Post a free ad and sell your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-file-text-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verify Japenese Auction Sheet</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:195px;border-left: 1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Bikes</h5>
+													<p style="font-size: 10px;">Search from over 30k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Bikes For Sale</h5>
+													<p style="font-size: 10px;">View Used Featured Cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr" >
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Bikes</h5>
+													<p style="font-size: 10px;">Post a free ad and sell your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr  pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-file-text-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verify Japenese Auction Sheet</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-car mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Makes</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311340545car%20brands%20icons-10.png" style="width: auto; height: 30px;">
+													Toyota
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311330924car%20brands%20icons-05.png" style="width: auto; height: 30px;">
+													Suzuki
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311379445car%20brands%20icons-01.png" style="width: auto; height: 30px;">
+													Honda
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667310950921car%20brands%20icons-04.png" style="width: auto; height: 30px;">
+													KIA
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311350665car%20brands%20icons-11.png" style="width: auto; height: 30px;">
+													Daihatsu
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311313383car%20brands%20icons-02.png" style="width: auto; height: 30px;">
+													Nissan
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311379445car%20brands%20icons-01.png" style="width: auto; height: 30px;">
+													Honda
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-map-marker mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Cities</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-01.6897ad5f3a08a935cc20.png" style="width: auto; height: 30px;">
+													Lahore
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-02.4a1bb5dfd5c7bbfe1d0a.png" style="width: auto; height: 30px;">
+													Islamabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-03.d0eed4fea7c53a045afa.png" style="width: auto; height: 30px;">
+													Karachi
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1ZsY5puFxCqLnL9JcHQZQalE6z6vgesmXETyd-vcAGqTG1C0hf8m6pAPA2BGroNJhmM&usqp=CAU" style="width: auto; height: 30px;">
+													Faisalabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-05.b4c6c565a841f1dea6ee.png" style="width: auto; height: 30px;">
+													Peshawar
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-06.9d96102ab6e19689ec23.png" style="width: auto; height: 30px;">
+													Sialkot
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-07.61554c8aa732934873ef.png" style="width: auto; height: 30px;">
+													Gujranwala
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									New Cars
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:195px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">New Cars</h5>
+													<p style="font-size: 10px;">Search New Cars</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Car Comparison</h5>
+													<p style="font-size: 10px;">Compare Car Differences</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-user-plus mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Car Dealer</h5>
+													<p style="font-size: 10px;">Search New Car Dealers</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Cars Price</h5>
+													<p style="font-size: 10px;">Search New Cars Price</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:195px;border-left: 1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<div class="ul-brdr">
+												<li class="d-flex ">
+													<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+													<a class="dropdown-item mt-md-3" href="#">
+														<h5 style="font-size:15px;">Search New Cars</h5>
+														<p style="font-size: 10px;">Search All Sorts Of New Cars</p>
+													</a>
+												</li>
+											</div>
+											<li class="d-flex ">
+												<i class="fa fa-user-plus mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Search New Dealers</h5>
+													<p style="font-size: 10px;">Search New Car Dealers</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-comments-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Car Reviews</h5>
+													<p style="font-size: 10px;">Read Car Reviews</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2" >
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Cars</h5>
+													<p style="font-size: 10px;">Sell your car</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-map-marker mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Cities</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-01.6897ad5f3a08a935cc20.png" style="width: auto; height: 30px;">
+													Lahore
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-02.4a1bb5dfd5c7bbfe1d0a.png" style="width: auto; height: 30px;">
+													Islamabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-03.d0eed4fea7c53a045afa.png" style="width: auto; height: 30px;">
+													Karachi
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1ZsY5puFxCqLnL9JcHQZQalE6z6vgesmXETyd-vcAGqTG1C0hf8m6pAPA2BGroNJhmM&usqp=CAU" style="width: auto; height: 30px;">
+													Faisalabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-05.b4c6c565a841f1dea6ee.png" style="width: auto; height: 30px;">
+													Peshawar
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-06.9d96102ab6e19689ec23.png" style="width: auto; height: 30px;">
+													Sialkot
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-07.61554c8aa732934873ef.png" style="width: auto; height: 30px;">
+													Gujranwala
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Bikes
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:280px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Bikes</h5>
+													<p style="font-size: 10px;">Search from over 30k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Bikes</h5>
+													<p style="font-size: 10px;">Find Your Perfect Ride</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Bikes</h5>
+													<p style="font-size: 10px;">View Featured Used Bikes</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Post a free Ad</h5>
+													<p style="font-size: 10px;">Sell Your Bikes Now</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:280px;border-left:1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Bike Compare</h5>
+													<p style="font-size: 10px;">Compare Bike Difference's</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Bike Prices</h5>
+													<p style="font-size: 10px;">Search New Bike Prices</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-comments-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Bike Reviews</h5>
+													<p style="font-size: 10px;">Read Bikes Reviews</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Parts
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Auto Parts</h5>
+													<p style="font-size: 10px;">Find New or Used Car & Bike Parts</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">AutoDeals Shop</h5>
+													<p style="font-size: 10px;">Find the New Parts</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">AutoDeals Store</h5>
+													<p style="font-size: 10px;">Buy Car & Bikes Accessories From AD</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell New & Used Parts</h5>
+													<p style="font-size: 10px;">Post a Free Ads & Sell it</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									More
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Import</h5>
+													<p style="font-size: 10px;">Calculate custom duty on imported cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Custom Duty Calculator</h5>
+													<p style="font-size: 10px;">Calculate custom duty on imported cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/car-finance-calculator.25d9e663f72a08710bad.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Finance Calculator</h5>
+													<p style="font-size: 10px;">Get your dream car on easy installments</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/used-car-calculate.247f36d6d6718f34e3b1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Used Price Calculator</h5>
+													<p style="font-size: 10px;">Used car price evaluation tool</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Insurance</h5>
+													<p style="font-size: 10px;">Get car insurance & secure your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-tracker.b91fb117a6842f7993fe.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Tracker</h5>
+													<p style="font-size: 10px;">Secure your car, get a tracker</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-tracker.b91fb117a6842f7993fe.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Fuel Prices</h5>
+													<p style="font-size: 10px;">Find out latest fuel prices in Pakistan</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Blog
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verification guid & explaination</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">AutoMotive News</h5>
+													<p style="font-size: 10px;">Latest news & updates</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Pakistan Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest News Pakistani Automotives</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">WorldWide Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest automotive news across the globe</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">WorldWide Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest automotive news across the globe</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Automotive Gadgets</h5>
+													<p style="font-size: 10px;">Find out automotive gadgets & accessories</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">How to?</h5>
+													<p style="font-size: 10px;">Know more about your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">New Cars</h5>
+													<p style="font-size: 10px;">Find out newly launched cars in Pakistan</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link mt-2" style="color:#fff;" href="">Videos</a>
+							</li>
+							<li class="dropdown nav-item">
+								<a class="top-level-link">
+									<span  class="pt-2 pb-2 ps-3 pe-3 ms-sm-4 me-sm-5 mt-sm-2 btn nav-button dropdown-toggle">
+										Post fee add
+									</span>
+								</a>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</nav>
+		</div>
+    </div>
+	<div class="container-fluid">
+		<div class="row second-bar" style="">
+			<div class="text-white mt-2 ms-md-5 d-flex">
+				<a href="AR-carshop.html" class="text-white me-3 ms-md-4 text-decoration-none">Home</a>
+				<p>|</p>
+				<a href="" class="text-white me-3 ms-3 text-decoration-none">Auction Sheet Verification</a>
+			</div>
+		</div>
+	</div>	
+	<div class="container mt-4">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card auction-sheet-card pt-4 px-3">
+					<h3>Auction Sheet Verification</h3>
+					<p>Get the original Auction Sheet Verification by Autodeals to buy the Japanese car with complete peace of mind.</p>
+					<input type="text" placeholder="Enter Chassis No. NZE141-6048720" class="form-control mb-0" name="chassisNo">
+					<button type="button" class="btn btnn btn-auction-sheet">Verify Auction Sheet</button> 
+				</div>
+			</div>
+			<div class="col-sm-8 auction-sheet-content">
+				<h1>Buying Used car from Japan ?</h1>
+				<p>Thousands of Japanese car with hidden deffects are sold as used every week</p>
+				<img src="	https://autodeals.pk/static/media/banner.6d35fec081fac9ef6c5e.png" class="mt-n5 mt-md-3">
+			</div>
+		</div>
+		<div class="million-card mt-n4 mt-md-3">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card">
+						<h4>1 Million +</h4>
+						<p>
+							Auction Sheet sold per 
+							<br>
+							 year through AutoDeals
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<h4>500,000 +</h4>
+						<p>
+							Japanese Auction Sheet translated
+							<br>
+							  per year on AutoDeals
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<h4>300,000 +</h4>
+						<p>
+							User registered
+							<br>
+							   per year on AutoDeals
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="dont-risk">
+				<div class="d-flex justify-content-center">
+					<img src="file:///C:/Users/ThinkPad/Downloads/svgviewer-output%20(1).svg" height="70px" width="70px">
+					<div class="ms-3">
+						<h1>
+							<span>Don't Risk</span>
+							<span style="color: #618597;">Your Life</span>
+							<p>Get the Original Auction Sheet</p>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-sm-4 px-3 mb-4">
+				<div class="card risk-card">
+					<div class="d-flex justify-content-start">
+						<img src="images/tick-mark.png" >
+						<p class="card-text">Verification Online by AutoDeals</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 px-3 mb-4">
+				<div class="card risk-card">
+					<div class="d-flex justify-content-start">
+						<img src="images/tick-mark.png" >
+						<p class="card-text">Buy the Japanese car with complete peace of mind</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 px-3 mb-4">
+				<div class="card risk-card">
+					<div class="d-flex justify-content-start">
+						<img src="images/tick-mark.png" >
+						<p class="card-text">Get Online auction sheet verification by the chassis id of your vehicle</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 px-3 mb-4">
+				<div class="card risk-card">
+					<div class="d-flex justify-content-start">
+						<img src="images/tick-mark.png" >
+						<p class="card-text">Providing Services to Verify Japanese reports online</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 px-3 mb-4">
+				<div class="card risk-card">
+					<div class="d-flex justify-content-start">
+						<img src="images/tick-mark.png" >
+						<p class="card-text">Complete a to z vehicle inspection report </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 px-3 mb-4">
+				<div class="card risk-card">
+					<div class="d-flex justify-content-start">
+						<img src="images/tick-mark.png" >
+						<p class="card-text">Don't waste your money </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="d-flex justify-content-center">
+			<button class="btn btnn auction-btn">Verify Auction Sheet</button>
+		</div>
+		<div class="row mt-5 qualities">
+			<div class="col-sm-4 px-0">
+				<div class="card">
+					<h4>Car Submerged?</h4>
+					<p>
+						Find out your car is submerged or not 
+						<br>
+						 Just enter your chassis number and
+						<br>
+						verify your Japanese car.
+					</p>
+					<div class="d-flex justify-content-center">
+						<a href="#News&Discussion1"><button type="button" class="btn btnn read-more-btn" >Read More</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 px-0">
+				<div class="card">
+					<h4>Car Water Damaged?</h4>
+					<p>
+						Find out your car is water damaged or not 
+						<br>
+						 Do not be fooled by sellers verifying
+						<br>
+						Your Japanese used car now online.
+					</p>
+					<div class="d-flex justify-content-center">
+						<a  href="#News&Discussion1">
+							<button type="button" class="btn btnn read-more-btn">Read More</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 px-0">
+				<div class="card">
+					<h4>Check condition?</h4>
+					<p>
+						Before buy check actual condition of
+						<br>
+						 Japanese cars online, save your money
+						<br>
+						or life by checking true conditions online.
+					</p>
+					<div class="d-flex justify-content-center">
+						<a  href="#News&Discussion1">
+							<button class="btn btnn read-more-btn">Read More</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row never-buy">
+			<div class="col-sm-6 px-0">
+				<h2>Never Buy Car Without Auction Sheet Verification</h2>
+				<p class="mt-4">
+					Autodeals Is Now Providing Services To Verify Auction Sheets Of Japanese Imported Cars, Just Enter The Chassis Number Of Your Car To Verify 
+					The Auction Sheet. Now You Can Verify More Than 20 Years Old Auction Sheets. The report of an imported car including scratches, dimples, 
+					dents, repair marks, replaced parts, paint-works, airbags, rust, and corrosion assessment.
+				</p>
+				<p class="mt-3">
+					Get the original Japanese car Auction Sheet of your car for Only USD 9$. Get the auction sheet of the car to verify by simply providing the chassis 
+					number.
+				</p>
+				<div class="mt-5">
+					<button class="btn btnn read-more-btn">Verify Auction Sheet</button>
+				</div>
+			</div>
+			<div class="col-sm-6 px-0">
+				<img src="https://autodeals.pk/static/media/never-buy.5089f7d548216d296352.png">
+			</div>
+		</div>
+	</div>
+	<div class="container pt-3 py-md-5 products" style="background-color: rgb(250, 251, 254);">
+		<div class="d-flex justify-content-between">
+			<h3>What we offer?</h3>
+		</div>
+		<div class="products-card">		
+			<div class="row">
+				<div class="col-sm-3 col-6 px-2 mb-3">
+					<div class="text-decoration-none text-dark">
+						<div class="offer-1">
+							<img src="https://autodeals.pk/static/media/true-report.c5d85ce539ba01b192f0.png" height="100px" width="auto">
+							<div class="d-flex justify-content-between my-2 mt-4">
+								<div class="d-flex flex-column">
+									<h4 class="text-start">True</h4>
+									<h4 class="text-start">Report</h4>
+								</div>
+								<i class="fa fa-chevron-right mt-3" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-6 px-2 mb-3">
+					<div class="text-decoration-none text-dark">
+						<div class="offer-1">
+							<img src="https://autodeals.pk/static/media/translation.f874072c882c0b9c344b.png" height="100px" width="auto">
+							<div class="d-flex justify-content-between my-2 mt-4">
+								<div class="d-flex flex-column">
+									<h4 class="text-start">English</h4>
+									<h4 class="text-start">Translation</h4>
+								</div>
+								<i class="fa fa-chevron-right mt-3" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-6 px-2 mb-3">
+					<div class="text-decoration-none text-dark">
+						<div class="offer-1">
+							<img src="https://autodeals.pk/static/media/bulk-packages.f5f73d70ca57cc752827.png" height="100px" width="auto">
+							<div class="d-flex justify-content-between my-2 mt-4">
+								<div class="d-flex flex-column">
+									<h4 class="text-start">Bulk</h4>
+									<h4 class="text-start">Pages</h4>
+								</div>
+								<i class="fa fa-chevron-right mt-3" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-6 px-2 mb-3">
+					<div class="text-decoration-none text-dark">
+						<div class="offer-1">
+							<i class="fa fa-book" aria-hidden="true" style="font-size: 100px;"></i>
+							<div class="d-flex justify-content-between my-2 mt-4">
+								<div class="d-flex flex-column">
+									<h4 class="text-start">Auction</h4>
+									<h4 class="text-start">Guide</h4>
+								</div>
+								<i class="fa fa-chevron-right mt-3" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-4">
+		<div class="d-flex justify-content-center">
+			<h2 class="mb-3">Sample Auction Sheet</h2>
+		</div>
+		<div class="sample-sheet row justify-content-between">
+			<div class="col-sm-3 col-6 ">
+				<div class="sample-card">
+					<img src="https://autodeals.pk/static/media/a.330fa3fdce8cf19fd9c2.jpeg">
+					<div class="card card-sample" style="width: 255px">
+						<p class="sample-btn">4.5 Grade</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-6">
+				<div class="sample-card">
+					<img src="https://autodeals.pk/static/media/j.4db389664183140aba06.jpeg">
+					<div class="card card-sample"  style="width: 255px">
+						<p class="sample-btn">Repair Accidental</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-6">
+				<div class="sample-card">
+					<img src="https://autodeals.pk/static/media/g.2165b5549624f5cba216.jpeg">
+					<div class="card card-sample" style="width: 255px">
+						<p class="sample-btn">Water Damaged</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-6 p-md-0" >
+				<div class="sample-card">
+					<img src="https://autodeals.pk/static/media/n.336a7f650ef9cbfb925e.jpeg">
+					<div class="card card-sample"  style="width: 255px">
+						<p class="sample-btn">Damaged Condition</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container car-brands">
+		<h2>Verify Auction Sheet of all major car brands</h2>
+		<div class="row">
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311340545car%20brands%20icons-10.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">Toyota</p>
+				</a>
+			</div>
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311330924car%20brands%20icons-05.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">Suzuki</p>
+				</a>
+			</div>
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311379445car%20brands%20icons-01.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">Honda</p>
+				</a>
+			</div>
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311350665car%20brands%20icons-11.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">Daihatsu</p>
+				</a>
+			</div>
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311350665car%20brands%20icons-11.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">Hyundai</p>
+				</a>
+			</div>
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667310950921car%20brands%20icons-04.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">KIA</p>
+				</a>
+			</div>
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311369797car%20brands%20icons-14.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">BMW</p>
+				</a>
+			</div>
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1642505520214chery.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">Changan</p>
+				</a>
+			</div>
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311003688car%20brands%20icons-09.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">Mercedes</p>
+				</a>
+			</div>
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667310866996car%20brands%20icons-21.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">Porshe</p>
+				</a>
+			</div>
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1642504904748Range-Rover.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">Rang Rover</p>
+				</a>
+			</div>
+			<div class="col-sm-1 col-3 px-2">
+				<a class="px-lg-3 px-md-1 text-decoration-none" href="" style="width: 120px;">
+					<div class="card card-brand" style="cursor: pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311359002car%20brands%20icons-08.png">
+					</div>
+					<p class="mb-0 pt-1 text-overflow text-dark text-center">Audi</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container auction-sheet-guide mt-5">
+		<h2>Auction Sheet Guide</h2>
+		<div class="row">
+			<div class="col-lg-7 col-md-12">
+				<div class="card guide-card mb-lg-0 mb-2">
+					<img src="https://autodeals.pk/static/media/auction-guide.0ff3fc1e3f1d6c22d1aa.png">
+					<div class="guide-text">
+						<h4 class="mt-2">How to verify Japanese Used Cars before buying?</h4>
+						<p>Car buyers give top priority to Japanese cars. Japanese used cars are available at lower prices as compared to the brand new cars.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-12">
+				<div class="card guide-card-right">
+					<div class="row">
+						<div class="col-sm-6 col-5 pr-0">
+							<img src="https://autodeals.pk/static/media/how-to-verify-japanese-car.88182ffebce2cda08e3b.jpeg">
+						</div>
+						<div class="col-sm-6 col-7 px-0">
+							<div class="mt-4 ms-3 me-4">
+								<h6 class="mt-4">What is the grade in auction sheet report?</h6>
+								<small>When we are looking for a car from japan auction house you may notice...</small>
+								<br>
+								<button class="btn btnn read-btn">Read More</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card guide-card-right mt-3">
+					<div class="row">
+						<div class="col-sm-6 col-5 pr-0">
+							<img src="https://autodeals.pk/static/media/how-to-verify-japanese-car.88182ffebce2cda08e3b.jpeg">
+						</div>
+						<div class="col-sm-6 col-7 px-0">
+							<div class="mt-4 ms-3 me-4">
+								<h6 class="mt-4">What is the grade in auction sheet report?</h6>
+								<small>When we are looking for a car from japan auction house you may notice...</small>
+								<button class="btn btnn read-btn">Read More</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-4">
+		<div class="d-flex justify-content-between mb-md-4 mb-2" id="News&Discussion1">
+			<h2>News & Discussion</h2>
+			<button class="btn btnn browse-btn">View All</button>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/Proton-Price-Increased-in-Pakistan.png"/>
+					</a>
+					<h4>Proton Price Increased in Pakistan</h4>
+					<p>Overview Alhaj Automotive has only price increased ....</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100 mb-3">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/Car-Scratches-Types-and-How-to-Fix-Them.png"/>
+					</a>
+					<h4>Car Scratches Types and How to Fix Them</h4>
+					<p>Overview Car scratches can range from little flaws ...</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100 mb-3">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/Volkswagen-VW-and-Skoda-Local-Assembled-Plant-in-Pakistan.png"/>
+					</a>
+					<h4>Volkswagen (VW) and Skoda Local Assembled Plant in Pakistan</h4>
+					<p>Overview Premier Motors Limited (PML) is building ...</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100 mb-3">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/Honda-Car-Prices-Increased-Again-Second-Time-in-2-Weeks.png"/>
+					</a>
+					<h4>Honda Car Prices Increased Again- Second Time in 2 Weeks</h4>
+					<p>Overview Honda car prices have raised the pricing ...</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100 mb-3">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/FIA-Arrests-Petrol-Pumps-Mafia-Looting-People-1.png"/>
+					</a>
+					<h4>FIA Arrests Petrol Pumps Mafia Looting People</h4>
+					<p>The Federal Investigation Agency&#8217;s (FIA) Cyb ...</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100 mb-3">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/Peugeot-3008-and-Peugeot-5008-Coming-Soon-2023.png"/>
+					</a>
+					<h4>Peugeot 3008 and Peugeot 5008 Coming Soon 2023</h4>
+					<p>Overview The new Peugeot 3008 and Peugeot 5008 wil ...</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-4">
+		<h2 class="fw-bold">Happy Clients</h2>
+		<div class="row d-flex flex-row">
+			<div class="col-sm-4 clint-card">
+				<div class="clients-text">
+					<i class="fa fa-comment" aria-hidden="true" style=""></i>
+					<h1>"</h1>
+				</div>
+				<div class="card happy-clients-card" style="z-index:2;position:unset;">
+					<p class="">
+						Extremely helpful and polite, Their support staff was very helpful and polite. Really appreciate their kind help.
+					</p>	
+					<b>Dusty</b>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="clients-text">
+					<i class="fa fa-comment" aria-hidden="true" style=""></i>
+					<h1>"</h1>
+				</div>
+				<div class="card happy-clients-card" style="z-index:2;position:unset;">
+					<p class="">
+						Their services are very good. They follow their timeline properly, I got my auction sheets on time.
+					</p>	
+					<b>Tayyab Jutt</b>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="clients-text">
+					<i class="fa fa-comment" aria-hidden="true" style=""></i>
+					<h1>"</h1>
+				</div>
+				<div class="card happy-clients-card" style="z-index:2;position:unset;">
+					<p class="">
+						Though, I did a typo error in my email, the support helped me by regeneration of the link to send me again.
+					</p>	
+					<b>Jayanta Bhowmick</b>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-5">
+		<div class="d-flex justify-content-center">
+			<h2 class="fw-bold">Frequently Asked Question's</h2>
+		</div>
+		<div class="mt-3">
+			<button type="button" class="btn btnn w-100 Question-btn d-flex">
+				<div>
+					<i class="fa fa-plus"></i>
+				</div>
+				<div class="px-3">
+					<h5>What’s the option for not found chassis?</h5>
+				</div>
+			</button>
+		</div>
+		<div >
+			<button type="button" class="btn btnn w-100 Question-btn d-flex">
+				<div>
+					<i class="fa fa-plus"></i>
+				</div>
+				<div class="px-3">
+					<h5> Is the report generated by japan?</h5>
+				</div>
+			</button>
+		</div>
+		<div >
+			<button type="button" class="btn btnn w-100 Question-btn d-flex">
+				<div>
+					<i class="fa fa-plus"></i>
+				</div>
+				<div class="px-3">
+					<h5> If auction sheet not received?</h5>
+				</div>
+			</button>
+		</div>
+		<div >
+			<button type="button" class="btn btnn w-100 Question-btn d-flex">
+				<div>
+					<i class="fa fa-plus"></i>
+				</div>
+				<div class="px-3">
+					<h5>I have made the payment. How will I receive the Auction Sheet?</h5>
+				</div>
+			</button>
+		</div>
+		<div >
+			<button type="button" class="btn btnn w-100 Question-btn d-flex">
+				<div>
+					<i class="fa fa-plus"></i>
+				</div>
+				<div class="px-3">
+					<h5> Which information provide in auctions sheet?</h5>
+				</div>
+			</button>
+		</div>
+		<div >
+			<button type="button" class="btn btnn w-100 Question-btn d-flex">
+				<div>
+					<i class="fa fa-plus"></i>
+				</div>
+				<div class="px-3">
+					<h5> Which information provide in auctions sheet?</h5>
+				</div>
+			</button>
+		</div>
+	</div>
+	<div class="container mt-5">
+		<h4 class="mb-md-4">Browse More Used Car</h4>
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2023 Cars for sale </a>
+				<span class="text-muted">(1+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2022 Cars for sale </a>
+				<span class="text-muted">(1+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2021 Cars for sale </a>
+				<span class="text-muted">(1+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2020 Cars for sale </a>
+				<span class="text-muted">(1+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2019 Cars for sale </a>
+				<span class="text-muted">(1025+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2018 Cars for sale </a>
+				<span class="text-muted">(1025+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2017 Cars for sale </a>
+				<span class="text-muted">(1025+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2016 Cars for sale </a>
+				<span class="text-muted">(1025+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2015 Cars for sale </a>
+				<span class="text-muted">(978+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2014 Cars for sale </a>
+				<span class="text-muted">(978+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2013 Cars for sale </a>
+				<span class="text-muted">(978+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2012 Cars for sale </a>
+				<span class="text-muted">(978+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2011 Cars for sale </a>
+				<span class="text-muted">(581+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2010 Cars for sale </a>
+				<span class="text-muted">(581+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2009 Cars for sale </a>
+				<span class="text-muted">(581+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2008 Cars for sale </a>
+				<span class="text-muted">(581+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2007 Cars for sale </a>
+				<span class="text-muted">(660+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2006 Cars for sale </a>
+				<span class="text-muted">(660+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2005 Cars for sale </a>
+				<span class="text-muted">(660+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used 2004 Cars for sale </a>
+				<span class="text-muted">(660+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-4 seocrumbs">
+				<a href="">Used Cars for sale in Lahore </a>
+				<span class="text-muted">(5523+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-md-4 seocrumbs">
+				<a href="">Used Cars for sale in  Karachi </a>
+				<span class="text-muted">(520+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-md-4 seocrumbs">
+				<a href="">Used Cars for sale in Islamabad </a>
+				<span class="text-muted">(251+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-md-4 seocrumbs">
+				<a href="">Used Cars for sale in Rawalpindi </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Faisalabad </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Multan </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Gujranwala </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Peshawar </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Sialkot </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Sergodha </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Hyderabad </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Bwhawalpur </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Sahiwal </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Gujrat </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Rahim Yar Khan </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Layyah </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Okara </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Merdan </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Quetta </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Used Cars for sale in Wah Cantt </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-4 seocrumbs">
+				<a href="">Toyota Car </a>
+				<span class="text-muted">(5523+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-md-4 seocrumbs">
+				<a href="">Honda Car </a>
+				<span class="text-muted">(520+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-md-4 seocrumbs">
+				<a href="">Suzuki Car </a>
+				<span class="text-muted">(251+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-md-4 seocrumbs">
+				<a href="">Dihatsu Car </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Nissan Car </a>
+				<span class="text-muted">(5523+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Hyundai Car </a>
+				<span class="text-muted">(520+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">KIA Car </a>
+				<span class="text-muted">(251+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Mitsubishi Car </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">MG Car </a>
+				<span class="text-muted">(5523+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Mercedes Benz Car </a>
+				<span class="text-muted">(520+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Changan Car </a>
+				<span class="text-muted">(251+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Audi Car </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">United Car </a>
+				<span class="text-muted">(5523+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">FAW Benz Car </a>
+				<span class="text-muted">(520+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Prince Car </a>
+				<span class="text-muted">(251+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">DFSK Car </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">BMW Car </a>
+				<span class="text-muted">(5523+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Subaru Benz Car </a>
+				<span class="text-muted">(520+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Mazda Car </a>
+				<span class="text-muted">(251+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Chevrolet Car </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-4 seocrumbs">
+				<a href="">Toyota Corolla Car for sale </a>
+				<span class="text-muted">(5523+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-md-4 seocrumbs">
+				<a href="">Honda Civic Car for sale </a>
+				<span class="text-muted">(520+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-md-4 seocrumbs">
+				<a href="">Suzuki Mehran Car for sale </a>
+				<span class="text-muted">(251+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 mt-md-4 seocrumbs">
+				<a href="">Honda City Car for sale </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Suzuki Cultus Car for sale </a>
+				<span class="text-muted">(5523+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Suzuki Alto Car for sale </a>
+				<span class="text-muted">(520+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Toyota Vitz Car for sale </a>
+				<span class="text-muted">(251+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Dihatsu Coure Car for sale </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Suzuki Wagon R Car for sale </a>
+				<span class="text-muted">(5523+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Hyundai Santro Car for sale </a>
+				<span class="text-muted">(520+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Toyota Prado Car for sale </a>
+				<span class="text-muted">(251+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Dihatsu Mira Car for sale </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Honda Vezel Car for sale </a>
+				<span class="text-muted">(5523+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Toyota Hilux Car for sale </a>
+				<span class="text-muted">(520+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Suzuki Swift Car for sale </a>
+				<span class="text-muted">(251+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">KIA Spostage Car for sale </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Toyota Yaris Car for sale </a>
+				<span class="text-muted">(5523+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Toyota Prius Car for sale </a>
+				<span class="text-muted">(520+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">Toyota Fortuner Car for sale </a>
+				<span class="text-muted">(251+)</span>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-3 seocrumbs">
+				<a href="">MG HS Car for sale </a>
+				<span class="text-muted">(129+)</span>
+			</div>
+			
+		</div>
+	</div>
+	<div class="container mb-md-5" style="margin-top: 115px !important;">
+		<h4>Buy & Sell Car Online</h4>
+		<p>
+			Buy and sell cars online through Pakistan's #1 automobile website. Autodeals Offers motorcars from the most popular makes such as Honda,
+			Toyota, Suzuki, Nissan, Mazda, Daihatsu, Mercedes, BMW. You can choose from thousands of use vehicles and buy your dream car within the 
+			right budget. Checkout the used cars for sale in Karachi, Lahore, Islamabad, Rawalpindi, Peshawar, and hundreds of other cities. Moreover, 
+			Sell Car on autodeals.pk, Pakistan's best car selling website, and avail the oppertunity to meet thousands of potential buyers for your vehicles.
+			Upload pictures, set the right price, put your location and provide your all other information without any hassle, and you will be able to sell
+			any car. You can also buy Car parts and motorcycles online in Pakistan
+		</p>
+	</div>
+	
+	<!-- footer -->
+	<div class="container-fluid mt-5" style="background-color: rgb(245, 245, 245);">
+		<div class="row pb-md-5 mt-md-5 ms-md-1" style="border-bottom: 2px solid lightgrey;font-size: 14px;">
+			<div class="col-md-2 col-4 ms-md-5 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Cars By Make
+				</h2>
+				<div class="">
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary fw-100">Toyota Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Suzuki Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Honda Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">KIA Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Dihatsu Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Mercedes Cars For Sale.</a>
+					</li>
+					
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Hundyai Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Nissan Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">BMW Cars For Sale.</a>
+					</li>
+				</ul>	
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4 footer-content">
+						<h2 class="mb-md-3 fw-bolder">
+							Cars By Bodytype
+						</h2>
+						<ul class="mb-0 list-unstyled">
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Hetchback</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Sedan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">SUV</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">MInivan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Van</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Cross Over</a>
+							</li>
+							
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Double Cabin</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-4 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Cars By City
+				</h2>
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Lahore</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In IslamAbad</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Karachi</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Rawalpindi</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In FaislAbad</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Gujranwala</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Sialkot</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Multan</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Peshawar</a>
+					</li>
+				</ul>	
+				<div class="row">
+					<div class="col-md-12 mt-4 mb-0 footer-content">
+						<h2 class="mb-md-3 fw-bolder">
+							Our Business Partners
+						</h2>
+						<ul class=" list-unstyled">
+							<li>
+								<a href="" class="text-decoration-none text-secondary">AutoDeals Japan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">My Auction Sheet</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">List Network</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">City Book</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-4 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Explore AutoDeals
+				</h2>
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Used Cars</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Used Bikes</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">New Cars</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">New Bikes</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Auto Parts</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sell Your Car</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sell Your Bike</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Blog</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sitemap</a>
+					</li>
+				</ul>
+					<div class="row">
+						<div class="col-md-12 mt-4 footer-content">
+							<h2 class="mb-md-3 fw-bolder">
+								About Company
+							</h2>
+							<ul class="mb-0 list-unstyled">
+								<li>
+									<a href="" class="text-decoration-none text-secondary">About AutoDeals</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Our Prodicts</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Advertise With Us</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">How To Pay</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Shipment & Return Policy</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Return & Exchange</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Refund Policy</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Facs</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Contact-Us</a>
+								</li>
+							</ul>	
+						</div>
+					</div>
+			</div>
+			<div class="col-md-5 mt-3 ms-md-5 footer-content">
+				<div class="newsletter pb-0">
+					<h4 class=" mb-3">Newsletter</h4>
+					<div class="d-flex newsletter-input">
+						<input type="text" class="form-control" placeholder="name@email.com" ></input>
+						<button class="input-button btn ms-2" type="button">Suscribe</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4 footer-content">
+						<h5 class="mb-md-3">
+							Our Soccail Media
+						</h5>
+						<div class="row">
+							<div class="d-flex">
+								<a href="" class="text-decoration-none"><i class="fa fa-facebook footer-icon" aria-hidden="true"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-twitter footer-icon ms-2" aria-hidden="true"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-pinterest footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-instagram footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-youtube-play footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-linkedin footer-icon ms-2" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4">
+						<img src="https://autodeals.pk/static/media/google-play-badge.0168dd766b85b2f2e845.png" style="height: 43.5px;cursor: pointer;"/>
+						<img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Download_on_Apple_TV_Badge_SI_RGB_blk.svg/2560px-Download_on_Apple_TV_Badge_SI_RGB_blk.svg.png" style="height: 43.5px;cursor: pointer;"/>
+						<img src="https://autodeals.pk/static/media/huawei.f823d81072a99fd1918e.png" style="height: 43.5px;cursor: pointer;"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 d-flex mt-3">
+						<h6 class="fw-bold">Get In Touch :</h6>
+						<i class="fa fa-envelope-o ms-1 mt-1" style="color:#f1833b"></i>
+						<a href="" class="text-secondary ms-1">Support@AR-CarShop.PK</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid mb-5 mb-md-0" style="background-color: rgb(245, 245, 245);">
+		<div class="mb-5 mb-md-0">
+			<div class="row">
+				<div class="col-md-4">
+					<button class="btn d-flex flex-column ms-md-5">
+						<div class="text-dark text-left ">
+							<h6>Developed By:</h6>
+							<img src="https://autodeals.pk/static/media/wellcreator.3f2a6fc7f75eb582cbbd.png" style="width: auto;height: 40px;"/>
+						</div>
+					</button>
+				</div>
+				<div class="col-md-4 mt-4 text-secondary">
+					<p>Copyright © 2003 - 2023 AutoDeals (Pvt) Ltd.</p>
+				</div>
+				<div class="col-md-4 justify-content-end term-service">
+					<a href="" class="text-dark text-decoration-none me-1">Term Of Service</a>
+					<span>|</span>
+					<a class="text-dark text-decoration-none ms-1">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

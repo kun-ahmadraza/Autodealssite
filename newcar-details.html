@@ -1,0 +1,2047 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nwe-Car-Details</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Merriweather:ital,wght@1,700&family=Montserrat:wght@100&family=Nunito+Sans:wght@200&family=Oswald:wght@200;400;600&family=PT+Serif:ital@1&family=Playfair+Display:ital,wght@1,500&family=Poppins:ital,wght@0,700;1,800&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;500&family=Rubik:ital,wght@1,600&family=Ubuntu&family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
+	<link href="newcar-details.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="dekstop-header">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg ">
+				<a class="navbar-brand" href="#">
+					<img class="ms-md-5" src="https://autodeals.pk/static/media/logo.35afa53228637baeeb8e.png" style="width: auto; height: 60px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<ul class="main-nav d-flex ms-md-5">
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Used Cars
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:195px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Cars</h5>
+													<p style="font-size: 10px;">Search from over 60k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Cars For Sale</h5>
+													<p style="font-size: 10px;">View Used Featured Cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Cars</h5>
+													<p style="font-size: 10px;">Post a free ad and sell your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-file-text-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verify Japenese Auction Sheet</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:195px;border-left: 1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Bikes</h5>
+													<p style="font-size: 10px;">Search from over 30k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Bikes For Sale</h5>
+													<p style="font-size: 10px;">View Used Featured Cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr" >
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Bikes</h5>
+													<p style="font-size: 10px;">Post a free ad and sell your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr  pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-file-text-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verify Japenese Auction Sheet</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-car mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Makes</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311340545car%20brands%20icons-10.png" style="width: auto; height: 30px;">
+													Toyota
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311330924car%20brands%20icons-05.png" style="width: auto; height: 30px;">
+													Suzuki
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311379445car%20brands%20icons-01.png" style="width: auto; height: 30px;">
+													Honda
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667310950921car%20brands%20icons-04.png" style="width: auto; height: 30px;">
+													KIA
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311350665car%20brands%20icons-11.png" style="width: auto; height: 30px;">
+													Daihatsu
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311313383car%20brands%20icons-02.png" style="width: auto; height: 30px;">
+													Nissan
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311379445car%20brands%20icons-01.png" style="width: auto; height: 30px;">
+													Honda
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-map-marker mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Cities</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-01.6897ad5f3a08a935cc20.png" style="width: auto; height: 30px;">
+													Lahore
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-02.4a1bb5dfd5c7bbfe1d0a.png" style="width: auto; height: 30px;">
+													Islamabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-03.d0eed4fea7c53a045afa.png" style="width: auto; height: 30px;">
+													Karachi
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1ZsY5puFxCqLnL9JcHQZQalE6z6vgesmXETyd-vcAGqTG1C0hf8m6pAPA2BGroNJhmM&usqp=CAU" style="width: auto; height: 30px;">
+													Faisalabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-05.b4c6c565a841f1dea6ee.png" style="width: auto; height: 30px;">
+													Peshawar
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-06.9d96102ab6e19689ec23.png" style="width: auto; height: 30px;">
+													Sialkot
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-07.61554c8aa732934873ef.png" style="width: auto; height: 30px;">
+													Gujranwala
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									New Cars
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:195px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">New Cars</h5>
+													<p style="font-size: 10px;">Search New Cars</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Car Comparison</h5>
+													<p style="font-size: 10px;">Compare Car Differences</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-user-plus mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Car Dealer</h5>
+													<p style="font-size: 10px;">Search New Car Dealers</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Cars Price</h5>
+													<p style="font-size: 10px;">Search New Cars Price</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:195px;border-left: 1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<div class="ul-brdr">
+												<li class="d-flex ">
+													<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+													<a class="dropdown-item mt-md-3" href="#">
+														<h5 style="font-size:15px;">Search New Cars</h5>
+														<p style="font-size: 10px;">Search All Sorts Of New Cars</p>
+													</a>
+												</li>
+											</div>
+											<li class="d-flex ">
+												<i class="fa fa-user-plus mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Search New Dealers</h5>
+													<p style="font-size: 10px;">Search New Car Dealers</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-comments-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Car Reviews</h5>
+													<p style="font-size: 10px;">Read Car Reviews</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2" >
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Cars</h5>
+													<p style="font-size: 10px;">Sell your car</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-map-marker mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Cities</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-01.6897ad5f3a08a935cc20.png" style="width: auto; height: 30px;">
+													Lahore
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-02.4a1bb5dfd5c7bbfe1d0a.png" style="width: auto; height: 30px;">
+													Islamabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-03.d0eed4fea7c53a045afa.png" style="width: auto; height: 30px;">
+													Karachi
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1ZsY5puFxCqLnL9JcHQZQalE6z6vgesmXETyd-vcAGqTG1C0hf8m6pAPA2BGroNJhmM&usqp=CAU" style="width: auto; height: 30px;">
+													Faisalabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-05.b4c6c565a841f1dea6ee.png" style="width: auto; height: 30px;">
+													Peshawar
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-06.9d96102ab6e19689ec23.png" style="width: auto; height: 30px;">
+													Sialkot
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-07.61554c8aa732934873ef.png" style="width: auto; height: 30px;">
+													Gujranwala
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Bikes
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:280px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Bikes</h5>
+													<p style="font-size: 10px;">Search from over 30k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Bikes</h5>
+													<p style="font-size: 10px;">Find Your Perfect Ride</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Bikes</h5>
+													<p style="font-size: 10px;">View Featured Used Bikes</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Post a free Ad</h5>
+													<p style="font-size: 10px;">Sell Your Bikes Now</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:280px;border-left:1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Bike Compare</h5>
+													<p style="font-size: 10px;">Compare Bike Difference's</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Bike Prices</h5>
+													<p style="font-size: 10px;">Search New Bike Prices</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-comments-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Bike Reviews</h5>
+													<p style="font-size: 10px;">Read Bikes Reviews</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Parts
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Auto Parts</h5>
+													<p style="font-size: 10px;">Find New or Used Car & Bike Parts</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">AutoDeals Shop</h5>
+													<p style="font-size: 10px;">Find the New Parts</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">AutoDeals Store</h5>
+													<p style="font-size: 10px;">Buy Car & Bikes Accessories From AD</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell New & Used Parts</h5>
+													<p style="font-size: 10px;">Post a Free Ads & Sell it</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									More
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Import</h5>
+													<p style="font-size: 10px;">Calculate custom duty on imported cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Custom Duty Calculator</h5>
+													<p style="font-size: 10px;">Calculate custom duty on imported cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/car-finance-calculator.25d9e663f72a08710bad.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Finance Calculator</h5>
+													<p style="font-size: 10px;">Get your dream car on easy installments</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/used-car-calculate.247f36d6d6718f34e3b1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Used Price Calculator</h5>
+													<p style="font-size: 10px;">Used car price evaluation tool</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Insurance</h5>
+													<p style="font-size: 10px;">Get car insurance & secure your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-tracker.b91fb117a6842f7993fe.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Tracker</h5>
+													<p style="font-size: 10px;">Secure your car, get a tracker</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-tracker.b91fb117a6842f7993fe.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Fuel Prices</h5>
+													<p style="font-size: 10px;">Find out latest fuel prices in Pakistan</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Blog
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verification guid & explaination</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">AutoMotive News</h5>
+													<p style="font-size: 10px;">Latest news & updates</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Pakistan Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest News Pakistani Automotives</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">WorldWide Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest automotive news across the globe</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">WorldWide Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest automotive news across the globe</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Automotive Gadgets</h5>
+													<p style="font-size: 10px;">Find out automotive gadgets & accessories</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">How to?</h5>
+													<p style="font-size: 10px;">Know more about your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">New Cars</h5>
+													<p style="font-size: 10px;">Find out newly launched cars in Pakistan</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link mt-2" style="color:#fff;" href="">Videos</a>
+							</li>
+							<li class="dropdown nav-item">
+								<a class="top-level-link">
+									<span  class="pt-2 pb-2 ps-3 pe-3 ms-sm-4 me-sm-5 mt-sm-2 btn nav-button dropdown-toggle">
+										Post fee add
+									</span>
+								</a>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</nav>
+		</div>
+    </div>
+	<div class="container-fluid">
+		<div class="row second-bar" style="">
+			<div class="text-white mt-2 ms-md-5 d-flex">
+				<a href="AR-carshop.html" class="text-white me-3 ms-md-4 text-decoration-none">Home</a>
+				<p>|</p>
+				<a href="" class="text-white me-3 ms-3 text-decoration-none">New Cars</a>
+				<p>|</p>
+				<a href="" class="text-white me-3 ms-3 text-decoration-none">Daihatsu Move Canbus 2023 Overview & Price</a>
+			</div>
+		</div>
+	</div>	
+	<div class="container car-details">
+		<div class="row mt-md-5 mt-2">
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-3 col-lg-3 d-none d-md-block">
+						<div class="d-flex flex-column overflow">
+							<img class="thumdnails active" src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642493801.png">
+							<img class="thumdnails" src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642493892.png">
+							<img class="thumdnails" src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642493993.png">
+							<img class="thumdnails" src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642494175.png">
+							<img class="thumdnails" src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642494236.png">
+							<img class="thumdnails" src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642494124.png">
+						</div>
+					</div>
+					<div class="col-md-8 col-12 mt-md-5">
+						<div id="carouselExampleControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642493801.png" style="height: 380px;" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642493892.png" style="height: 380px;" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642493892.png" style="height: 380px;" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642494175.png" style="height: 380px;" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642494236.png" style="height: 380px;" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16756642494124.png" style="height: 380px;" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<button class="carousel-control-prev prev-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next nxt-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+						<div class="car-name d-flex flex-column mt-md-4 mt-2 text-center">
+							<h3>Daihatsu Move Canbus 2023 Overview & Price</h3>
+							<h4>PKR. 27.00 Lacs to 29.75 Lacs</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-12 ">
+				<div class="varient-card container px-0">
+					<div class="d-flex flex-column px-0">
+						<div class="overview-details border-right py-3 text-center">
+							<p class="mb-0 text-muted">Year</p>
+							<h5 style="font-size:16px;">2023</h5>
+						</div>
+						<div class="overview-details border-right py-3 text-center">
+							<p class="mb-0 text-muted">Fuel Type</p>
+							<h5 style="font-size:16px;">Petrol</h5>
+						</div>
+						<div class="overview-details border-right py-3 text-center">
+							<p class="mb-0 text-muted">Transmission</p>
+							<h5 style="font-size:16px;">Automatic</h5>
+						</div>
+						<div class="overview-details border-right py-3 text-center">
+							<p class="mb-0 text-muted">Engine</p>
+							<h5 style="font-size:16px;">658 to 658</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container price-in-pakistan">
+		<h3>Daihatsu Move Canbus 2023 Price in Pakistan</h3>
+		<p>The price of sdlkfjsdlfjds Daihatsu Move Canbus 2023 in Pakistan ranges from PKR 27.00 Lacs to PKR 29.75 Lacs. 
+			These prices of Daihatsu Move Canbus 2023 are ex-factory.
+		</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<h4 class="mb-0">Variant</h4>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="p-3 border h-100">
+					<h4 class="mb-0">Ex-Factory Price</h4>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 STRIPES G
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 31.00 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 STRIPES G TURBO 4WD
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 30.50 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 THEORY G 4WD
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 29.25 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 STRIPES G 4WD
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 28.75 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 THEORY G TURBO
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 29.75 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 STRIPES G TURBO
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 29.50 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 THEORY G
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 29.00 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 STRIPES G
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 28.50 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 THEORY X 4WD
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 28.50 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 STRIPES X 4WD
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 27.00 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 THEORY X
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 27.50 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-7 px-0">
+				<div class="p-3 border h-100">
+					<a href="" style="color: #f68300;">
+						<h4 class="mb-0 overflow-text">
+							Daihatsu Move Canbus 2023 STRIPES X
+						</h4>
+					</a>
+					<a href="" class="sml"> 
+						<small class="text-dark">658 CC, Automatic, Petrol</small>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-5 px-0">
+				<div class="d-flex p-3 border h-100">
+					<a class="align-self-center text-dark anchor">
+						<h4 class="mb-0">PKR 27.50 Lacs</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container varient-color py-5">
+		<h3 class="mb-3">Daihatsu Move Canbus 2023 Colors</h3>
+		<div class="d-flex flex-wrap">
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: #fff;"></div>
+					<small class="text-center">White</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: rgb(192, 192, 192);"></div>
+					<small class="text-center">Silver</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: #111;"></div>
+					<small class="text-center">Black</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: grey;"></div>
+					<small class="text-center">Grey</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: rgb(0, 0, 255);;"></div>
+					<small class="text-center">Blue</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: green;"></div>
+					<small class="text-center">Green</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: red;"></div>
+					<small class="text-center">Red</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: gold;"></div>
+					<small class="text-center">Gold</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: Maroon;"></div>
+					<small class="text-center">Maroon</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: beige;"></div>
+					<small class="text-center">Beige</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: pink;"></div>
+					<small class="text-center">Pink</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: brown;"></div>
+					<small class="text-center">Brown</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: burgundy;"></div>
+					<small class="text-center">Burgundy</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: Yellow;"></div>
+					<small class="text-center">Yellow</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: bronze;"></div>
+					<small class="text-center">Bronze</small>
+				</div>
+			</div>
+			<div class="me-3">
+				<div class="d-flex flex-column">
+					<div class="colors" style="background-color: purple;"></div>
+					<small class="text-center">Purple</small>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h3>Daihatsu Move Canbus 2023 Overview</h3>
+		<p class="mt-3">The price of Daihatsu Move Canbus 2023 in Pakistan ranges from PKR 27.00 Lacs to PKR 31.00 Lacs. Daihatsu Move Canbus 2023 has 12 
+			variants in Pakistan which are Daihatsu Move Canbus 2023 THEORY G TURBO 4WD, Daihatsu Move Canbus 2023 STRIPES G TURBO 4WD, Daihatsu Move Canbus 
+			2023 THEORY G 4WD, Daihatsu Move Canbus 2023 STRIPES G 4WD, Daihatsu Move Canbus 2023 THEORY G TURBO, Daihatsu Move Canbus 2023 STRIPES G TURBO, 
+			Daihatsu Move Canbus 2023 THEORY G, Daihatsu Move Canbus 2023 STRIPES G, Daihatsu Move Canbus 2023 THEORY X 4WD, Daihatsu Move Canbus 2023 STRIPES 
+			X 4WD, Daihatsu Move Canbus 2023 THEORY X, Daihatsu Move Canbus 2023 STRIPES X,
+		</p>
+	</div>
+	<div class="container mt-5">
+		<div class="d-flex justify-content-between">
+			<h2>Upcoming New cars</h2>
+			<button type="button" class="btn btnn browse-btn">View All</button>
+		</div>
+		<div class="row popular-listing">
+			<div class="col-sm-3 col-6 px-0 main-popular">
+				<div class="popular-cars-img">
+					<a href="">
+						<img class="card-img-top" src="https://assets-autodeals.s3.amazonaws.com/16728182599371.png" alt="featured car" style="object-fit: contain;">
+					</a>
+				</div>
+				<div class="popular-cars-details">
+					<h5 class="mb-2">KIA Niro 2023</h5>
+					<p class="popular-cars-price">PKR 85.00 Lacs to 85.00 Lac</p>
+				</div>
+			</div>
+			<div class="col-sm-3 col-6 px-0 main-popular">
+				<div class="popular-cars-img">
+					<a href="">
+						<img class="card-img-top" src="https://assets-autodeals.s3.amazonaws.com/16635812004241.png" alt="featured car" style="object-fit: contain;">
+					</a>
+				</div>
+				<div class="popular-cars-details">
+					<h5 class="mb-2">MG MARVEL R 2023</h5>
+					<p class="popular-cars-price">PKR 70.00 Lacs to 70.00 Lacs</p>
+				</div>
+			</div>
+			<div class="col-sm-3 col-6 px-0 main-popular">
+				<div class="popular-cars-img">
+					<a href="">
+						<img class="card-img-top" src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1673871863539Untitled%20design%20%2823%29.png" alt="featured car" style="object-fit: contain;">
+					</a>
+				</div>
+				<div class="popular-cars-details">
+					<h5 class="mb-2">Changan CS35 2023</h5>
+					<p class="popular-cars-price">PKR 60.00 Lacs to 60.00 Lacs</p>
+				</div>
+			</div>
+			<div class="col-sm-3 col-6 px-0 main-popular">
+				<div class="popular-cars-img">
+					<a href="">
+						<img class="card-img-top" src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1673870972172Untitled%20design%20%2822%29.png" alt="featured car" style="object-fit: contain;">
+					</a>
+				</div>
+				<div class="popular-cars-details">
+					<h5 class="mb-2">KIA Cerato 2023</h5>
+					<p class="popular-cars-price">PKR 58.00 Lacs to 58.00 Lacs</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container TAFT">
+		<h2>Daihatsu TAFT 2023 Price in Pakistan</h2>
+		<div class="row TAFT-card">
+			<div class="col-sm-6 border-right">
+				<div class="TAFT-details">
+					<div class="d-flex  align-self-center my-2">
+						<p class="text-muted align-self-center ps-3" style="">Year</p>
+					</div>
+					<div class="align-self-center">
+						<h5 style="font-size: 14px;" class="text-center mb-0">2023</h5> 
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 border-right">
+				<div class="TAFT-details">
+					<div class="d-flex  align-self-center my-2">
+						<p class="text-muted align-self-center ps-3" style="">Feul Type</p>
+					</div>
+					<div class="align-self-center">
+						<h5 style="font-size: 14px;" class="text-center mb-0">Petrol</h5> 
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 border-right">
+				<div class="TAFT-details">
+					<div class="d-flex  align-self-center my-2">
+						<p class="text-muted align-self-center ps-3" style="">Transmission</p>
+					</div>
+					<div class="align-self-center">
+						<h5 style="font-size: 14px;" class="text-center mb-0">Automatic</h5> 
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 border-right">
+				<div class="TAFT-details">
+					<div class="d-flex  align-self-center my-2">
+						<p class="text-muted align-self-center ps-3" style="">Engine</p>
+					</div>
+					<div class="align-self-center">
+						<h5 style="font-size: 14px;" class="text-center mb-0">658 to 658</h5> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-md-5">
+		<div class="d-flex justify-content-between">
+			<h2>Browse Videos</h2>
+			<button class="btn browse-btn pe-4 ps-4">View All</button>
+		</div>
+		<div class="row mt-md-4 justify-content-between">
+			<div class="col-md-3 col-6 mb-2">
+				<div class="image-overlay">
+					<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1675252143209Haval-h6-hev.jpg" style="height: 143px;">
+					<div class="play-icon">
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-overflow mt-0" style="font-size: 17px;">Haval H6 HEV 2023 | Expert Full Car Review | Autodeals</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6 mb-2">
+				<div class="image-overlay">
+					<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1675075865002maxresdefault.jpg" style="height: 143px;">
+					<div class="play-icon">
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-overflow mt-0" style="font-size: 17px;">
+							KIA Grand Carnival 2023 Overview & Price in Pakistan | Expert Review | Autodeals
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6 mb-2">
+				<div class="image-overlay">
+					<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1674634975238maxresdefault%20%283%29.jpg" style="height: 143px;">
+					<div class="play-icon">
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-overflow mt-0" style="font-size: 17px;">
+							New 1086cc Hyundai Santro Asta Launching In Pakistan in 2023 | Autodeals
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6 mb-2">
+				<div class="image-overlay">
+					<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1674634885753maxresdefault%20%282%29.jpg" style="height: 143px;">
+					<div class="play-icon">
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-overflow mt-0" style="font-size: 17px;">
+							New KIA Picanto 2023 | KIA Picanto Review | Autodeals
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6 mb-2 mt-md-2">
+				<div class="image-overlay">
+					<img src="https://assets-autodeals.s3.amazonaws.com/1674634803027maxresdefault%20%281%29.jpg" style="height: 143px;">
+					<div class="play-icon">
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-overflow mt-0" style="font-size: 17px;">New 2023 BMW i7 | BMW 7 Series Review | Autodeals</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6 mb-2 mt-md-2">
+				<div class="image-overlay">
+					<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1674209239331Priuse.jpg" style="height: 143px;">
+					<div class="play-icon">
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-overflow mt-0" style="font-size: 17px;">
+							2023 Toyota Prius | Toyota Prius Hybrid | Prius Review Autodeals
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6 mb-2 mt-md-2">
+				<div class="image-overlay">
+					<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1673946764785BJ40.jpg" style="height: 143px;">
+					<div class="play-icon">
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-overflow mt-0" style="font-size: 17px;">
+							2023 BJ40 Complete Review | Walkaround Interior & Exterior | Autodeals
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6 mt-md-2 mb-2">
+				<div class="image-overlay">
+					<img src="https://assets-autodeals.s3.amazonaws.com/1673876035946maxresdefault%20%282%29.jpg" style="height: 143px;">
+					<div class="play-icon">
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<div class="mt-2">
+						<h5 class="text-overflow mt-0" style="font-size: 17px;">
+							Changan Alsvin | Watch complete expert review with details and specifications
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row mb-3 d-flex">
+			<div class="col-6" >
+				<h2 class="ms-md-5 mt-5">Featured Used Cars For Sale</h2>
+			</div>
+			<div class="col-6 justify-content-end d-flex">
+				<a href="usedcars.html">
+					<button class="btn browse-btn mt-5 me-md-5">View All</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<div class="card new-cars-card" style="">
+						<div class="text-on-image">
+							<img  src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1675168720032343421.jpg" class="main-image" />
+							<div class="product-label-featured">
+								<label>
+									<h3 style="font-size:16px"><i class="fa fa-star-o" aria-hidden="true"></i></h3>
+									<span style="font-size:10px;color:#fff;">Feature</span>
+								</label>
+							</div>
+						</div>
+						<div class="card-body" style="color:#111;">
+							<h5 style="color:#111;">Mercedes Benz EQS 2023</h5>
+							<div class="locations">
+								<p class="mb-md-2"><i class="fa fa-map-marker pe-2"></i>Lahore</p>
+								<p class="mb-md-2"><i class="fa fa-heart-o"  aria-hidden="true"></i></p>
+							</div>
+							<hr>
+							<div class="row d-flex mb-1">
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="data:image/png;base64,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">
+										<span class="text-dark">Automatic</span>
+									</p>
+								</div>
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAABTlJREFUaEPtWkdIJUkY/s05oAdBMB08KCZUUBR0VhQ8iAkRM0bUi67poodVMR7EcFL04EkMiCOGg3iYRcyKK2YPsqAIgmnEgGLY/mq3ep7uzM573c+nwhY0r7tfV9X//am+Clr0ojw9PXkJr6KE65Nw4d7y5Tcafj4X+vtDuL4I17CWlhbuxaKl+CAIXyg8t2hYQFW6A5hKAUQrryQCEIQfEl5Gq9LaG377WQARg/4ZAEH4X4Wf5jcUSErXRQKIFq1/fH5FSgtvXAfu9AsAVAo3v72xMFK7rwIARHew1Bak1nt8fCTBBQi/2tra7F5C+R0AzoSKGk+Vd3d3tLKyQp2dndTe3k66uroS5KdzAHiSUlPVOrwb/O7v71NZWRlNTU2Rubk5TU5Okp2dnapNsu81AoALf3R0RDU1NdTf388Ez8/Pp4KCAtLR0WEuJMWNNALg/v6empqaqLm5mQwMDCg+Pp6qqqrI0NCQrq+vaXx8nOLi4lgsqFpeFQDXfE9PD5WWlpK/vz/zeSsrK6Zt/F9fX8/eLS8vk7W1taryv54LceEPDw8pICCAXF1daWRkhGkZF7LP1tYWhYSEsAD28/OjwcFBld3oVSwA4XFByNjYWFpfX6eZmRmysbERBXx4eKCEhASanp5m7/A8MDBAgYGBKrmS2gEoJjWkx+rqaqqrq6P09HTRbeAni4uLFBUVxYRFHYBwcXGhiYmJtwVwcXFBo6OjdHNzQ+Xl5RQcHEx9fX2i5rllCgsLaWgI/PFbgcVgKScnJ6VjQZYFuLZh/vPzc6bJ7u5uamn5m5HjGRbIzs4WBcK729tb8vDwoKurq2eCmpqaUm5uLhUVFSkdC7IAQGM8SJEqX+ZxCAtwOzs7ZGFhIf5/enrK3OXl6Ovj40Nubm7M5ZQtsgHExMTQ0tKS6MfcKjxNZmZmspyvyHcAPCgoiPb29sS4MDY2pq6uLjo+PmZjgrJFFoCGhgZqa2v7obkBBloeHh4mT0/PZ8GJFBoaGkr6+vqUkpJC3t7eNDY2Rh0dHWxkVrZIBrC5uUlhYWGi5r/XIc8uZmZmjLgZGRmJn8EKl5eXLODBjcLDw8nd3V1lSiEJAASrqKhgAcsI1U+oMKywurpKlpbfSC8fK3hdPGuUSoBNgiIoU/T09BgABLK6iyQLQIj/AajJFJIsgACcm5tjMcAJGpcH2cbX15fOzs7o4OCAnJ2dqbe3l9bW1t6PC/EAnJ+fp+jo6GcDEkZS0IeTkxOKiIggUAsvLy/a2Nh4PwC4tmEFEDLFETUvL4/s7e0pNTWVZScAgVWQdt9VEAPEjwA4OjpScnLyxwQAFwKbhAVQQA0+lAUUASBW4EJgnnAhxYFMTUlI3pTyey6Uk5NDDg4OlJSUxGjGwsICZWRksFmZIpV4dwD4RAWrDqAEXFhMbEpKStgSiiokTVmAksYB3vjs7CxLo1yw4uJiioyMfNa3iYkJ2draKsWZlBVa8TvZAJDrOQCs/fDglSKMlDqyAIDT19bWimwU/o+JiiaLLADILJjU8JWFrKysjwVge3ubGhsbxUlIWloaoxGaLLIssLu7S62t4n4bJSYmsoWpn01w1AlQLQAQxEijWGnDMqKmAWCvSdJUCZQZNJnvtIA685SpTi3/R1tfZW0x8W0ivoQidV4rAyzbYqoUGvjQm3w4TvBFqhvJ0J7cql+FBrw+/kY3V4PgSp+Fexzy+AgFhz7YsYiXhz1w5AAxISkraQA53AaHPcQDKf/aXRYsgZgAuk/wsXcABkLz4zbdgvB/KirqL7sO42ZPOZOPAAAAAElFTkSuQmCC">
+										<span class="text-dark">Petrol</span>
+									</p>
+								</div>
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="https://autodeals.pk/static/media/engine@2x.eee1c69b9aea0d2f73b6.png">
+										<span class="text-dark">998cc</span>
+									</p>
+								</div>
+							</div>
+							<div class="locations">
+								<h6 class="card-price">Price On Call <small class="pkr">PKR</small></h6>
+								<button class="btn btnn" style="background-color:rgba(2, 48, 71, 0.93);padding: 0px 15px;color:#fff">Details</button>
+							</div>
+						</div>
+					</div> 
+				</div>
+				<div class="item">
+					<div class="card new-cars-card">
+						<div class="text-on-image">
+							<img  src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1675000147762325368671-400x300.jpeg" class="main-image" />
+							<div class="product-label-featured">
+								<label>
+									<h3 style="font-size:16px"><i class="fa fa-star-o" aria-hidden="true"></i></h3>
+									<span style="font-size:10px;color:#fff;">Feature</span>
+								</label>
+							</div>
+						</div>
+						<div class="card-body" style="color:#111;">
+							<h5 style="color:#111;">Honda City 2022</h5>
+							<div class="locations">
+								<p class="mb-md-2"><i class="fa fa-map-marker pe-2"></i>Lahore</p>
+								<p class="mb-md-2"><i class="fa fa-heart-o"  aria-hidden="true"></i></p>
+							</div>
+							<hr>
+							<div class="row d-flex mb-1">
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="data:image/png;base64,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">
+										<span class="text-dark">Automatic</span>
+									</p>
+								</div>
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAABTlJREFUaEPtWkdIJUkY/s05oAdBMB08KCZUUBR0VhQ8iAkRM0bUi67poodVMR7EcFL04EkMiCOGg3iYRcyKK2YPsqAIgmnEgGLY/mq3ep7uzM573c+nwhY0r7tfV9X//am+Clr0ojw9PXkJr6KE65Nw4d7y5Tcafj4X+vtDuL4I17CWlhbuxaKl+CAIXyg8t2hYQFW6A5hKAUQrryQCEIQfEl5Gq9LaG377WQARg/4ZAEH4X4Wf5jcUSErXRQKIFq1/fH5FSgtvXAfu9AsAVAo3v72xMFK7rwIARHew1Bak1nt8fCTBBQi/2tra7F5C+R0AzoSKGk+Vd3d3tLKyQp2dndTe3k66uroS5KdzAHiSUlPVOrwb/O7v71NZWRlNTU2Rubk5TU5Okp2dnapNsu81AoALf3R0RDU1NdTf388Ez8/Pp4KCAtLR0WEuJMWNNALg/v6empqaqLm5mQwMDCg+Pp6qqqrI0NCQrq+vaXx8nOLi4lgsqFpeFQDXfE9PD5WWlpK/vz/zeSsrK6Zt/F9fX8/eLS8vk7W1taryv54LceEPDw8pICCAXF1daWRkhGkZF7LP1tYWhYSEsAD28/OjwcFBld3oVSwA4XFByNjYWFpfX6eZmRmysbERBXx4eKCEhASanp5m7/A8MDBAgYGBKrmS2gEoJjWkx+rqaqqrq6P09HTRbeAni4uLFBUVxYRFHYBwcXGhiYmJtwVwcXFBo6OjdHNzQ+Xl5RQcHEx9fX2i5rllCgsLaWgI/PFbgcVgKScnJ6VjQZYFuLZh/vPzc6bJ7u5uamn5m5HjGRbIzs4WBcK729tb8vDwoKurq2eCmpqaUm5uLhUVFSkdC7IAQGM8SJEqX+ZxCAtwOzs7ZGFhIf5/enrK3OXl6Ovj40Nubm7M5ZQtsgHExMTQ0tKS6MfcKjxNZmZmspyvyHcAPCgoiPb29sS4MDY2pq6uLjo+PmZjgrJFFoCGhgZqa2v7obkBBloeHh4mT0/PZ8GJFBoaGkr6+vqUkpJC3t7eNDY2Rh0dHWxkVrZIBrC5uUlhYWGi5r/XIc8uZmZmjLgZGRmJn8EKl5eXLODBjcLDw8nd3V1lSiEJAASrqKhgAcsI1U+oMKywurpKlpbfSC8fK3hdPGuUSoBNgiIoU/T09BgABLK6iyQLQIj/AajJFJIsgACcm5tjMcAJGpcH2cbX15fOzs7o4OCAnJ2dqbe3l9bW1t6PC/EAnJ+fp+jo6GcDEkZS0IeTkxOKiIggUAsvLy/a2Nh4PwC4tmEFEDLFETUvL4/s7e0pNTWVZScAgVWQdt9VEAPEjwA4OjpScnLyxwQAFwKbhAVQQA0+lAUUASBW4EJgnnAhxYFMTUlI3pTyey6Uk5NDDg4OlJSUxGjGwsICZWRksFmZIpV4dwD4RAWrDqAEXFhMbEpKStgSiiokTVmAksYB3vjs7CxLo1yw4uJiioyMfNa3iYkJ2draKsWZlBVa8TvZAJDrOQCs/fDglSKMlDqyAIDT19bWimwU/o+JiiaLLADILJjU8JWFrKysjwVge3ubGhsbxUlIWloaoxGaLLIssLu7S62t4n4bJSYmsoWpn01w1AlQLQAQxEijWGnDMqKmAWCvSdJUCZQZNJnvtIA685SpTi3/R1tfZW0x8W0ivoQidV4rAyzbYqoUGvjQm3w4TvBFqhvJ0J7cql+FBrw+/kY3V4PgSp+Fexzy+AgFhz7YsYiXhz1w5AAxISkraQA53AaHPcQDKf/aXRYsgZgAuk/wsXcABkLz4zbdgvB/KirqL7sO42ZPOZOPAAAAAElFTkSuQmCC">
+										<span class="text-dark">Petrol</span>
+									</p>
+								</div>
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="https://autodeals.pk/static/media/engine@2x.eee1c69b9aea0d2f73b6.png">
+										<span class="text-dark">1497cc</span>
+									</p>
+								</div>
+							</div>
+							<div class="locations">
+								<h6 class="card-price">44.90 Lacs <small class="pkr">PKR</small></h6>
+								<button class="btn btnn" style="background-color:rgba(2, 48, 71, 0.93);padding: 0px 15px;color:#fff">Details</button>
+							</div>
+						</div>
+					</div> 
+				</div>
+				<div class="item">
+					<div class="card new-cars-card">
+						<div class="text-on-image">
+							<img  src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1675057447498IMG_20230121_132140.jpg" class="main-image" />
+							<div class="product-label-featured">
+								<label>
+									<h3 style="font-size:16px"><i class="fa fa-star-o" aria-hidden="true"></i></h3>
+									<span style="font-size:10px;color:#fff;">Feature</span>
+								</label>
+							</div>
+						</div>
+						<div class="card-body" style="color:#111;">
+							<h5 style="color:#111;">Toyota Corolla 2017</h5>
+							<div class="locations">
+								<p class="mb-md-2"><i class="fa fa-map-marker pe-2"></i>Bahawalpur</p>
+								<p class="mb-md-2"><i class="fa fa-heart-o"  aria-hidden="true"></i></p>
+							</div>
+							<hr>
+							<div class="row d-flex mb-1">
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="data:image/png;base64,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">
+										<span class="text-dark">Automatic</span>
+									</p>
+								</div>
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAABTlJREFUaEPtWkdIJUkY/s05oAdBMB08KCZUUBR0VhQ8iAkRM0bUi67poodVMR7EcFL04EkMiCOGg3iYRcyKK2YPsqAIgmnEgGLY/mq3ep7uzM573c+nwhY0r7tfV9X//am+Clr0ojw9PXkJr6KE65Nw4d7y5Tcafj4X+vtDuL4I17CWlhbuxaKl+CAIXyg8t2hYQFW6A5hKAUQrryQCEIQfEl5Gq9LaG377WQARg/4ZAEH4X4Wf5jcUSErXRQKIFq1/fH5FSgtvXAfu9AsAVAo3v72xMFK7rwIARHew1Bak1nt8fCTBBQi/2tra7F5C+R0AzoSKGk+Vd3d3tLKyQp2dndTe3k66uroS5KdzAHiSUlPVOrwb/O7v71NZWRlNTU2Rubk5TU5Okp2dnapNsu81AoALf3R0RDU1NdTf388Ez8/Pp4KCAtLR0WEuJMWNNALg/v6empqaqLm5mQwMDCg+Pp6qqqrI0NCQrq+vaXx8nOLi4lgsqFpeFQDXfE9PD5WWlpK/vz/zeSsrK6Zt/F9fX8/eLS8vk7W1taryv54LceEPDw8pICCAXF1daWRkhGkZF7LP1tYWhYSEsAD28/OjwcFBld3oVSwA4XFByNjYWFpfX6eZmRmysbERBXx4eKCEhASanp5m7/A8MDBAgYGBKrmS2gEoJjWkx+rqaqqrq6P09HTRbeAni4uLFBUVxYRFHYBwcXGhiYmJtwVwcXFBo6OjdHNzQ+Xl5RQcHEx9fX2i5rllCgsLaWgI/PFbgcVgKScnJ6VjQZYFuLZh/vPzc6bJ7u5uamn5m5HjGRbIzs4WBcK729tb8vDwoKurq2eCmpqaUm5uLhUVFSkdC7IAQGM8SJEqX+ZxCAtwOzs7ZGFhIf5/enrK3OXl6Ovj40Nubm7M5ZQtsgHExMTQ0tKS6MfcKjxNZmZmspyvyHcAPCgoiPb29sS4MDY2pq6uLjo+PmZjgrJFFoCGhgZqa2v7obkBBloeHh4mT0/PZ8GJFBoaGkr6+vqUkpJC3t7eNDY2Rh0dHWxkVrZIBrC5uUlhYWGi5r/XIc8uZmZmjLgZGRmJn8EKl5eXLODBjcLDw8nd3V1lSiEJAASrqKhgAcsI1U+oMKywurpKlpbfSC8fK3hdPGuUSoBNgiIoU/T09BgABLK6iyQLQIj/AajJFJIsgACcm5tjMcAJGpcH2cbX15fOzs7o4OCAnJ2dqbe3l9bW1t6PC/EAnJ+fp+jo6GcDEkZS0IeTkxOKiIggUAsvLy/a2Nh4PwC4tmEFEDLFETUvL4/s7e0pNTWVZScAgVWQdt9VEAPEjwA4OjpScnLyxwQAFwKbhAVQQA0+lAUUASBW4EJgnnAhxYFMTUlI3pTyey6Uk5NDDg4OlJSUxGjGwsICZWRksFmZIpV4dwD4RAWrDqAEXFhMbEpKStgSiiokTVmAksYB3vjs7CxLo1yw4uJiioyMfNa3iYkJ2draKsWZlBVa8TvZAJDrOQCs/fDglSKMlDqyAIDT19bWimwU/o+JiiaLLADILJjU8JWFrKysjwVge3ubGhsbxUlIWloaoxGaLLIssLu7S62t4n4bJSYmsoWpn01w1AlQLQAQxEijWGnDMqKmAWCvSdJUCZQZNJnvtIA685SpTi3/R1tfZW0x8W0ivoQidV4rAyzbYqoUGvjQm3w4TvBFqhvJ0J7cql+FBrw+/kY3V4PgSp+Fexzy+AgFhz7YsYiXhz1w5AAxISkraQA53AaHPcQDKf/aXRYsgZgAuk/wsXcABkLz4zbdgvB/KirqL7sO42ZPOZOPAAAAAElFTkSuQmCC">
+										<span class="text-dark">Petrol</span>
+									</p>
+								</div>
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="https://autodeals.pk/static/media/engine@2x.eee1c69b9aea0d2f73b6.png">
+										<span class="text-dark">1800cc</span>
+									</p>
+								</div>
+							</div>
+							<div class="locations">
+								<h6 class="card-price">39.50 Lacs <small class="pkr">PKR</small></h6>
+								<button class="btn btnn" style="background-color:rgba(2, 48, 71, 0.93);padding: 0px 15px;color:#fff">Details</button>
+							</div>
+						</div>
+					</div> 
+				</div>
+				<div class="item">
+					<div class="card new-cars-card">
+						<div class="text-on-image">
+							<img  src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16750674382933B620B70-6BB2-431D-A5F2-6A0D08A4637C.jpeg" class="main-image" />
+							<div class="product-label-featured">
+								<label>
+									<h3 style="font-size:16px"><i class="fa fa-star-o" aria-hidden="true"></i></h3>
+									<span style="font-size:10px;color:#fff;">Feature</span>
+								</label>
+							</div>
+						</div>
+						<div class="card-body" style="color:#111;">
+							<h5 style="color:#111;">Kia Grand Carnival 2019</h5>
+							<div class="locations">
+								<p class="mb-md-2"><i class="fa fa-map-marker pe-2"></i>Lahore</p>
+								<p class="mb-md-2"><i class="fa fa-heart-o"  aria-hidden="true"></i></p>
+							</div>
+							<hr>
+							<div class="row d-flex mb-1">
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="data:image/png;base64,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">
+										<span class="text-dark">Automatic</span>
+									</p>
+								</div>
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAABTlJREFUaEPtWkdIJUkY/s05oAdBMB08KCZUUBR0VhQ8iAkRM0bUi67poodVMR7EcFL04EkMiCOGg3iYRcyKK2YPsqAIgmnEgGLY/mq3ep7uzM573c+nwhY0r7tfV9X//am+Clr0ojw9PXkJr6KE65Nw4d7y5Tcafj4X+vtDuL4I17CWlhbuxaKl+CAIXyg8t2hYQFW6A5hKAUQrryQCEIQfEl5Gq9LaG377WQARg/4ZAEH4X4Wf5jcUSErXRQKIFq1/fH5FSgtvXAfu9AsAVAo3v72xMFK7rwIARHew1Bak1nt8fCTBBQi/2tra7F5C+R0AzoSKGk+Vd3d3tLKyQp2dndTe3k66uroS5KdzAHiSUlPVOrwb/O7v71NZWRlNTU2Rubk5TU5Okp2dnapNsu81AoALf3R0RDU1NdTf388Ez8/Pp4KCAtLR0WEuJMWNNALg/v6empqaqLm5mQwMDCg+Pp6qqqrI0NCQrq+vaXx8nOLi4lgsqFpeFQDXfE9PD5WWlpK/vz/zeSsrK6Zt/F9fX8/eLS8vk7W1taryv54LceEPDw8pICCAXF1daWRkhGkZF7LP1tYWhYSEsAD28/OjwcFBld3oVSwA4XFByNjYWFpfX6eZmRmysbERBXx4eKCEhASanp5m7/A8MDBAgYGBKrmS2gEoJjWkx+rqaqqrq6P09HTRbeAni4uLFBUVxYRFHYBwcXGhiYmJtwVwcXFBo6OjdHNzQ+Xl5RQcHEx9fX2i5rllCgsLaWgI/PFbgcVgKScnJ6VjQZYFuLZh/vPzc6bJ7u5uamn5m5HjGRbIzs4WBcK729tb8vDwoKurq2eCmpqaUm5uLhUVFSkdC7IAQGM8SJEqX+ZxCAtwOzs7ZGFhIf5/enrK3OXl6Ovj40Nubm7M5ZQtsgHExMTQ0tKS6MfcKjxNZmZmspyvyHcAPCgoiPb29sS4MDY2pq6uLjo+PmZjgrJFFoCGhgZqa2v7obkBBloeHh4mT0/PZ8GJFBoaGkr6+vqUkpJC3t7eNDY2Rh0dHWxkVrZIBrC5uUlhYWGi5r/XIc8uZmZmjLgZGRmJn8EKl5eXLODBjcLDw8nd3V1lSiEJAASrqKhgAcsI1U+oMKywurpKlpbfSC8fK3hdPGuUSoBNgiIoU/T09BgABLK6iyQLQIj/AajJFJIsgACcm5tjMcAJGpcH2cbX15fOzs7o4OCAnJ2dqbe3l9bW1t6PC/EAnJ+fp+jo6GcDEkZS0IeTkxOKiIggUAsvLy/a2Nh4PwC4tmEFEDLFETUvL4/s7e0pNTWVZScAgVWQdt9VEAPEjwA4OjpScnLyxwQAFwKbhAVQQA0+lAUUASBW4EJgnnAhxYFMTUlI3pTyey6Uk5NDDg4OlJSUxGjGwsICZWRksFmZIpV4dwD4RAWrDqAEXFhMbEpKStgSiiokTVmAksYB3vjs7CxLo1yw4uJiioyMfNa3iYkJ2draKsWZlBVa8TvZAJDrOQCs/fDglSKMlDqyAIDT19bWimwU/o+JiiaLLADILJjU8JWFrKysjwVge3ubGhsbxUlIWloaoxGaLLIssLu7S62t4n4bJSYmsoWpn01w1AlQLQAQxEijWGnDMqKmAWCvSdJUCZQZNJnvtIA685SpTi3/R1tfZW0x8W0ivoQidV4rAyzbYqoUGvjQm3w4TvBFqhvJ0J7cql+FBrw+/kY3V4PgSp+Fexzy+AgFhz7YsYiXhz1w5AAxISkraQA53AaHPcQDKf/aXRYsgZgAuk/wsXcABkLz4zbdgvB/KirqL7sO42ZPOZOPAAAAAElFTkSuQmCC">
+										<span class="text-dark">Petrol</span>
+									</p>
+								</div>
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="https://autodeals.pk/static/media/engine@2x.eee1c69b9aea0d2f73b6.png">
+										<span class="text-dark">3300cc</span>
+									</p>
+								</div>
+							</div>
+							<div class="locations">
+								<h6 class="card-price">65.00 Lacs <small class="pkr">PKR</small></h6>
+								<button class="btn btnn" style="background-color:rgba(2, 48, 71, 0.93);padding: 0px 15px;color:#fff">Details</button>
+							</div>
+						</div>
+					</div> 
+				</div>
+				<div class="item">
+					<div class="card new-cars-card" style="">
+						<div class="text-on-image">
+							<img  src="https://assets-autodeals.s3.amazonaws.com/1674998883687325929756-400x300.jpeg" class="main-image" />
+							<div class="product-label-featured">
+								<label>
+									<h3 style="font-size:16px"><i class="fa fa-star-o" aria-hidden="true"></i></h3>
+									<span style="font-size:10px;color:#fff;">Feature</span>
+								</label>
+							</div>
+						</div>
+						<div class="card-body" style="color:#111;">
+							<h5 style="color:#111;">Toyota Vitz 2014</h5>
+							<div class="locations">
+								<p class="mb-md-2"><i class="fa fa-map-marker pe-2"></i>Lahore</p>
+								<p class="mb-md-2"><i class="fa fa-heart-o"  aria-hidden="true"></i></p>
+							</div>
+							<hr>
+							<div class="row d-flex mb-1">
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="data:image/png;base64,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">
+										<span class="text-dark">Automatic</span>
+									</p>
+								</div>
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAABTlJREFUaEPtWkdIJUkY/s05oAdBMB08KCZUUBR0VhQ8iAkRM0bUi67poodVMR7EcFL04EkMiCOGg3iYRcyKK2YPsqAIgmnEgGLY/mq3ep7uzM573c+nwhY0r7tfV9X//am+Clr0ojw9PXkJr6KE65Nw4d7y5Tcafj4X+vtDuL4I17CWlhbuxaKl+CAIXyg8t2hYQFW6A5hKAUQrryQCEIQfEl5Gq9LaG377WQARg/4ZAEH4X4Wf5jcUSErXRQKIFq1/fH5FSgtvXAfu9AsAVAo3v72xMFK7rwIARHew1Bak1nt8fCTBBQi/2tra7F5C+R0AzoSKGk+Vd3d3tLKyQp2dndTe3k66uroS5KdzAHiSUlPVOrwb/O7v71NZWRlNTU2Rubk5TU5Okp2dnapNsu81AoALf3R0RDU1NdTf388Ez8/Pp4KCAtLR0WEuJMWNNALg/v6empqaqLm5mQwMDCg+Pp6qqqrI0NCQrq+vaXx8nOLi4lgsqFpeFQDXfE9PD5WWlpK/vz/zeSsrK6Zt/F9fX8/eLS8vk7W1taryv54LceEPDw8pICCAXF1daWRkhGkZF7LP1tYWhYSEsAD28/OjwcFBld3oVSwA4XFByNjYWFpfX6eZmRmysbERBXx4eKCEhASanp5m7/A8MDBAgYGBKrmS2gEoJjWkx+rqaqqrq6P09HTRbeAni4uLFBUVxYRFHYBwcXGhiYmJtwVwcXFBo6OjdHNzQ+Xl5RQcHEx9fX2i5rllCgsLaWgI/PFbgcVgKScnJ6VjQZYFuLZh/vPzc6bJ7u5uamn5m5HjGRbIzs4WBcK729tb8vDwoKurq2eCmpqaUm5uLhUVFSkdC7IAQGM8SJEqX+ZxCAtwOzs7ZGFhIf5/enrK3OXl6Ovj40Nubm7M5ZQtsgHExMTQ0tKS6MfcKjxNZmZmspyvyHcAPCgoiPb29sS4MDY2pq6uLjo+PmZjgrJFFoCGhgZqa2v7obkBBloeHh4mT0/PZ8GJFBoaGkr6+vqUkpJC3t7eNDY2Rh0dHWxkVrZIBrC5uUlhYWGi5r/XIc8uZmZmjLgZGRmJn8EKl5eXLODBjcLDw8nd3V1lSiEJAASrqKhgAcsI1U+oMKywurpKlpbfSC8fK3hdPGuUSoBNgiIoU/T09BgABLK6iyQLQIj/AajJFJIsgACcm5tjMcAJGpcH2cbX15fOzs7o4OCAnJ2dqbe3l9bW1t6PC/EAnJ+fp+jo6GcDEkZS0IeTkxOKiIggUAsvLy/a2Nh4PwC4tmEFEDLFETUvL4/s7e0pNTWVZScAgVWQdt9VEAPEjwA4OjpScnLyxwQAFwKbhAVQQA0+lAUUASBW4EJgnnAhxYFMTUlI3pTyey6Uk5NDDg4OlJSUxGjGwsICZWRksFmZIpV4dwD4RAWrDqAEXFhMbEpKStgSiiokTVmAksYB3vjs7CxLo1yw4uJiioyMfNa3iYkJ2draKsWZlBVa8TvZAJDrOQCs/fDglSKMlDqyAIDT19bWimwU/o+JiiaLLADILJjU8JWFrKysjwVge3ubGhsbxUlIWloaoxGaLLIssLu7S62t4n4bJSYmsoWpn01w1AlQLQAQxEijWGnDMqKmAWCvSdJUCZQZNJnvtIA685SpTi3/R1tfZW0x8W0ivoQidV4rAyzbYqoUGvjQm3w4TvBFqhvJ0J7cql+FBrw+/kY3V4PgSp+Fexzy+AgFhz7YsYiXhz1w5AAxISkraQA53AaHPcQDKf/aXRYsgZgAuk/wsXcABkLz4zbdgvB/KirqL7sO42ZPOZOPAAAAAElFTkSuQmCC">
+										<span class="text-dark">Petrol</span>
+									</p>
+								</div>
+								<div class="col-md-4 col-6">
+									<p class="d-flex my-1" style="font-size: 11px;">
+										<img class="custom-img-listing" src="https://autodeals.pk/static/media/engine@2x.eee1c69b9aea0d2f73b6.png">
+										<span class="text-dark">998cc</span>
+									</p>
+								</div>
+							</div>
+							<div class="locations">
+								<h6 class="card-price">24.50 Lacs <small class="pkr">PKR</small></h6>
+								<button class="btn btnn" style="background-color:rgba(2, 48, 71, 0.93);padding: 0px 15px;color:#fff">Details</button>
+							</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-5">
+		<h2 class="mb-4">Car Comparison</h2>
+		<div class="Compr row mt-md-4">
+			<div class="col-sm-8 d-flex justify-content-between align-items-center">
+				<div class="container">
+					<div class="row d-flex flex-row">
+						<div class="col-5 " style="cursor:pointer;">
+							<img class="" src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/164698484311210.jpg" height="250px" width="290px" alt="car">
+							<h5 class="ms-4">1.3L MT Comfort</h5>
+						</div>
+						<div class="col-1 line"></div>
+						<div class="vs col-1">
+							<p class="p1">V</p>
+							<p class="p2">S</p>
+						</div>
+						<div class="col-5 " style="cursor:pointer;">
+							<img class=" ms-4" src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1669206081085proton-40.jpg" height="250px" width="290px" alt="car">
+							<h5 class="ms-5">1.3L Standard M/T</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 border-left">
+				<div class="div2-vs1 row d-flex justify-content-between align-items-center">
+					<div class="col-sm-4 mt-4" style="cursor:pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/16430994642512.png">
+						<h6>Toyota Yaris 2023 ATIV X CVT 1.5</h6>
+					</div>
+					<div class="vs2 col-sm-1">
+						<p>vs</p>
+					</div>
+					<div class="col-1 line2"></div>
+					<div class="col-sm-4 mt-4" style="cursor:pointer;">
+						<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/164699245581644.jpg">
+						<h6>MG HS 2023 HS Essence</h6>
+					</div>
+				</div>
+				
+				<div class="col-sm-12">
+					<div class="div2-vs1 row d-flex justify-content-between align-items-center">
+						<div class="col-sm-4 mt-4" style="cursor:pointer;">
+							<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/164698484311210.jpg">
+							<h6>Changan Alsvin 2023 1.3L MT Comfort</h6>
+						</div>
+						<div class="vs2 col-sm-1">
+							<p>vs</p>
+						</div>
+						<div class="col-1 line2"></div>
+						<div class="col-sm-4 mt-4" style="cursor:pointer;">
+							<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1669206081085proton-40.jpg">
+							<h6>Proton  Saga 2023 1.3L Standard M/T</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-5">
+		<div class="d-flex justify-content-between mb-md-4 mb-2" id="News&Discussion1">
+			<h2>News & Discussion</h2>
+			<button class="btn btnn browse-btn">View All</button>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/Proton-Price-Increased-in-Pakistan.png"/>
+					</a>
+					<h4>Proton Price Increased in Pakistan</h4>
+					<p>Overview Alhaj Automotive has only price increased ....</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100 mb-3">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/Car-Scratches-Types-and-How-to-Fix-Them.png"/>
+					</a>
+					<h4>Car Scratches Types and How to Fix Them</h4>
+					<p>Overview Car scratches can range from little flaws ...</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100 mb-3">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/Volkswagen-VW-and-Skoda-Local-Assembled-Plant-in-Pakistan.png"/>
+					</a>
+					<h4>Volkswagen (VW) and Skoda Local Assembled Plant in Pakistan</h4>
+					<p>Overview Premier Motors Limited (PML) is building ...</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100 mb-3">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/Honda-Car-Prices-Increased-Again-Second-Time-in-2-Weeks.png"/>
+					</a>
+					<h4>Honda Car Prices Increased Again- Second Time in 2 Weeks</h4>
+					<p>Overview Honda car prices have raised the pricing ...</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100 mb-3">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/FIA-Arrests-Petrol-Pumps-Mafia-Looting-People-1.png"/>
+					</a>
+					<h4>FIA Arrests Petrol Pumps Mafia Looting People</h4>
+					<p>The Federal Investigation Agency&#8217;s (FIA) Cyb ...</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 px-2">
+				<div class="card p-2 news-card h-100 mb-3">
+					<a href="">
+						<img src="https://autodeals.pk/blog/wp-content/uploads/2023/02/Peugeot-3008-and-Peugeot-5008-Coming-Soon-2023.png"/>
+					</a>
+					<h4>Peugeot 3008 and Peugeot 5008 Coming Soon 2023</h4>
+					<p>Overview The new Peugeot 3008 and Peugeot 5008 wil ...</p>
+					<a href="">
+						<button type="button" class="btn rounded-0 px-0 pb-1" style="border-bottom: 2px solid rgb(51, 51, 51);">Read More</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="container mt-5">
+		<div class="seocrumbs">
+			<h5 class="pt-5">New Daihatsu TAFT By Year</h5>
+			<a href="/new-cars/search/-/maxY_2023/minY_2023" >Daihatsu TAFT 2023</a>
+			<span class="text-muted" style="font-size:13px;">(4+)</span> 
+		</div>
+		<div class="seocrumbs">
+			<h5 class="pt-5">More New Daihatsu</h5>
+			<a href="/new-cars/search/-/maxY_2023/minY_2023" >Daihatsu TAFT Daihatsu</a>
+			<span class="text-muted" style="font-size:13px;">(88+)</span> 
+		</div>
+		<div class="pb-5 seocrumbs">
+			<h5 class="pt-5">More New Daihatsu TAFT</h5>
+			<a href="/new-cars/search/-/maxY_2023/minY_2023">Daihatsu TAFT Daihatsu Accord Tourer</a>
+			<span class="text-muted" style="font-size:13px;">(4+)</span> 
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<div class="container-fluid mt-5" style="background-color: rgb(245, 245, 245);">
+		<div class="row pb-md-5 mt-md-5 ms-md-1" style="border-bottom: 2px solid lightgrey;font-size: 14px;">
+			<div class="col-md-2 col-4 ms-md-5 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Cars By Make
+				</h2>
+				<div class="">
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary fw-100">Toyota Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Suzuki Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Honda Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">KIA Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Dihatsu Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Mercedes Cars For Sale.</a>
+					</li>
+					
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Hundyai Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Nissan Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">BMW Cars For Sale.</a>
+					</li>
+				</ul>	
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4 footer-content">
+						<h2 class="mb-md-3 fw-bolder">
+							Cars By Bodytype
+						</h2>
+						<ul class="mb-0 list-unstyled">
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Hetchback</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Sedan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">SUV</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">MInivan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Van</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Cross Over</a>
+							</li>
+							
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Double Cabin</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-4 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Cars By City
+				</h2>
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Lahore</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In IslamAbad</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Karachi</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Rawalpindi</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In FaislAbad</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Gujranwala</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Sialkot</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Multan</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Peshawar</a>
+					</li>
+				</ul>	
+				<div class="row">
+					<div class="col-md-12 mt-4 mb-0 footer-content">
+						<h2 class="mb-md-3 fw-bolder">
+							Our Business Partners
+						</h2>
+						<ul class=" list-unstyled">
+							<li>
+								<a href="" class="text-decoration-none text-secondary">AutoDeals Japan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">My Auction Sheet</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">List Network</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">City Book</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-4 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Explore AutoDeals
+				</h2>
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Used Cars</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Used Bikes</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">New Cars</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">New Bikes</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Auto Parts</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sell Your Car</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sell Your Bike</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Blog</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sitemap</a>
+					</li>
+				</ul>
+					<div class="row">
+						<div class="col-md-12 mt-4 footer-content">
+							<h2 class="mb-md-3 fw-bolder">
+								About Company
+							</h2>
+							<ul class="mb-0 list-unstyled">
+								<li>
+									<a href="" class="text-decoration-none text-secondary">About AutoDeals</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Our Prodicts</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Advertise With Us</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">How To Pay</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Shipment & Return Policy</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Return & Exchange</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Refund Policy</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Facs</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Contact-Us</a>
+								</li>
+							</ul>	
+						</div>
+					</div>
+			</div>
+			<div class="col-md-5 mt-3 ms-md-5 footer-content">
+				<div class="newsletter pb-0">
+					<h4 class=" mb-3">Newsletter</h4>
+					<div class="d-flex newsletter-input">
+						<input type="text" class="form-control btnn" placeholder="name@email.com" ></input>
+						<button class="input-button btn btnn ms-2" type="button">Suscribe</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4 footer-content">
+						<h5 class="mb-md-3">
+							Our Soccail Media
+						</h5>
+						<div class="row">
+							<div class="d-flex">
+								<a href="" class="text-decoration-none"><i class="fa fa-facebook footer-icon" aria-hidden="true"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-twitter footer-icon ms-2" aria-hidden="true"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-pinterest footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-instagram footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-youtube-play footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-linkedin footer-icon ms-2" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4">
+						<img src="https://autodeals.pk/static/media/google-play-badge.0168dd766b85b2f2e845.png" style="height: 43.5px;cursor: pointer;"/>
+						<img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Download_on_Apple_TV_Badge_SI_RGB_blk.svg/2560px-Download_on_Apple_TV_Badge_SI_RGB_blk.svg.png" style="height: 43.5px;cursor: pointer;"/>
+						<img src="https://autodeals.pk/static/media/huawei.f823d81072a99fd1918e.png" style="height: 43.5px;cursor: pointer;"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 d-flex mt-3">
+						<h6 class="fw-bold">Get In Touch :</h6>
+						<i class="fa fa-envelope-o ms-1 mt-1" style="color:#f1833b"></i>
+						<a href="" class="text-secondary ms-1">Support@AR-CarShop.PK</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid mb-5 mb-md-0" style="background-color: rgb(245, 245, 245);">
+		<div class="mb-5 mb-md-0">
+			<div class="row">
+				<div class="col-md-4">
+					<button class="btn d-flex flex-column ms-md-5">
+						<div class="text-dark text-left ">
+							<h6>Developed By:</h6>
+							<img src="https://autodeals.pk/static/media/wellcreator.3f2a6fc7f75eb582cbbd.png" style="width: auto;height: 40px;"/>
+						</div>
+					</button>
+				</div>
+				<div class="col-md-4 mt-4 text-secondary">
+					<p>Copyright © 2003 - 2023 AutoDeals (Pvt) Ltd.</p>
+				</div>
+				<div class="col-md-4 justify-content-end term-service">
+					<a href="" class="text-dark text-decoration-none me-1">Term Of Service</a>
+					<span>|</span>
+					<a class="text-dark text-decoration-none ms-1">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	<script>
+		$('.owl-carousel').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+	</script>
+</body>
+</html>

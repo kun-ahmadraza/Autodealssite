@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+nav.navbar{
+	padding:0px;
+}
+a.navbar-brand{
+	padding: 2px 0px;
+}
+.dekstop-header{
+	background-color: #0c3148;
+}
+.main-nav{
+	font-size: 16px;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0;
+}
+.btnn:focus,.btnn:active {
+   border: 1px solid grey !important;
+   box-shadow: none;
+}
+.mega-menu{
+	text-decoration: none;
+}
+.mega-menu span{
+	color: white;
+	height: 100%;
+    padding: 19px 25px;
+    border-radius: 0;
+}
+.mega-menu span:hover{
+	background-color: #fff;
+	color: rgba(2, 48, 71, 0.93);
+}
+.nav-button{
+	font-size: 16px;
+    color: #fff;
+    background-color: #f68300;
+    border-radius: 10px;
+}
+.dropdown-menu.show{
+	display: flex;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.drpdwn-brdr{
+	border: 1px solid transparent;
+    box-shadow: 1px 1px 4px 4px rgb(0 0 0 / 10%);
+	border-bottom: 6px solid #f68300;
+	border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.drpdwn-brdr ul:hover{
+	
+}
+.drpdwn-brdr a{
+	background-color: #fff;
+	color: #111;
+	transition: 1s;
+}
+.drpdwn-brdr a:hover{
+	color: #f68300;
+	background-color: #fff;
+}
+.ul-brdr{
+	border-bottom: 1px solid lightgrey;
+}
+.dropdown:hover .dropdown-menu{display:flex;}
+.second-bar{
+    background-color: #0c3148;
+    border-top: 1px solid hsla(0,0%,100%,.15);
+    font-size: 15px;
+    font-weight: 400;
+}
+.curve-background{
+	background-color: #0c3148;
+	border-radius: 0 0 50% 50%/0 0 100% 100%;
+	transform: scaleX(1.5);
+	height: 55vh;
+}
+.card{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 12px;
+}
+.contact h2 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 400!important;
+}
+.contact p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300!important;
+}
+.contact-us-main {
+    margin-top: -194px;
+    padding: 30px;
+}
+.form-detail {
+    background: #fff;
+    padding: 30px;
+}
+.form-group input{
+    border-radius: 10px;
+    padding: 12px 12px;
+    font-size: 13px;
+    font-weight: 300;
+}
+.msg{
+    border-radius: 10px;
+    padding: 12px 12px;
+    font-size: 13px;
+    font-weight: 300;
+}
+.submitting {
+    color: gray;
+    font-size: 14px;
+}
+.form-submit button {
+    background-color: #f68300;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 30px;
+}
+.form-submit button:hover{
+	color: #fff;
+	background-color: #0c3148;
+}
+.footer-content h2{
+	color: black;
+	font-size: 19px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.newsletter-input input{
+    border: 1px solid #f1833b;
+    border-radius: 8px;
+    padding: 15px 15px;
+    width: 278px;
+}
+.input-button{
+	color: #fff;
+    background: #f68300;
+    padding: 0px 26px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+.footer-icon{
+	border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 27%) 0px 2px 2px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+}
+.footer-icon{
+	border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 27%) 0px 2px 2px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+}
+.term-service {
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+}

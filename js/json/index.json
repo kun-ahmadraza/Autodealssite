@@ -1,0 +1,145 @@
+[{
+	"id": 1,
+	"image": "images/category/1.png",
+	"name": "660 cc",
+	"brand_icon": "images/brands-icon/1.png",
+	"brand_name": "Honda(5083)",
+	"bodytype_img": "images/Body-type/1.png",
+	"bodytype_text": "Hatchback(836)"
+},{
+	"id": 2,
+	"image": "images/category/2.png",
+	"name": "880 cc",
+	"brand_icon": "images/brands-icon/2.png",
+	"brand_name": "Toyota(4901)",
+	"bodytype_img": "images/Body-type/2.png",
+	"bodytype_text": "Sedan(476)"
+},{
+	"id": 3,
+	"image": "images/category/3.png",
+	"name": "1000 cc",
+	"brand_icon": "images/brands-icon/3.png",
+	"brand_name": "Suzuki(3702)",
+	"bodytype_img": "images/Body-type/3.png",
+	"bodytype_text": "Compact SUV(367)"
+},{
+	"id": 4,
+	"image": "images/category/4.png",
+	"name": "1300 cc",
+	"brand_icon": "images/brands-icon/4.png",
+	"brand_name": "Daihatsu(1127)",
+	"bodytype_img": "images/Body-type/4.png",
+	"bodytype_text": "SUV(207)"
+},{
+	"id": 5,
+	"image": "images/category/5.png",
+    "name": "Automatic Cars",
+	"brand_icon": "images/brands-icon/5.png",
+	"brand_name": "Nissan(488)",
+	"bodytype_img": "images/Body-type/5.png",
+	"bodytype_text": "Double Cabin(77)"
+},{
+	"id": 6,
+	"image": "images/category/6.png",
+    "name": "Big Cars",
+	"brand_icon": "images/brands-icon/6.png",
+	"brand_name": "Hyundai(443)",
+	"bodytype_img": "images/Body-type/6.png",
+	"bodytype_text": "Van(38)"
+},{
+	"id": 7,
+	"image": "images/category/7.png",
+	"name": "Carry Daba",
+	"brand_icon": "images/brands-icon/7.png",
+	"brand_name": "KIA(395)",
+	"bodytype_img": "images/Body-type/7.png",
+	"bodytype_text": "Convertible(6)"
+},{
+	"id": 8,
+	"image": "images/category/8.png",
+	"name": "Cheap Cars",
+	"brand_icon": "images/brands-icon/8.png",
+	"brand_name": "Mitsubishi(235)",
+	"bodytype_img": "images/Body-type/8.png",
+	"bodytype_text": "Mini Van(6)"
+},{
+	"id": 9,
+	"image": "images/category/9.png",
+	"name": "Diesel Cars",
+	"brand_icon": "images/brands-icon/9.png",
+	"brand_name": "MG(158)",
+	"bodytype_img": "images/Body-type/9.png",
+	"bodytype_text": "Pick Up(5)"
+},{
+	"id": 10,
+	"image": "images/category/10.png",
+	"name": "Electric Cars",
+	"brand_icon": "images/brands-icon/10.png",
+	"brand_name": "Changan(112)",
+	"bodytype_img": "images/Body-type/10.png",
+	"bodytype_text": "Crossover(4)"
+},{
+	"id": 11,
+	"image": "images/category/11.png",
+    "name": "Family Cars",
+	"brand_icon": "images/brands-icon/11.png",
+	"brand_name": "Mercedes Benz(110)",
+	"bodytype_img": "images/Body-type/11.png",
+	"bodytype_text": "Single Cabin(2)"
+},{
+	"id": 12,
+	"image": "images/category/12.png",
+    "name": "Hybrid Cars",
+	"brand_icon": "images/brands-icon/12.png",
+	"brand_name": "Audi(106)",
+	"bodytype_img": "images/Body-type/12.png",
+	"bodytype_text": "Ttruck(1)"
+},{
+	"id": 13,
+	"image": "images/category/13.png",
+    "name": "Imported Cars",
+	"brand_icon": "images/brands-icon/13.png",
+	"brand_name": "FAW(68)",
+	"bodytype_img": "images/Body-type/13.png",
+	"bodytype_text": "Compact Sedan(1)"
+},{
+	"id": 14,
+	"image": "images/category/14.png",
+	"name": "japanese Daba",
+	"brand_icon": "images/brands-icon/14.png",
+	"brand_name": "United(67)",
+	"bodytype_img": "images/Body-type/14.png",
+	"bodytype_text": "Coupe(0)"
+},{
+	"id": 15,
+	"image": "images/category/15.png",
+	"name": "Jeep",
+	"brand_icon": "images/brands-icon/15.png",
+	"brand_name": "BMW(60)",
+	"bodytype_img": "images/Body-type/15.png",
+	"bodytype_text": "Micro Van(0)"
+},{
+	"id": 16,
+	"image": "images/category/16.png",
+	"name": "Low Mileage Cars",
+	"brand_icon": "images/brands-icon/16.png",
+	"brand_name": "Prince(52)",
+	"bodytype_img": "images/Body-type/16.png",
+	"bodytype_text": "MPV(0)"
+},{
+	"id": 17,
+	"image": "images/category/17.png",
+	"name": "low Price Cars",
+	"brand_icon": "images/brands-icon/17.png",
+	"brand_name": "DFSK(51)",
+	"bodytype_img": "images/Body-type/17.png",
+	"bodytype_text": "Station Wagon(0)"
+},{
+	"id": 18,
+	"image": "images/category/18.png",
+    "name": "Old Cars",
+	"brand_icon": "images/brands-icon/18.png",
+	"brand_name": "Subaru(46)",
+	"bodytype_img": "images/Body-type/18.png",
+	"bodytype_text": "High Roof(0)"
+}]

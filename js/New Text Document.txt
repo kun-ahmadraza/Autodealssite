@@ -1,0 +1,22 @@
+<a href="" class="car-anchor ms-md-4"> 
+						<img class="mt-4" src="https://autodeals.pk/static/media/800cc-updated%20(1).31ea951dfedf6d01c8c1.png" height="50px" width="100px"/> 
+						<p class="ms-4">800 cc</p> 
+					</a> 
+					<a href="" class="car-anchor ms-md-5"> 
+						<img class="mt-4" src="https://autodeals.pk/static/media/1000-cc.1a854a8f16206c1f7c79.png" height="50px" width="100px"/> 
+						<p class="ms-4">1000 cc</p> 
+				 </a>
+				 <a href="" class="car-anchor  ms-md-5">
+						<img class="mt-4" src="https://autodeals.pk/static/media/1300-cc.653ff8fa8ee3894bed01.png" height="50px" width="100px"/> 
+						<p class="ms-4">1000 cc</p>
+					</a>
+					<a href="" class="car-anchor  ms-md-5" id="outc">
+						<img class="mt-4" src="https://autodeals.pk/static/media/automatic-car.6c930eff4d5aef0e654a.png" height="50px" width="100px"/>
+						<p class="ms-4">Automatic Cars</p>
+					</a> 
+					<a href="" class="car-anchor  ms-md-5">
+						<img class="mt-4" src="https://autodeals.pk/static/media/big-car.6f57d330726f29beae73.png" height="50px" width="100px"/>
+						<p class="ms-4">Big Cars</p>
+					</a>
+
+EXPLORE PRODUCTS CODE

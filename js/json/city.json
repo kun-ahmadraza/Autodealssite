@@ -1,0 +1,25 @@
+[{
+	"id": 1,
+	"city_text": "Lahore(3316)",
+	"city_img": "images/city/1.png"
+},{
+	"id": 1,
+	"city_text": "IslamAbad(1433)",
+	"city_img": "images/city/2.png"
+},{
+	"id": 1,
+	"city_text": "FaisalAbad(1370)",
+	"city_img": "images/city/3.png"
+},{
+	"id": 1,
+	"city_text": "Rawalpindi(840)",
+	"city_img": "images/city/3.png"
+},{
+	"id": 1,
+	"city_text": "Peshawar(204)",
+	"city_img": "images/city/5.png"
+},{
+	"id": 1,
+	"city_text": "SialkotI(190)",
+	"city_img": "images/city/6.png"
+}]

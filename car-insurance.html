@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Insurance</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Merriweather:ital,wght@1,700&family=Montserrat:wght@100&family=Nunito+Sans:wght@200&family=Oswald:wght@200;400;600&family=PT+Serif:ital@1&family=Playfair+Display:ital,wght@1,500&family=Poppins:ital,wght@0,700;1,800&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;500&family=Rubik:ital,wght@1,600&family=Ubuntu&family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
+	<link href="car-insurance.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="dekstop-header">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg ">
+				<a class="navbar-brand" href="#">
+					<img class="ms-md-5" src="https://autodeals.pk/static/media/logo.35afa53228637baeeb8e.png" style="width: auto; height: 60px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<ul class="main-nav d-flex ms-md-5">
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Used Cars
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:195px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Cars</h5>
+													<p style="font-size: 10px;">Search from over 60k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Cars For Sale</h5>
+													<p style="font-size: 10px;">View Used Featured Cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Cars</h5>
+													<p style="font-size: 10px;">Post a free ad and sell your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-file-text-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verify Japenese Auction Sheet</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:195px;border-left: 1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Bikes</h5>
+													<p style="font-size: 10px;">Search from over 30k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Bikes For Sale</h5>
+													<p style="font-size: 10px;">View Used Featured Cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr" >
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Bikes</h5>
+													<p style="font-size: 10px;">Post a free ad and sell your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr  pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-file-text-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verify Japenese Auction Sheet</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-car mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Makes</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311340545car%20brands%20icons-10.png" style="width: auto; height: 30px;">
+													Toyota
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311330924car%20brands%20icons-05.png" style="width: auto; height: 30px;">
+													Suzuki
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311379445car%20brands%20icons-01.png" style="width: auto; height: 30px;">
+													Honda
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667310950921car%20brands%20icons-04.png" style="width: auto; height: 30px;">
+													KIA
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311350665car%20brands%20icons-11.png" style="width: auto; height: 30px;">
+													Daihatsu
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311313383car%20brands%20icons-02.png" style="width: auto; height: 30px;">
+													Nissan
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1667311379445car%20brands%20icons-01.png" style="width: auto; height: 30px;">
+													Honda
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-map-marker mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Cities</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-01.6897ad5f3a08a935cc20.png" style="width: auto; height: 30px;">
+													Lahore
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-02.4a1bb5dfd5c7bbfe1d0a.png" style="width: auto; height: 30px;">
+													Islamabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-03.d0eed4fea7c53a045afa.png" style="width: auto; height: 30px;">
+													Karachi
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1ZsY5puFxCqLnL9JcHQZQalE6z6vgesmXETyd-vcAGqTG1C0hf8m6pAPA2BGroNJhmM&usqp=CAU" style="width: auto; height: 30px;">
+													Faisalabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-05.b4c6c565a841f1dea6ee.png" style="width: auto; height: 30px;">
+													Peshawar
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-06.9d96102ab6e19689ec23.png" style="width: auto; height: 30px;">
+													Sialkot
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-07.61554c8aa732934873ef.png" style="width: auto; height: 30px;">
+													Gujranwala
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									New Cars
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:195px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">New Cars</h5>
+													<p style="font-size: 10px;">Search New Cars</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Car Comparison</h5>
+													<p style="font-size: 10px;">Compare Car Differences</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-user-plus mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Car Dealer</h5>
+													<p style="font-size: 10px;">Search New Car Dealers</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Cars Price</h5>
+													<p style="font-size: 10px;">Search New Cars Price</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:195px;border-left: 1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<div class="ul-brdr">
+												<li class="d-flex ">
+													<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+													<a class="dropdown-item mt-md-3" href="#">
+														<h5 style="font-size:15px;">Search New Cars</h5>
+														<p style="font-size: 10px;">Search All Sorts Of New Cars</p>
+													</a>
+												</li>
+											</div>
+											<li class="d-flex ">
+												<i class="fa fa-user-plus mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Search New Dealers</h5>
+													<p style="font-size: 10px;">Search New Car Dealers</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-comments-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Car Reviews</h5>
+													<p style="font-size: 10px;">Read Car Reviews</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2" >
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell Your Cars</h5>
+													<p style="font-size: 10px;">Sell your car</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style" style="list-style-type: none;width: 195px;border-left:1px solid lightgrey;"> 
+										<div>
+											<li class="d-flex text-center">
+												<a class="dropdown-item d-flex mt-md-3" href="#">
+													<i class="fa fa-map-marker mt-1 me-2" aria-hidden="true"></i>
+													<h5>Popular Cities</h5>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex mt-md-2">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-01.6897ad5f3a08a935cc20.png" style="width: auto; height: 30px;">
+													Lahore
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-02.4a1bb5dfd5c7bbfe1d0a.png" style="width: auto; height: 30px;">
+													Islamabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-03.d0eed4fea7c53a045afa.png" style="width: auto; height: 30px;">
+													Karachi
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1ZsY5puFxCqLnL9JcHQZQalE6z6vgesmXETyd-vcAGqTG1C0hf8m6pAPA2BGroNJhmM&usqp=CAU" style="width: auto; height: 30px;">
+													Faisalabad
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-05.b4c6c565a841f1dea6ee.png" style="width: auto; height: 30px;">
+													Peshawar
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-06.9d96102ab6e19689ec23.png" style="width: auto; height: 30px;">
+													Sialkot
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item " href="#">
+													<img class="me-1" src="https://autodeals.pk/static/media/Cities%20icons-07.61554c8aa732934873ef.png" style="width: auto; height: 30px;">
+													Gujranwala
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Bikes
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:280px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Used Bikes</h5>
+													<p style="font-size: 10px;">Search from over 30k options</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Bikes</h5>
+													<p style="font-size: 10px;">Find Your Perfect Ride</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-star-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Featured Bikes</h5>
+													<p style="font-size: 10px;">View Featured Used Bikes</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Post a free Ad</h5>
+													<p style="font-size: 10px;">Sell Your Bikes Now</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+									<ul class="style col-4" style="list-style-type: none;width:280px;border-left:1px solid #ececec;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-cogs mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Bike Compare</h5>
+													<p style="font-size: 10px;">Compare Bike Difference's</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-tag mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">New Bike Prices</h5>
+													<p style="font-size: 10px;">Search New Bike Prices</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-comments-o mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Bike Reviews</h5>
+													<p style="font-size: 10px;">Read Bikes Reviews</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Parts
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Find Auto Parts</h5>
+													<p style="font-size: 10px;">Find New or Used Car & Bike Parts</p>
+												</a>
+											</li>
+										</div>
+									
+										<div class="ul-brdr" style="">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size: 13px;" aria-hidden="true"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">AutoDeals Shop</h5>
+													<p style="font-size: 10px;">Find the New Parts</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">AutoDeals Store</h5>
+													<p style="font-size: 10px;">Buy Car & Bikes Accessories From AD</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr pb-md-2">
+											<li class="d-flex ">
+												<i class="fa fa-search mt-4 ms-2" style="font-size:13px;"></i>
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size:15px;">Sell New & Used Parts</h5>
+													<p style="font-size: 10px;">Post a Free Ads & Sell it</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									More
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Import</h5>
+													<p style="font-size: 10px;">Calculate custom duty on imported cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Custom Duty Calculator</h5>
+													<p style="font-size: 10px;">Calculate custom duty on imported cars</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/car-finance-calculator.25d9e663f72a08710bad.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Finance Calculator</h5>
+													<p style="font-size: 10px;">Get your dream car on easy installments</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/used-car-calculate.247f36d6d6718f34e3b1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Used Price Calculator</h5>
+													<p style="font-size: 10px;">Used car price evaluation tool</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-insurance.7806c725bdbef06f38f1.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Insurance</h5>
+													<p style="font-size: 10px;">Get car insurance & secure your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-tracker.b91fb117a6842f7993fe.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Car Tracker</h5>
+													<p style="font-size: 10px;">Secure your car, get a tracker</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<img style="width: 30px; height: 30px; object-fit: contain;" class="mt-4 ms-md-2" src="https://autodeals.pk/static/media/vehile-tracker.b91fb117a6842f7993fe.png">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Fuel Prices</h5>
+													<p style="font-size: 10px;">Find out latest fuel prices in Pakistan</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="top-level-link dropdown">
+								<a class="mega-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="dropdown-toggle btn">
+									Blog
+									</span>
+								</a>
+								<div class="dropdown-menu drpdwn-brdr">
+									<ul class="style col-4" style="list-style-type: none;width:300px;"> 
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Auction Sheet</h5>
+													<p style="font-size: 10px;">Verification guid & explaination</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">AutoMotive News</h5>
+													<p style="font-size: 10px;">Latest news & updates</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Pakistan Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest News Pakistani Automotives</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">WorldWide Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest automotive news across the globe</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">WorldWide Automotive Industry</h5>
+													<p style="font-size: 10px;">Latest automotive news across the globe</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">Automotive Gadgets</h5>
+													<p style="font-size: 10px;">Find out automotive gadgets & accessories</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">How to?</h5>
+													<p style="font-size: 10px;">Know more about your car</p>
+												</a>
+											</li>
+										</div>
+										<div class="ul-brdr">
+											<li class="d-flex ">
+												<a class="dropdown-item mt-md-3" href="#">
+													<h5 style="font-size: 15px;">New Cars</h5>
+													<p style="font-size: 10px;">Find out newly launched cars in Pakistan</p>
+												</a>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link mt-2" style="color:#fff;" href="">Videos</a>
+							</li>
+							<li class="dropdown nav-item">
+								<a class="top-level-link">
+									<span  class="pt-2 pb-2 ps-3 pe-3 ms-sm-4 me-sm-5 mt-sm-2 btn nav-button dropdown-toggle">
+										Post fee add
+									</span>
+								</a>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</nav>
+		</div>
+    </div>
+	<div class="container-fluid">
+		<div class="row second-bar" style="">
+			<div class="text-white mt-2 ms-md-5 d-flex">
+				<a href="AR-carshop.html" class="text-white me-3 ms-md-4 text-decoration-none">Home</a>
+				<p>|</p>
+				<a href="car-import.html" class="text-white me-3 ms-3 text-decoration-none">Car Insurance</a>
+			</div>
+		</div>
+	</div>	
+	<div class="bg-pic">
+		<div class="container">
+			<div class="row">
+				<div class="head-card mb-4 col-lg-5 col-md-12">
+					<h3 class="font-weight-normal text-start mb-3">Car Insurance</h3>
+					<div class="row">
+						<div class="col-sm-6 pe-md-1 pricecalculator-web-view">
+							<div class="input-group">
+								<input type="text" class="form-control form-select btnn mb-2 bg-white" placeholder="Year" style="border-radius: 10px;padding: 10px;" />
+							</div>
+						</div>
+						<div class="col-sm-6 ps-md-1 ">
+							<div class="input-group">
+								<input type="text" class="form-control form-select btnn mb-2 bg-white" placeholder="Make" style="border-radius: 10px;padding: 10px;" />
+							</div>
+						</div>
+						<div class="col-sm-6 pe-md-1 pricecalculator-web-view">
+							<div class="input-group">
+								<input type="text" class="form-control form-select btnn mb-2 bg-white" placeholder="Model" style="border-radius: 10px;padding: 10px;" />
+							</div>
+						</div>
+						<div class="col-sm-6 ps-md-1">
+							<div class="input-group">
+								<input type="text" class="form-control form-select btnn mb-2 bg-white" placeholder="Version" style="border-radius: 10px;padding: 10px;" />
+							</div>
+						</div>
+					</div>
+					<div class="input-group">
+						<input type="text" class="form-control form-select btnn mb-2 bg-white" placeholder="Price" style="border-radius: 10px;padding: 10px;" />
+					</div>						
+					<button class="btn calculate-btn w-100 mt-2" ><i class="fa fa-search me-2" aria-hidden="true"></i>Search 35,600 Cars</button>
+					<div class="text-start my-4">
+						<a href="" class="text-dark">Reset filters</a>
+					</div>
+				</div>
+				<div class="price-banner col-lg-6">
+					<h3 class="">Car Insurance</h3>
+					<p class="">Hassle Free Car Insurance</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container why-choose">
+		<div class="d-flex justify-content-center">
+			<h2>Why Choose Autodeals</h2>
+		</div>
+		<div class="px-md-5 py-md-4 row">
+			<div class="col-md-6">
+				<div class="d-flex">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path>
+						<path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path>
+					</svg>
+					<div class="content">
+						<h3>Customer Service Representative</h3>
+						<p>Expert in handling auto insurance cases from partner banks</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="d-flex">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path>
+						<path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path>
+					</svg>
+					<div class="content">
+						<h3>Customer Service Representative</h3>
+						<p>Expert in handling auto insurance cases from partner banks</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="d-flex">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path>
+						<path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path>
+					</svg>
+					<div class="content">
+						<h3>Customer Service Representative</h3>
+						<p>Expert in handling auto insurance cases from partner banks</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="d-flex">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path>
+						<path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path>
+					</svg>
+					<div class="content">
+						<h3>Customer Service Representative</h3>
+						<p>Expert in handling auto insurance cases from partner banks</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="d-flex">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path>
+						<path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path>
+					</svg>
+					<div class="content">
+						<h3>Customer Service Representative</h3>
+						<p>Expert in handling auto insurance cases from partner banks</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="d-flex">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path>
+						<path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z"></path>
+					</svg>
+					<div class="content">
+						<h3>Customer Service Representative</h3>
+						<p>Expert in handling auto insurance cases from partner banks</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-5 insrnce-prtnr">
+		<div class="d-flex justify-content-center">
+			<h2>Our Insurance Partner</h2>
+		</div>
+		<div class="row mt-5">
+			<div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="car-insurance-img">
+					<img src="data:image/png;base64,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"/>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="car-insurance-img">
+					<img src="data:image/png;base64,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"/>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="car-insurance-img">
+					<img src="data:image/png;base64,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"/>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="car-insurance-img">
+					<img src="https://autodeals.pk/static/media/bank-al-habib.4a886cf43d29bbac351a.png"/>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="car-insurance-img">
+					<img src="https://autodeals.pk/static/media/faysal-bank.ee5c066a6e47df7350b9.png"/>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="car-insurance-img">
+					<img src="https://autodeals.pk/static/media/js-bank.7c0c9c1879c6f31a7fd0.png"/>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="car-insurance-img">
+					<img src="https://autodeals.pk/static/media/mcb.92f251d07a4996485336.png"/>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="car-insurance-img">
+					<img src="https://autodeals.pk/static/media/soneri.6f7a70039f19185adf24.png"/>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="car-insurance-img">
+					<img src="https://autodeals.pk/static/media/meezan.cff6058eb0c098f8a601.png"/>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="car-insurance-img">
+					<img src="https://autodeals.pk/static/media/ubl.1a37753181e5784fc54c.png"/>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="car-insurance-img">
+					<img src="data:image/png;base64,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"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container insrnce-steps mt-5">
+		<div class="text-center">
+			<h3>Car Insurance Steps</h3>
+		</div>
+		<div class="step-section mt-5">
+			<div class="d-flex justify-content-between">
+				<div class="circle">
+					<p class="align-self-center">1</p>
+				</div>
+				<div class="circle">
+					<p class="align-self-center">2</p>
+				</div>
+				<div class="circle">
+					<p class="align-self-center">3</p>
+				</div>
+				<div class="circle">
+					<p class="align-self-center">4</p>
+				</div>
+				<div class="circle">
+					<p class="align-self-center">5</p>
+				</div>
+			</div>
+			<div class="line-section">
+				<div class="line">
+				</div>
+			</div>
+			<div class="content-area">
+				<p class="content-title">Fill out basic information</p>
+				<p class="content-title">Get a call from Autodeals team for verification</p>
+				<p class="content-title">Choose plan from various option</p>
+				<p class="content-title">Get a call from partner company for third party car survey</p>
+				<p class="content-title">Get insurance coverage after approval and drive with peace of mind</p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-5">
+		<div class="d-flex justify-content-center faqs-heading mb-4">
+			<h2>Frequently Ask Questions (FAQs)</h2>
+		</div>
+		<div class="FAQS">
+			<div class="row">
+				<div class="col-sm-6 mb-4">
+					 <button type="button" id="toggler1" class="w-100 d-flex justify-content-between ml-md-0 ml-n4 btn btnn btn-">
+						<div class="px-3">
+							<h5>Financing Your Dream Car Has Never Been Easier</h5>
+						</div>
+						<div class="px-3">
+							<i class="fa fa-times"></i>
+						</div>
+					</button>
+					<div class="border-0 px-4 py-2 ms-md-0 ms-n4 card">
+						<p class="text-muted">
+							Calculate Installments
+							<br>
+							Select Your Desired Plan
+							<br>
+							Apply Online
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6 mb-4">
+					 <button type="button" id="toggler1" class="w-100 d-flex justify-content-between ml-md-0 ml-n4 btn btnn btn-">
+						<div class="px-3">
+							<h5>Islamic Banking Car Loan / Auto Financing:</h5>
+						</div>
+						<div class="px-3">
+							<i class="fa fa-times"></i>
+						</div>
+					</button>
+					<div class="border-0 px-4 py-2 ms-md-0 ms-n4 card">
+						<p class="text-muted">
+							Islamic Banking Auto Financing facility is based on the Sharia compliance for leasing vehicles is different from normal Auto 
+							financing. There are indeed multiple terminologies for a specific process and in this case, it is termed as Murabaha or at some 
+							places, Car Ijarah.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6 mb-4">
+					 <button type="button" id="toggler1" class="w-100 d-flex justify-content-between ml-md-0 ml-n4 btn btnn btn-">
+						<div class="px-3">
+							<h5>EMI Calculator:</h5>
+						</div>
+						<div class="px-3">
+							<i class="fa fa-plus"></i>
+						</div>
+					</button>
+					<div class="border-0 px-4 py-2 ms-md-0 ms-n4 card">
+						<p class="text-muted">
+							
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6 mb-4">
+					 <button type="button" id="toggler1" class="w-100 d-flex justify-content-between ml-md-0 ml-n4 btn btnn btn-">
+						<div class="px-3">
+							<h5>Bank Alfalah, HBL & Meezan Bank’s Car Loan Calculator:</h5>
+						</div>
+						<div class="px-3">
+							<i class="fa fa-plus"></i>
+						</div>
+					</button>
+					<div class="border-0 px-4 py-2 ms-md-0 ms-n4 card">
+						<p class="text-muted">
+							
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6 mb-4">
+					 <button type="button" id="toggler1" class="w-100 d-flex justify-content-between ml-md-0 ml-n4 btn btnn btn-">
+						<div class="px-3">
+							<h5>AutoDeals’ Car Loan Calculator:</h5>
+						</div>
+						<div class="px-3">
+							<i class="fa fa-plus"></i>
+						</div>
+					</button>
+					<div class="border-0 px-4 py-2 ms-md-0 ms-n4 card">
+						<p class="text-muted">
+							
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<div class="container-fluid mt-5" style="background-color: rgb(245, 245, 245);">
+		<div class="row pb-md-5 mt-md-5 ms-md-1" style="border-bottom: 2px solid lightgrey;font-size: 14px;">
+			<div class="col-md-2 col-4 ms-md-5 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Cars By Make
+				</h2>
+				<div class="">
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary fw-100">Toyota Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Suzuki Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Honda Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">KIA Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Dihatsu Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Mercedes Cars For Sale.</a>
+					</li>
+					
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Hundyai Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Nissan Cars For Sale.</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">BMW Cars For Sale.</a>
+					</li>
+				</ul>	
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4 footer-content">
+						<h2 class="mb-md-3 fw-bolder">
+							Cars By Bodytype
+						</h2>
+						<ul class="mb-0 list-unstyled">
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Hetchback</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Sedan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">SUV</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">MInivan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Van</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Cross Over</a>
+							</li>
+							
+							<li>
+								<a href="" class="text-decoration-none text-secondary">Double Cabin</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-4 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Cars By City
+				</h2>
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Lahore</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In IslamAbad</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Karachi</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Rawalpindi</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In FaislAbad</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Gujranwala</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Sialkot</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Multan</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Cars In Peshawar</a>
+					</li>
+				</ul>	
+				<div class="row">
+					<div class="col-md-12 mt-4 mb-0 footer-content">
+						<h2 class="mb-md-3 fw-bolder">
+							Our Business Partners
+						</h2>
+						<ul class=" list-unstyled">
+							<li>
+								<a href="" class="text-decoration-none text-secondary">AutoDeals Japan</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">My Auction Sheet</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">List Network</a>
+							</li>
+							<li>
+								<a href="" class="text-decoration-none text-secondary">City Book</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-4 mt-4 footer-content">
+				<h2 class="mb-md-3 fw-bolder">
+					Explore AutoDeals
+				</h2>
+				<ul class="mb-0 list-unstyled">
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Used Cars</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Used Bikes</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">New Cars</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">New Bikes</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Auto Parts</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sell Your Car</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sell Your Bike</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Blog</a>
+					</li>
+					<li>
+						<a href="" class="text-decoration-none text-secondary">Sitemap</a>
+					</li>
+				</ul>
+					<div class="row">
+						<div class="col-md-12 mt-4 footer-content">
+							<h2 class="mb-md-3 fw-bolder">
+								About Company
+							</h2>
+							<ul class="mb-0 list-unstyled">
+								<li>
+									<a href="" class="text-decoration-none text-secondary">About AutoDeals</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Our Prodicts</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Advertise With Us</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">How To Pay</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Shipment & Return Policy</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Return & Exchange</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Refund Policy</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Facs</a>
+								</li>
+								<li>
+									<a href="" class="text-decoration-none text-secondary">Contact-Us</a>
+								</li>
+							</ul>	
+						</div>
+					</div>
+			</div>
+			<div class="col-md-5 mt-3 ms-md-5 footer-content">
+				<div class="newsletter pb-0">
+					<h4 class=" mb-3">Newsletter</h4>
+					<div class="d-flex newsletter-input">
+						<input type="text" class="form-control btnn" placeholder="name@email.com" ></input>
+						<button class="input-button btn btnn ms-2" type="button">Suscribe</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4 footer-content">
+						<h5 class="mb-md-3">
+							Our Soccail Media
+						</h5>
+						<div class="row">
+							<div class="d-flex">
+								<a href="" class="text-decoration-none"><i class="fa fa-facebook footer-icon" aria-hidden="true"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-twitter footer-icon ms-2" aria-hidden="true"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-pinterest footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-instagram footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-youtube-play footer-icon ms-2" style="color: rgb(230, 0, 35);"></i></a>
+								<a href="" class="text-decoration-none"><i class="fa fa-linkedin footer-icon ms-2" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-4">
+						<img src="https://autodeals.pk/static/media/google-play-badge.0168dd766b85b2f2e845.png" style="height: 43.5px;cursor: pointer;"/>
+						<img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Download_on_Apple_TV_Badge_SI_RGB_blk.svg/2560px-Download_on_Apple_TV_Badge_SI_RGB_blk.svg.png" style="height: 43.5px;cursor: pointer;"/>
+						<img src="https://autodeals.pk/static/media/huawei.f823d81072a99fd1918e.png" style="height: 43.5px;cursor: pointer;"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 d-flex mt-3">
+						<h6 class="fw-bold">Get In Touch :</h6>
+						<i class="fa fa-envelope-o ms-1 mt-1" style="color:#f1833b"></i>
+						<a href="" class="text-secondary ms-1">Support@AR-CarShop.PK</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid mb-5 mb-md-0" style="background-color: rgb(245, 245, 245);">
+		<div class="mb-5 mb-md-0">
+			<div class="row">
+				<div class="col-md-4">
+					<button class="btn d-flex flex-column ms-md-5">
+						<div class="text-dark text-left ">
+							<h6>Developed By:</h6>
+							<img src="https://autodeals.pk/static/media/wellcreator.3f2a6fc7f75eb582cbbd.png" style="width: auto;height: 40px;"/>
+						</div>
+					</button>
+				</div>
+				<div class="col-md-4 mt-4 text-secondary">
+					<p>Copyright © 2003 - 2023 AutoDeals (Pvt) Ltd.</p>
+				</div>
+				<div class="col-md-4 justify-content-end term-service">
+					<a href="" class="text-dark text-decoration-none me-1">Term Of Service</a>
+					<span>|</span>
+					<a class="text-dark text-decoration-none ms-1">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

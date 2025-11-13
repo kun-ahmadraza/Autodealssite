@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouTube Clone | First Exercise</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link href="exmple.css" rel="stylesheet" />
+</head>
+<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg d-block">
+				<div class="row">
+					<div class="col col-sm-2 d-inline">
+						<button class="btn ms-1 mt-2 d-md-inline d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+							<i class="fa fa-bars  " style="font-size:20px;"></i>
+						</button>	
+						<a class="navbar-brand ms-1 d-inline d-md-inline" href="https://youtube.com/"><img class="mt-2 " height="20px" width="90px" src="images/ytb.jpeg" /><sup class="sup">PK</sup></a>
+					</div>
+					<div class="col col-sm-6 d-md-inline d-none mt-2"  id="search">
+						<form class=" d-md-inline d-none" >
+							<div class="input-group ">
+								<input type="" class="form-control brdr ms-5" id="search" placeholder="Search">
+								<button class="btn btn-light brdr" type="submit" id=""><i class="fa fa-search"></i></button> 
+							</div>
+						</form>
+					</div>
+					<div class="col col-sm-1">
+						<button class="btn btn-light phn d-md-inline d-none mt-2" type="submit"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+					</div>
+					<div class="col col-sm-2 ms-lg-5 mt-2">
+						<i class="fa fa-search me-1 d-inline d-md-none src"></i>
+						<i class="fa fa-user-circle-o mt-1 me-2 src d-inline d-md-none" style="font-size:20px;"></i>
+						<i class="fa fa-ellipsis-v d-inline d-md-none src" aria-hidden="true"></i>
+						<button class="btn ms-lg-5 d-md-inline d-none" type="submit"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+						<a class="sign d-md-inline d-none" href="#" style="text-decoration: none;"><i class="fa fa-user-circle-o me-2 mt-3"></i>sign in</a>
+					</div>
+			</nav>
+		</div>
+		<div class="row">
+		<div class="col-sm-1 d-sm-inline d-none">
+			<nav class ="navbar ul navbar-header">
+				<ul class ="nav navbar-nav sidebar">
+					<button class="btn hme ms-3">
+						<li class="nav-item icn">
+							<a class="nav-link" href="#"><i class="fa fa-home sidebar" aria-hidden="true"></i></a>
+						</li>
+						<li class ="nav-item">
+							<a class ="nav-link sidebar" href="#"> Home </a>
+						</li>
+					</button>
+					<button class="btn hme ms-3">
+						<li class="nav-item icn mt-3">
+							<a class="nav-link" href="#"><i class="fa fa-youtube sidebar" aria-hidden="true"></i></a>
+						</li>
+						<li class ="nav-item">
+							<a class ="nav-link sidebar" href="#"> Shorts </a>
+						</li>
+					</button>
+					<button class="btn hme ms-3">
+						<li class="nav-item icn mt-3">
+							<a class="nav-link" href="#"><i class="fa fa-play-circle sidebar" aria-hidden="true"></i></a>
+						</li>
+						<li class ="nav-item">
+							<a class ="nav-link sidebar" href="#">Play </a>
+						</li>
+					</button>
+					<button class="btn hme ms-3">
+						<li class="nav-item icn mt-3">
+							<a class="nav-link" href="#"><i class="fa fa-phone sidebar" aria-hidden="true"></i></a>
+						</li>
+						<li class ="nav-item">
+							<a class ="nav-link sidebar" href="#">Contact </a>
+						</li>
+					</button>
+					<button class="btn hme ms-3">
+						<li class="nav-item icn">
+							<a class="nav-link" href="#"><i class="fa fa-history sidebar" aria-hidden="true"></i></a>
+						</li>
+					</button>
+					<button class="btn hme ms-3">
+						<li class ="nav-item">
+							<a class ="nav-link sidebar" href="#"> History</a>
+						</li>
+					</button>
+				</ul>	
+			</nav>
+		</div>
+		<div class="col-sm-11" id="myCarousel" class="carousel slide" data-ride="carousel">
+				<button class="btn btn-light tbtn active" id="myCarousel">All</button>
+				<button class="btn btn-light tbtn" id="myCarousel">History</button>
+				<button class="btn btn-light tbtn" id="myCarousel">Music</button>
+				<button class="btn btn-light tbtn d-md-inline d-none" id="myCarousel">Pakistani dramas</button>
+				<button class="btn btn-light tbtn" id="myCarousel">News</button>
+				<button class="btn btn-light  tbtn" id="myCarousel">CSS</button>
+				<button class="btn btn-light tbtn d-md-inline d-none" id="myCarousel">HTML</button>
+				<button class="btn btn-light tbtn d-md-inline d-none" id="myCarousel">Religious recitation</button>
+				<button class="btn btn-light tbtn d-md-inline d-none" id="myCarousel">Lollywood</button>
+				<button class="btn btn-light tbtn d-md-inline d-none" id="myCarousel">Comedy</button>
+				<button class="btn btn-light tbtn d-md-inline d-none" id="myCarousel">Thirilers</button>
+				<button class="btn btn-light tbtn d-md-inline d-none" id="myCarousel">Live</button>
+			<div class="row mt-5  me-2" id="">
+				<div class="col-md">
+					<img src="https://i.ytimg.com/vi/65wFL9gLug0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBzHbZC5-v8W4t929FyJ9CrJdo3cw" style="max-width: 100%; border-radius: 10px;" />
+					<div class="row vadion_caption">
+						<div class="col-3 pt-3">
+							<img class="" src="https://yt3.ggpht.com/1MYYxb4pA_zWiaFmYqKe0GQAJTbmzbznyPnKqQyDJXotUaKh_Gmq8y1qq-ylDFrgt2jBcm8Tqw=s68-c-k-c0x00ffffff-no-rj" style="max-width: 50px;" />
+						</div>
+						<div class="col-9 pt-3">
+							<h5><a style="text-decoration:none;color:black;font-size:15px" href="https://www.youtube.com/watch?v=65wFL9gLug0">Kala Doriya|Episode 17[Eng Subtitles]-13 january2023</a></h5>
+							<p class="text-secondary" style="font-size:10px">Hum Tv<br>4.6m views 1 day ago</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<img src="https://i.ytimg.com/vi/G_dvd1iqfv8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC7UczZ5iogem5RhUgWKYmxITRZ7A" style="max-width: 100%; border-radius: 10px;" />
+					<div class="row vadion_caption">
+						<div class="col-3 pt-3">
+							<img class="yt" src="https://yt3.ggpht.com/4aqzRntMLKfm9qcheGG6h4opBdelJFjsP8dZa5TUQMVi8654Z-Ly9Ed7voC6h7N1rf1n0uYs=s68-c-k-c0x00ffffff-no-rj" style="max-width: 50px;" />
+						</div>
+						<div class="col-9 pt-3">
+							<h5><a style="text-decoration:none;color:black;font-size:18px" href="https://www.youtube.com/watch?v=G_dvd1iqfv8">Kurulus Osman Season 2- Episode 127</a></h5>
+							<p class="text-secondary" style="font-size:12px">Kurulus Osman Urdu By Atv<br>6.6m views</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<img src="https://i.ytimg.com/vi/TaZU4QF5EfQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAn5nWOk8cIdWaWZ89KYF2wfg8kDA" style="max-width: 100%; border-radius: 10px;" />
+					<div class="row vadion_caption">
+						<div class="col-3 pt-3 ">
+							<img class="yt" src="images/download.jpg"/>
+						</div>
+						<div class="col-9 pt-3">
+							<h5><a style="text-decoration:none;color:black;font-size:18px" href="https://www.youtube.com/watch?v=ePoY-f0Ll8s">Kuch Ankahi Episode1(Eng Subtitles)</a></h5>
+							<p class="text-secondary" style="font-size:12px">ATY DIGITAL HD<br>6.1m views . 6days ago</p>
+						
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<img src="https://i.ytimg.com/vi/GMz2ufRTVkc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAAeDN9uEZEvuuxPvBpcCMvqHbqzw" style="max-width: 100%; border-radius: 10px;" />
+					<div class="row vadion_caption">
+						<div class="col-3 pt-3">
+							<img class="yt" src="https://yt3.ggpht.com/ytc/AMLnZu-vFWl9yb0kaHQqEqVqCbv-Sqdga325EW18LHrs7A=s68-c-k-c0x00ffffff-no-rj" style="max-width: 50px;" />
+						</div>
+						<div class="col-9 pt-3">
+							<h5><a style="text-decoration:none;color:black;font-size:15px" href="https://www.youtube.com/watch?v=GMz2ufRTVkc">How to make responsive nevigation bar</a></h5>
+							<p class="text-secondary" style="font-size:12px">Heavy Coding<br>4.7k views . 1year ago</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5 me-2">
+				<div class="col-md">
+					<img src="https://i.ytimg.com/vi/RSxiEkgs_Q8/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAVd4mdNLo2HutbpUiLQuXm0yifEQ" style="max-width: 100%; border-radius: 10px;" />
+					<div class="row vadion_caption">
+						<div class="col-3 pt-3">
+							<img class="yt" src="images/wep.jpeg" style="max-width: 45px;" />
+						</div>
+						<div class="col-9 pt-3">
+							<h5><a style="text-decoration:none;color:black;font-size:15px" href="ytvideo.html">Yariyan OST Song Lyrics | Ahmad Editx</a></h5>
+							<p class="text-secondary" style="font-size:10px">Ahmad Editx<br>4.6m views 2weeks ago</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<img src="https://i.ytimg.com/vi/rEO6bLfwruo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC1AAViXIqdr2Mu83mH2CLjjcexTQ" style="max-width: 100%; border-radius: 10px;" />
+					<div class="row vadion_caption">
+						<div class="col-3 pt-3">
+							<img class="yt" src="https://yt3.ggpht.com/iZB5BAdhP2sVtm05oYWPokLmUJ6fiEjO6eXXWpbHjB-yeN8DrA1WfKkvUQP6Cj_EQYWEo4ot=s68-c-k-c0x00ffffff-no-rj" style="max-width: 50px;" />
+						</div>
+						<div class="col-9 pt-3">
+							<h5><a style="text-decoration:none;color:black;font-size:15px" href="https://www.youtube.com/watch?v=G_dvd1iqfv8">Mujy Pyar Hua Tha Complete Ost by Khaifi...</a></h5>
+							<p class="text-secondary" style="font-size:12px">ARY Digital HD<br>5.6m views 2weeks ago</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<img src="https://i.ytimg.com/vi/_de6NuFIjEk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDtUvy1x5Wctj4Y2ca1iugGgsCDmw" style="max-width: 100%; border-radius: 10px;" />
+					<div class="row vadion_caption">
+						<div class="col-3 pt-3 ">
+							<img class="yt" src="https://yt3.ggpht.com/cM0aUbxqvOMYmw-rSB_fq6k96vD9TNq2ZaH0eJJtEuVKrJv6qO7JLvhkYhJAPm1FSAh0ReicTg=s68-c-k-c0x00ffffff-no-rj"/>
+						</div>
+						<div class="col-9 pt-3">
+							<h5><a style="text-decoration:none;color:black;font-size:15px" href="https://www.youtube.com/watch?v=ePoY-f0Ll8s">HANSA MANA HAI With Tabish Hashmi|Haris Rauf...</a></h5>
+							<p class="text-secondary" style="font-size:12px">HANSNA MANA HAI<br>2M views . 8days ago</p>
+						
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<img src="https://i.ytimg.com/vi/96L8HvKDzFc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoj3DYsJnSwcz6-PWOWkR1aMzKGQ" style="max-width: 100%; border-radius: 10px;" />
+					<div class="row vadion_caption">
+						<div class="col-sm-3 pt-3">
+							<img class="yt" src="https://yt3.ggpht.com/F7hQ4ZUMZh4Ibi3-XRNn4kkX9VoMuMrr5UM9urVT3wolBhmYsB_RBhIJUoGuPv-tqombYaH2dQ=s68-c-k-c0x00ffffff-no-rj" style="max-width: 50px;" />
+						</div>
+						<div class="col-sm-9 pt-3">
+							<h5><a style="text-decoration:none;color:black;font-size:15px" href="https://www.youtube.com/watch?v=GMz2ufRTVkc">Mother-Son duo Where one is animator and other is so...</a></h5>
+							<p class="text-secondary" style="font-size:12px">BBC News<br>198k views . 5days ago</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas offcanvas-start cns" id="sidebar" tabindex="-1">
+		<div class="offcanvas-header">
+			<button type="button" class="bars " data-bs-dismiss="offcanvas">
+				<i class="fa fa-bars " style="font-size:20px;"></i>
+			</button>
+			<h1 class="offcanvas-title">
+				<img class="img heading" src="https://download.logo.wine/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.png" />
+				<h2 class="ythd">YouTube<sup><sup class="fnt">PK</sup></sup></h2>	
+			</h1>
+    
+		</div>
+	<div class="offcanvas offcanvas-start cns" id="sidebar" tabindex="-1">
+		<div class="offcanvas-header">
+			<button type="button" class="bars " data-bs-dismiss="offcanvas">
+				<i class="fa fa-bars " style="font-size:20px;"></i>
+			</button>
+			<h1 class="offcanvas-title">
+				<img class="img heading" src="https://download.logo.wine/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.png" />
+				<h2 class="ythd">YouTube<sup><sup class="fnt">PK</sup></sup></h2>	
+			</h1>
+    
+		</div>
+	<div class="offcanvas-body" style="margin-top:-45px;">
+			<button class="nvicn"><i class="fa fa-home me-4" style="font-size:20px;"></i> Home
+			</button>
+			<br>
+		   <button class="nvicn"><i class="fa fa-youtube-play me-4 mt-4" style="font-size:20px;"></i> Shorts
+			</button>
+			<br>
+		   <button class="nvicn"><i class="fa fa-phone me-4 mt-4" style="font-size:20px;"></i> Contact
+			</button>
+			<hr>
+			<button class="nvicn"><i class="fa fa-book me-4 mt-4" style="font-size:20px;"></i> Library
+			</button>
+			<button class="nvicn"><i class="fa fa-history me-4 mt-4" style="font-size:20px;"></i> History
+			</button>
+			<hr>
+			<p class="ms-2" style="font-size:14px;">Sign in to like videos,<br>Comment and Subscribe.</p>
+			<a class="sign mt-1 ms-2" href="#"style="text-decoration: none;"><i class="fa fa-user-circle-o me-2 mt-3"></i>sign in</a>
+			<hr>
+			<button class="nvicn"><i class="fa fa-free-code-camp me-4 mt-2" style="font-size:20px;"></i> Trending
+			</button>
+			<button class="nvicn"><i class="fa fa-music me-4 mt-4" style="font-size:20px;"></i> Music
+			</button>
+			<button class="nvicn"><i class="fa fa-gamepad me-4 mt-4" style="font-size:20px;"></i> Gaming
+			</button>
+	</div>
+	</div>
+	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</nav>
+</body>
+</html>

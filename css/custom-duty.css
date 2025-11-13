@@ -1,0 +1,274 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+nav.navbar{
+	padding:0px;
+}
+a.navbar-brand{
+	padding: 2px 0px;
+}
+.dekstop-header{
+	background-color: rgba(2, 48, 71, 0.93);
+}
+.main-nav{
+	font-size: 16px;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0;
+}
+.btnn:focus,.btnn:active {
+   border: 1px solid grey !important;
+   box-shadow: none;
+}
+.mega-menu{
+	text-decoration: none;
+}
+.mega-menu span{
+	color: white;
+	height: 100%;
+    padding: 19px 25px;
+    border-radius: 0;
+}
+.mega-menu span:hover{
+	background-color: #fff;
+	color: rgba(2, 48, 71, 0.93);
+}
+.nav-button{
+	font-size: 16px;
+    color: #fff;
+    background-color: #f68300;
+    border-radius: 10px;
+}
+.dropdown-menu.show{
+	display: flex;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.drpdwn-brdr{
+	border: 1px solid transparent;
+    box-shadow: 1px 1px 4px 4px rgb(0 0 0 / 10%);
+	border-bottom: 6px solid #f68300;
+	border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.drpdwn-brdr ul:hover{
+	
+}
+.drpdwn-brdr a{
+	background-color: #fff;
+	color: #111;
+	transition: 1s;
+}
+.drpdwn-brdr a:hover{
+	color: #f68300;
+	background-color: #fff;
+}
+.ul-brdr{
+	border-bottom: 1px solid lightgrey;
+}
+.dropdown:hover .dropdown-menu{display:flex;}
+.second-bar{
+    background-color: rgba(2, 48, 71, 0.93);
+    border-top: 1px solid hsla(0,0%,100%,.15);
+    font-size: 15px;
+    font-weight: 400;
+}
+.bg-pic {
+    background: linear-gradient(rgba(63,76,82,.23),rgba(2,48,71,.929)),url("https://autodeals.pk/static/media/banner.a676f093b6e8463c1e96.png");
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 0;
+    height: 330px;
+}
+.head-card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(204, 204, 204, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
+    margin-top: 71px;
+    padding: 20px 20px 10px;
+	margin-left: 10px;
+    text-align: center;
+	width: 470px;
+}
+.car-loan-banner {
+    margin-top: 120px;
+	margin-left: 30px
+}
+.car-loan-banner h3 {
+    color: #fff;
+    font-size: 41px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.car-loan-banner p {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.calculate-btn{
+	color: #fff;
+    background: #f68300;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.calculate-btn:hover{
+	background-color: rgba(2, 48, 71, 0.93);
+	color: #fff;
+}
+.clearnce-btn{
+	border: 1px solid #fff;
+    border-radius: 10px;
+    background: #f68300;
+    color: #fff;
+    padding: 16px 42px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.clearnce-btn:hover{
+	color: #fff;
+}
+.first-section {
+    margin-top: 150px;
+}
+.first-section .questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 70px;
+}
+.questions h3 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.questions p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-top: 5px;
+}
+.border-right {
+    border-right: 1px solid #dee2e6!important;
+}
+.gift-scheme {
+    padding: 20px 0;
+}
+.gift-scheme h4 {
+    font-size: 23px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.gift-scheme p {
+    color: #789;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0px 0;
+}
+.gift-scheme svg{
+	color: #f68300;
+}
+.submit-btn{
+	background: #f68300;
+    color: #fff;
+    padding: 8px 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.submit-btn:hover{
+	color: #fff;
+}
+.days-color {
+    color: #f68f1f;
+    font-weight: 700;
+}
+.faqs-heading{
+	color: #f68300;
+    font-weight: 700;
+}
+.FAQs button {
+    border-radius: 0;
+    padding: 10px;
+}
+.FAQs button h5 {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+}
+.seocrumbs a {
+    color: #6c6c6c!important;
+    font-size: 12px;
+	font-weight: 500;
+	margin-bottom: 0 !important;
+	text-decoration: none;
+}
+.seocrumbs a:hover{
+	border-bottom: 1px solid #6c6c6c;
+}  
+.footer-content h2{
+	color: black;
+	font-size: 19px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.newsletter-input input{
+    border: 1px solid #f1833b;
+    border-radius: 8px;
+    padding: 15px 15px;
+    width: 278px;
+}
+.input-button{
+	color: #fff;
+    background: #f68300;
+    padding: 0px 26px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+.footer-icon{
+	border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 27%) 0px 2px 2px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+}
+.footer-icon{
+	border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 27%) 0px 2px 2px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+}
+.term-service {
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+}
+.submit-btn{
+	background: #f68300;
+    color: #fff;
+    padding: 8px 38px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+.submit-btn:hover{
+	color: #fff;
+	background-color: rgba(2, 48, 71, 0.93);
+}
+.cancel-btn{
+	background: #900C3F;
+    color: #fff;
+    padding: 8px 38px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+.cancel-btn:hover{
+	color: #fff;
+	background-color: #C70039;
+}

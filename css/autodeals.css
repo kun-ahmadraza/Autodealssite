@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-color{
+    background-color: #143f54;
+}
+#img{
+    height: 50px;
+    padding-left: 40px;
+}

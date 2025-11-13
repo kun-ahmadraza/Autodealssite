@@ -1,0 +1,41 @@
+[{
+	"id": 1,
+	"image": "images/explore_products/1.png",
+	"card_text": "Car <br> Import",
+	"link": "car-import.html"
+},{
+	"id": 2,
+	"image": "images/explore_products/2.png",
+	"card_text": "Custom Duty <br> Calculator",
+	"link": "custom-duty.html"
+},{
+	"id": 3,
+	"image": "images/explore_products/3.png",
+	"card_text": "Car Finance <br> Calculator",
+	"link": "car-finance.html"
+},{
+	"id": 4,
+	"image": "images/explore_products/4.png",
+	"card_text": "Used Car Price <br> Calculator",
+	"link": "price-in-pakistan.html"
+},{
+	"id": 5,
+	"image": "images/explore_products/5.png",
+	"card_text": "Auction Sheet <br> Verification",
+	"link": "Auction-sheet-verification.html"
+},{
+	"id": 6,
+	"image": "images/explore_products/6.png",
+	"card_text": "Vehicle <br> Insurance",
+	"link": "car-insurance.html"
+},{
+	"id": 7,
+	"image": "images/explore_products/7.png",
+	"card_text": "Vehicle <br> Tracker",
+	"link": "car-tracker.html"
+},{
+	"id": 8,
+	"image": "images/explore_products/8.png",
+	"card_text": "Car <br> Review",
+	"link": ""
+}]

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>My own profile website.</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Merriweather:ital,wght@1,700&family=Montserrat:wght@100&family=Nunito+Sans:wght@200&family=Oswald:wght@400;600&family=PT+Serif:ital@1&family=Playfair+Display:ital,wght@1,500&family=Poppins:ital,wght@0,700;1,800&family=Roboto+Condensed:ital@1&family=Roboto:wght@100;300;500&family=Rubik:ital,wght@1,600&family=Ubuntu&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+	<link href="autodeals.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="dekstop-header">
+		<div class="container-fluid">
+			<nav class="py-0 navbar navbar-expand-md navbar-light">
+				<a href="" class="navbar-brand">
+					<img loading="lazy" src="https://www.freepnglogos.com/uploads/zent-logo-png-car-22.png" style="width: auto; height: 80px;" alt="logo"/>
+				</a>
+				<button aria-label="Toggle navigation" class="navbar-toggler" type="button">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse">
+					<ul class="ms-auto navbar-nav">
+						<ul class="main-nav d-flex">
+							<li class="top-level-link">
+								<a class="mega-menu dropdown " href="">
+									<span class="pt-4 pb-4 ps-4 pe-4 btn dropdown-toggle" >
+										Used Cars
+									</span>
+								</a>
+							</li>
+							<li class="top-level-link">
+								<a class="mega-menu dropdown" href="">
+									<span  class="pt-4 pb-4 ps-4 pe-4 btn dropdown-toggle">
+										New Cars
+									</span>
+								</a>
+								<li class="top-level-link">
+								<a class="mega-menu dropdown" href="">
+									<span  class="pt-4 pb-4 ps-4 pe-4 btn dropdown-toggle">
+										Bike
+									</span>
+								</a>
+							</li>
+							<li class="top-level-link">
+								<a class="mega-menu dropdown" href="">
+									<span  class="pt-4 pb-4 ps-4 pe-4 btn dropdown-toggle">
+										Parts
+									</span>
+								</a>
+							</li>
+							<li class="top-level-link">
+								<a class="mega-menu dropdown" href="">
+									<span  class="pt-4 pb-4 ps-4 pe-4 btn dropdown-toggle">
+										Blog
+									</span>
+								</a>
+							</li>
+						</ul>
+						<li class="nav-item">
+							<a class="nav-link mt-3" style="color:#fff;" href="">Videos</a>
+						</li>
+						<li class="dropdown nav-item">
+							<a class="top-level-link">
+								<span style="font-size: 16px;color:#fff;background-color:orange;" class="pt-2 pb-2 ps-3 pe-3 ms-sm-5 me-sm-5 mt-sm-3 btn dropdown-toggle">
+									Post fee add
+								</span>
+							</a>
+						</li>
+					</ul>
+			</nav>
+				</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="homeimage">
+			<div class="jumbotron">
+				<div class="container">
+					<div class="row">
+						<div class="col-5 card d-flex flex-column main-card" style="max-width:441px;">
+							<ul class="nav" >
+								<li class="nav-item">
+									<a class="tabsa nav-link" style="border: 1px solid grey;" href=""><i class="fa fa-car me-1" aria-hidden="true"></i>Cars</a>
+								</li>
+								<li class="nav-item">
+									<a class="tabs nav-link" style="border: 1px solid grey;" href=""><i class="fa fa-motorcycle me-1" aria-hidden="true"></i>Bikes</a>
+								</li>
+								<li class="nav-item">
+									<a class="tabs nav-link" style="border: 1px solid grey;" href=""><i class="fa fa-magnet me-1" aria-hidden="true"></i>Parts</a>
+								</li>
+								<li class="nav-item">
+									<a class="tabs nav-link" style="border: 1px solid grey;" href=""><i class="fa fa-file-text me-1" aria-hidden="true"></i>Auction Sheet</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="d-flex justify-content-center mt-4">
+									<h3>Find Your Perfect Cars</h3>
+								</div>
+								<div class="input-group search-inputs ms-3" style="max-width:380px;">
+									<div class="input-group mb-3 mt-2">
+										<input type="search" class="form-control rounded " placeholder="Type Search Keyword" aria-label="Search" aria-describedby="search-addon" /></div>
+									<div class="input-group mb-3">
+										<input type="search" class="form-control rounded " placeholder="All cities" aria-label="Search" aria-describedby="search-addon" />
+									</div>
+									<div class="input-group mb-3">
+										<input type="search" class="form-control rounded " placeholder="Min Price" aria-label="Search" aria-describedby="search-addon" />
+									</div>
+									<div class="input-group mb-3">
+										<input type="search" class="form-control rounded " placeholder="Max Price" aria-label="Search" aria-describedby="search-addon" />
+									</div>
+										<button type="button" class="btn btn-outline-primary mb-5 search" style=" border-radius: 10px;">search</button>
+								</div>
+									<div>
+										<a href="" style="color:black;">More option</a>
+										<a href="" style="margin-left: 228px;color:black;">Reset Filters</a>
+									</div>
+							</div>
+						</div>
+						<div class="col-7">
+							<h1 class="heading ms-3">New & Used Cars Available<h1>
+							<p class="ms-5 paragraph">Thousand of used and new cars for sale in Pakistan</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row mb-3 d-flex">
+			<div class="col-6" >
+				<h3 class="banner-heading ms-5 mt-5">Browse Used Cars</h3>
+			</div>
+			<div class="col-6 justify-content-end d-flex">
+				<a href="">
+					<button class="btn banner-btn mt-5 me-5">View All</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container container-border">
+		<div class="row">
+			<ul class="col-md-3 d-flex flex-column nav" style="border: 1px solid lightgrey; border-radius: 10px;padding:0;">
+				<a href="" class="banner-li active">
+					<li class="" >
+						<i class="fa fa-th-large pe-sm-2" aria-hidden="true"></i>
+						Categorey
+					</li>
+				</a>
+				<a href="" class="banner-li">
+					<li class="">
+						<i class="fa fa-usd pe-sm-2" aria-hidden="true"></i>
+						Budget
+					</li>
+				<a href="" class="banner-li">
+					<li class="">
+						<i class="fa fa-cogs pe-sm-2" aria-hidden="true"></i>
+						Mode
+					</li>
+				</a>
+				<a href="" class="banner-li">
+					<li class="">
+						<i class="fa fa-building-o pe-sm-2" aria-hidden="true"></i>
+						Make
+					</li>
+				</a>
+				<a href="" class="banner-li">
+					<li class="">
+						<i class="fa fa-car pe-sm-2" aria-hidden="true"></i>
+						Cars
+					</li>
+				</a>
+				<a href="" class="banner-li">
+					<li class="">
+						<i class="fa fa-map-marker pe-sm-2" aria-hidden="true"></i>
+						City
+					</li>
+				</a>
+			</ul>
+			<div class="col-md-8">
+				<div class=" d-flex flex-row">
+					<a href="" class="car-anchor ms-3">
+						<img class="mt-4" src="https://autodeals.pk/static/media/660-cc.d8b2953bfde6a5ea7859.png" height="50px" width="100px"/> 
+						<p class="ms-4">660 cc</p>
+					</a>
+					<a href="" class="car-anchor ms-4">
+						<img class="mt-4" src="https://autodeals.pk/static/media/800cc-updated%20(1).31ea951dfedf6d01c8c1.png" height="50px" width="100px"/> 
+						<p class="ms-4">800 cc</p>
+					</a>
+					<a href="" class="car-anchor ms-5">
+						<img class="mt-4" src="https://autodeals.pk/static/media/1000-cc.1a854a8f16206c1f7c79.png" height="50px" width="100px"/> 
+						<p class="ms-4">1000 cc</p>
+					</a>
+					<a href="" class="car-anchor ms-5">
+						<img class="mt-4" src="https://autodeals.pk/static/media/1300-cc.653ff8fa8ee3894bed01.png" height="50px" width="100px"/> 
+						<p class="ms-4">1000 cc</p>
+					</a>
+					<a href="" class="car-anchor ms-5">
+						<img class="mt-4" src="https://autodeals.pk/static/media/automatic-car.6c930eff4d5aef0e654a.png" height="50px" width="100px"/> 
+						<p class="ms-4">Automatic Cars</p>
+					</a>
+					<a href="" class="car-anchor ms-5">
+						<img class="mt-4" src="https://autodeals.pk/static/media/big-car.6f57d330726f29beae73.png" height="50px" width="100px"/> 
+						<p class="ms-4">Big Cars</p>
+					</a>
+				</div>
+				<div class="row">
+					<div class="col-11 d-flex">
+						<a href="" class="car-anchor ms-3">
+							<img class="mt-4" src="https://autodeals.pk/static/media/carry-daba.1985721c53f9cea4362e.png" height="50px" width="100px"/> 
+							<p class="ms-4">Carry dabba</p>
+						</a>
+						<a href="" class="car-anchor ms-4">
+							<img class="mt-4" src="https://autodeals.pk/static/media/cheap-car.145aa5e278f8ce133745.png" height="50px" width="100px"/> 
+							<p class="ms-4">Cheap Cars</p>
+						</a>
+						<a href="" class="car-anchor ms-5">
+							<img class="mt-4" src="https://autodeals.pk/static/media/diesel-car.bb6b83bb8041ec41ec53.png" height="50px" width="100px"/> 
+							<p class="ms-4">Diesel Cars</p>
+						</a>
+						<a href="" class="car-anchor ms-5">
+							<img class="mt-4" src="https://autodeals.pk/static/media/electric-car.91c7ada8485a0576cf8a.png" height="50px" width="100px"/> 
+							<p class="ms-4">Electric Cars</p>
+						</a>
+						<a href="" class="car-anchor ms-5">
+							<img class="mt-4" src="https://autodeals.pk/static/media/family-cars.7e192e6af2312c305fa1.png" height="50px" width="100px"/> 
+							<p class="ms-4">family Cars</p>
+						</a>
+						<a href="" class="car-anchor ms-5">
+							<img class="mt-4" src="https://autodeals.pk/static/media/hybrid-car.8d999a4750ddedaabb7b.png" height="50px" width="100px"/> 
+							<p class="ms-4">Hybrid Cars</p>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-11 d-flex">
+						<a href="" class="car-anchor ms-3">
+							<img class="mt-4" src="https://autodeals.pk/static/media/imported-car.1113132c858ac59c243e.png" height="50px" width="100px"/> 
+							<p class="ms-4">imported dabba</p>
+						</a>
+						<a href="" class="car-anchor ms-4">
+							<img class="mt-4" src="https://autodeals.pk/static/media/japanese-car.194fb07c686cfab7e154.png" height="50px" width="100px"/> 
+							<p class="ms-4">japanese Cars</p>
+						</a>
+						<a href="" class="car-anchor ms-5">
+							<img class="mt-4" src="https://autodeals.pk/static/media/jeep.28102d88600730a75991.png" height="50px" width="100px"/> 
+							<p class="ms-4">jeep</p>
+						</a>
+						<a href="" class="car-anchor ms-5">
+							<img class="mt-4" src="https://autodeals.pk/static/media/low-mileage-car.9755451b9b5270867cf5.png" height="50px" width="100px"/> 
+							<p class="ms-4">Low Milleage Cars</p>
+						</a>
+						<a href="" class="car-anchor ms-5">
+							<img class="mt-4" src="https://autodeals.pk/static/media/low-price.fb7f62af1d9a3c288b8e.png" height="50px" width="100px"/> 
+							<p class="ms-4">Low Price Cars</p>
+						</a>
+						<a href="" class="car-anchor ms-5">
+							<img class="mt-4" src="https://autodeals.pk/static/media/old-car.acffb1108e6729e418f8.png" height="50px" width="100px"/> 
+							<p class="ms-4">old Cars</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row mb-3 d-flex">
+			<div class="col-6" >
+				<h3 class="banner-heading ms-5 mt-5">Featured Used Cars For Sale</h3>
+			</div>
+			<div class="col-6 justify-content-end d-flex">
+				<a href="">
+					<button class="btn banner-btn mt-5 me-5">View All</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<div class="card">
+						<img style="height:238px" src="https://assets-autodeals.s3.eu-west-1.amazonaws.com/1672732463425WhatsApp%20Image%202022-12-31%20at%209.11.03%20PM.jpeg" class="img-card-top" />
+						<div class="card-body" style="color:#111;">
+							<h4 style="color:#111;">Suzuki Wagon R 2018</h4>
+							<p><i class="fa fa-map-marker pe-2"></i>Lahore<i class="fa fa-heart-o" style="margin-left:150px;" aria-hidden="true"></i></p>
+							<hr>
+							<h5>18.5 lacs
+								<button class="btn ms-5" style="background-color:rgba(2, 48, 71, 0.93);color:#fff">Details</button
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="card">
+						<img style="height:238px" src="https://cache3.pakwheels.com/ad_pictures/7852/Slide_toyota-aqua-s-15-2018-78521801.webp" class="img-card-top" />
+						<div class="card-body" style="color:#111;">
+							<h4>Toyota Aqua 2018</h4>
+							<p><i class="fa fa-map-marker pe-2"></i>IslamAbad<i class="fa fa-heart-o" style="margin-left:130px;" aria-hidden="true"></i></p>
+							<hr>
+							<h5>47 lacs
+								<button class="btn ms-5" style="background-color:rgba(2, 48, 71, 0.93);color:#fff">Details</button>
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="card">
+						<img style="height:238px" src="https://cache2.pakwheels.com/ad_pictures/7835/Slide_honda-city-i-vtec-prosmatec-2017-78353378.webp" class="img-card-top" />
+						<div class="card-body" style="color:#111;">
+							<h4>Honda City 2017</h4>
+							<p><i class="fa fa-map-marker pe-2"></i>Lahore<i class="fa fa-heart-o" style="margin-left:150px;" aria-hidden="true"></i></p>
+							<hr>
+							<h5>29 lacs
+								<button class="btn ms-5" style="background-color:rgba(2, 48, 71, 0.93);color:#fff">Details</button
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="card">
+						<img style="height:238px" src="https://cache1.pakwheels.com/ad_pictures/7585/Slide_faw-x-pv-standard-4-2017-75853383.jpg" class="img-card-top" />
+						<div class="card-body" style="color:#111;">
+							<h4 style="color:#111;">FAW X-PV 2017</h4>
+							<p><i class="fa fa-map-marker pe-2"></i>Lahore<i class="fa fa-heart-o" style="margin-left:150px;" aria-hidden="true"></i></p>
+							<hr>
+							<h5>7.45 lacs
+								<button class="btn ms-5" style="background-color:rgba(2, 48, 71, 0.93);color:#fff">Details</button
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="card">
+						<img style="height:238px" src="https://cache1.pakwheels.com/ad_pictures/7851/Slide_honda-civic-oriel-1-8-i-vtec-cvt-2018-78517521.webp" class="img-card-top" />
+						<div class="card-body" style="color:#111;">
+							<h4>Honda Civic 2018</h4>
+							<p><i class="fa fa-map-marker pe-2"></i>Lahore<i class="fa fa-heart-o" style="margin-left:150px;" aria-hidden="true"></i></p>
+							<hr>
+							<h5>50 lacs
+								<button class="btn ms-5" style="background-color:rgba(2, 48, 71, 0.93);color:#fff">Details</button
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="card">
+						<img style="height:238px" src="https://cache1.pakwheels.com/ad_pictures/7542/Slide_suzuki-cultus-vxri-euro-ii-2015-75426809.webp" class="img-card-top" />
+						<div class="card-body" style="color:#111;">
+							<h4>Suzuki Cultus 2015</h4>
+							<p><i class="fa fa-map-marker pe-2"></i>Lahore<i class="fa fa-heart-o" style="margin-left:150px;" aria-hidden="true"></i></p>
+							<hr>
+							<h5>14.90 lacs
+								<button class="btn ms-5" style="background-color:rgba(2, 48, 71, 0.93);color:#fff">Details</button
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row mb-3 d-flex">
+			<div class="col-6" >
+				<h3 class="banner-heading ms-5 mt-5">Cars Comparisons</h3>
+			</div>
+			<div class="col-6 justify-content-end d-flex">
+				<a href="">
+					<button class="btn banner-btn mt-5 me-5">All Car Comperisons</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container container-border mb-sm-4">
+		<div class="row">
+			<div class="col-8">
+				<div class="d-flex">
+					<a href="" class="text-decoration-none text-black">
+						<img src="https://cache3.pakwheels.com/system/car_generation_pictures/3036/medium/Changan-Kalash.jpg?1444202067" alt="car"/>
+						<p class="changan">Changan-Kalash</p>
+					</a>
+						<h5 class="comparison">VS</h5>
+					<a href="" class="text-decoration-none text-black">
+						<img src="https://cache1.pakwheels.com/system/car_generation_pictures/3035/medium/Suzuki_Ravi_2012.jpg?1444129314" alt="car"/>
+						<p class="changan">Suzuki-ravi</p>
+					</a>
+				</div>
+				<div class="row">
+					<div class="col">
+						<button class="btn comparison-button text-white mb-sm-4 mt-2">View Comparison</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-3 text-center">
+				<h4 class="mt-sm-4 ms-3">BMW Z4</h4>
+				<h5 class="VS-heading">VS</h5>
+				<h4>Nissan 370Z</h4>
+				<hr>
+				<h4 class="mt-sm-4 ms-3">Toyota Vitz</h4>
+				<h5 class=" VS-heading">VS</h5>
+				<h4>Daihatsu Mira</h4>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h3 class="banner-heading mt-md-4">The latest new car releases and expert reviews</h3>
+		<p class="fs-5">Get our experts' honest take on new makes and models.</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-3 card ms-5" style="padding:0;">
+					<img src="https://images.cars.com/cldstatic/wp-content/uploads/honda-pilot-trailsport-2023-01-exterior-front-angle-offroad-scaled.jpg" class="card-img-top" height="214px" width="200px"/>
+					<div class="card-body">
+						<p>Expert Review</P>
+						<h5 class="card-title" style="font-size: 19px;">2023 Honda Pilot Review: Flying Straight and Level</h5>
+						<p>
+							<img src="https://images.cars.com/cldstatic/wp-content/uploads/brian-normile-headshot-square-purple.jpg" class="mt-3 me-2 card-img" />
+							By Brain Normile 
+						</p>
+					</div>
+				</div>
+					<div class="col-3 card ms-5" style="padding:0;">
+						<img src="https://images.cars.com/cldstatic/wp-content/uploads/nissan-altima-sr-2023-01-exterior-front-angle-scaled.jpg" class="card-img-top" height="214px" width="313px"/>
+						<div class="card-body">
+							<p>Expert Review</P>
+							<h5 class="card-title" style="font-size: 19px;">2023 Nissan Altima 2.0 SR Review: A Sensible, Somewhat Sporty Sedan</h5>
+							<p>
+								<img src="https://images.cars.com/cldstatic/wp-content/uploads/damon-bell-headshot-purple-about-us.jpg" class="mt-3 me-2 card-img" />
+								By Damon Bell 
+							</p>
+						</div>
+					</div>
+					<div class="col-3 card ms-5" style="padding:0;">
+						<img src="https://images.cars.com/cldstatic/wp-content/uploads/bmw-x3-m-competition-2022-17-blue-dynamic-exterior-profile-suv-scaled.jpg" class="card-img-top" height="214px" width="313px"/>
+						<div class="card-body">
+							<p>Expert Review</P>
+							<h5 class="card-title" style="font-size: 19px;">2022 BMW X3 M Competition Review: Competing</h5>
+							<p>
+								<img src="https://images.cars.com/cldstatic/wp-content/uploads/patrick-masterson-headshot-square-purple.jpg" class="mt-3 me-2 card-img" />
+								By Patrick Masterson
+							</p>
+						</div>
+					</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	<script>
+		$('.owl-carousel').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+	</script>
+</body>
+</html>
